@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\adminsekolah;
 
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,8 @@ class DataSiswaController extends Controller
      */
     public function index()
     {
-        return view('pages.adminsekolah.datasiswa.index');
+        $datas = User::all();
+        return view('pages.adminsekolah.datasiswa.index', compact('datas'));
     }
 
     /**

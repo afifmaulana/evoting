@@ -7,7 +7,9 @@
                     <div class="card-body">
                         <h4 class="card-title">Data Calon</h4>
                         <div class="button">
+                            <a href="{{route('datacalon.create')}}">
                             <button type="button" class="btn btn-primary btn-fw"><i class="mdi mdi-plus-box-outline"></i>Primary</button>
+                            </a>
                         </div>
                         <div class="row">
                             <div class="col-12 table-responsive">
@@ -24,6 +26,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
+                                        {{--{!! $dataCalon->visi !!}--}}
                                         <td>1</td>
                                         <td>Edinburgh</td>
                                         <td>blabla bla </td>

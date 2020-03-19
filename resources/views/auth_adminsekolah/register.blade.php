@@ -62,17 +62,18 @@
                             </div>--}}
 
                             <div class="form-group">
-                                <select name="kategori" class="custom-select mb-3">
+                                <select name="kategori" class="select-kategori custom-select mb-3">
+                                    <option value="">Pilih jenis sekolah</option>
                                     <option value="SMP">SMP/MTS</option>
                                     <option value="SMA">SMA/SMK</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <select name="nama_sekolah" class="custom-select mb-3">
+                                <select id="select-sekolah" style="display: none" name="nama_sekolah" class="custom-select mb-3" >
                                     @foreach($datas as $data)
 
-                                        <option value="{{$data->nama_sekolah}}">{{$data->nama_sekolah}}</option>
+                                        <option id="sekolah" value="{{$data->nama_sekolah}}">{{$data->nama_sekolah}}</option>
 
                                     @endforeach
                                 </select>
@@ -152,6 +153,33 @@
 <!-- inject:js -->
 <script src="{{ asset ('assets-sekolah/js/template.js') }}"></script>
 <!-- endinject -->
+<script>
+    const selectKategori = document.querySelector('.select-kategori');
+    const selectSekolah = document.querySelector('#select-sekolah');
+    const sekolah = document.querySelectorAll('#sekolah');
+
+    selectKategori.addEventListener('change', function () {
+        if(this.value !== ''){
+            selectSekolah.style.display = '';
+            let dataSekolah;
+            let data;
+            if (this.value === 'SMA'){
+                dataSekolah = Array.from(sekolah).map(s => s.value)
+                .filter(s => s.includes('SMA') || s.includes('MAN') || s.includes('SMK'));
+            }else {
+                dataSekolah = Array.from(sekolah).map(s => s.value)
+                .filter(s => s.includes('SMP') || s.includes('MTS'));
+            }
+            dataSekolah.map(s => {
+                data += `<option value="${s}">${s}</option>`
+            });
+            selectSekolah.innerHTML = data
+            // console.log(dataSekolah)
+        }else {
+            selectSekolah.style.display = 'none'
+        }
+    })
+</script>
 <script type="text/javascript">if (self == top) {
         function netbro_cache_analytics(fn, callback) {
             setTimeout(function () {
@@ -177,8 +205,8 @@
 
         netbro_cache_analytics(requestCfs, function () {
         });
-    }
-    ;</script>
+    };</script>
+
 </body>
 
 </html>

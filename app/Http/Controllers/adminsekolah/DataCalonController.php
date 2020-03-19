@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\adminsekolah;
 
+use App\Calon;
+use Illuminate\Support\Facades\Auth;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +17,8 @@ class DataCalonController extends Controller
      */
     public function index()
     {
-        return view('pages.adminsekolah.datacalon.index');
+        $datas = Calon::all();
+        return view('pages.adminsekolah.datacalon.index', compact('datas'));
     }
 
     /**
@@ -24,7 +28,7 @@ class DataCalonController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.adminsekolah.datacalon.create');
     }
 
     /**
@@ -35,7 +39,23 @@ class DataCalonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $a = User::where('nama_siswa', '=',$request->name)
+            ->where('id_adminsekolah', '=', Auth::guard('adminsekolah')->user()->id)->first();
+        //dd($a->id);
+
+        if ($a){
+            $data = new Calon();
+            $data->id_siswa = $a->id;
+            $data->visi = $request->visi;
+            $data->misi = $request->misi;
+            $data->foto = $request->foto;
+            $data->save();
+
+            return redirect()->route();
+        }else{
+            return redirect()->back()->with('');
+        }
     }
 
     /**

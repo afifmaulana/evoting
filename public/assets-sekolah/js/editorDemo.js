@@ -56,9 +56,32 @@
   if ($("#summernoteExample").length) {
     $('#summernoteExample').summernote({
       height: 300,
-      tabsize: 2
+      tabsize: 2,
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'italic', 'underline', 'clear']],
+            ['fontname', ['fontname']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']]
+        ],
     });
   }
+
+    if ($("#summernoteExample2").length) {
+        $('#summernoteExample2').summernote({
+            height: 300,
+            tabsize: 2,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']]
+            ],
+        });
+    }
+
+
 
   /*X-editable editor*/
   if ($('#editable-form').length) {

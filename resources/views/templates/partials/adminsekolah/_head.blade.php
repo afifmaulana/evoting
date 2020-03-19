@@ -12,6 +12,8 @@
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ asset ('assets-sekolah/css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ asset ('assets-sekolah/vendors/summernote/dist/summernote-bs4.css') }}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{ asset ('assets-sekolah/images/favicon.png') }}" />
 </head>
