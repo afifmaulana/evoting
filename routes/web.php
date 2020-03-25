@@ -50,10 +50,13 @@ Route::group(['prefix' => 'superusers'], function (){
     Route::get('sekolah/{id}', 'superusers\SekolahController@destroy')->name('sekolah.destroy');
 });
 
+/*Route::post('import/create', 'adminsekolah\DataSiswaController@import')->name('import.store');*/
+
 Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('dashboard2', 'adminsekolah\DashboardController');
     Route::resource('datacalon', 'adminsekolah\DataCalonController');
     Route::resource('datasiswa', 'adminsekolah\DataSiswaController');
+
     Route::resource('pemilihan', 'adminsekolah\PemilihanController');
     Route::resource('profil', 'adminsekolah\ProfilController');
 

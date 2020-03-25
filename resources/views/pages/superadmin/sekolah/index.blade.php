@@ -27,16 +27,16 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <ul class="breadcrumb breadcrumb-style ">
                             <li class="breadcrumb-item">
-                                <h4 class="page-title">Data Table</h4>
+                                <h4 class="page-title">Data Sekolah</h4>
                             </li>
                             <li class="breadcrumb-item bcrumb-1">
                                 <a href="../../index.html">
                                     <i class="fas fa-home"></i> Home</a>
                             </li>
                             <li class="breadcrumb-item bcrumb-2">
-                                <a href="#" onClick="return false;">Tables</a>
+                                <a href="#" onClick="return false;">Sekolah</a>
                             </li>
-                            <li class="breadcrumb-item active">Data Tables</li>
+                            <li class="breadcrumb-item active">Data Sekolah</li>
                         </ul>
                     </div>
                 </div>

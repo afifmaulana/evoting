@@ -5,6 +5,9 @@ namespace App\Http\Controllers\adminsekolah;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Imports\CsvImport;
+use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Support\Facades\Auth;
 
 class DataSiswaController extends Controller
 {
@@ -13,9 +16,12 @@ class DataSiswaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
     public function index()
     {
-        $datas = User::all();
+        $datas = User::all()->where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id);
         return view('pages.adminsekolah.datasiswa.index', compact('datas'));
     }
 
@@ -26,7 +32,8 @@ class DataSiswaController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('pages.adminsekolah.datasiswa.create');
     }
 
     /**
@@ -37,7 +44,15 @@ class DataSiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+           'nis' => 'unique:users',
+           'email' => 'unique:users'
+        ]);
+
+
+        Excel::import(new CsvImport, request()->file('file'));
+        return back();
+
     }
 
     /**

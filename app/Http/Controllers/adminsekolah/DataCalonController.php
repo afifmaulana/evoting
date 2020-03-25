@@ -44,17 +44,22 @@ class DataCalonController extends Controller
             ->where('id_adminsekolah', '=', Auth::guard('adminsekolah')->user()->id)->first();
         //dd($a->id);
 
+        $image=$request->file('foto');
+        $filename=rand().'.'.$image->getClientOriginalExtension();
+        $path=public_path('uploads/adminsekolah');
+        $image->move($path,$filename);
+
         if ($a){
             $data = new Calon();
             $data->id_siswa = $a->id;
             $data->visi = $request->visi;
             $data->misi = $request->misi;
-            $data->foto = $request->foto;
+            $data->foto = $filename;
             $data->save();
 
-            return redirect()->route();
+            return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');
         }else{
-            return redirect()->back()->with('');
+            return redirect()->back()->with('datacalon.create');
         }
     }
 
@@ -77,7 +82,8 @@ class DataCalonController extends Controller
      */
     public function edit($id)
     {
-        //
+        $datas = Calon::find($id);
+        return view('pages.adminsekolah.datacalon.edit', compact('datas'));
     }
 
     /**
@@ -89,7 +95,28 @@ class DataCalonController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $a = User::where('nama_siswa', '=',$request->name)
+            ->where('id_adminsekolah', '=', Auth::guard('adminsekolah')->user()->id)->first();
+        //dd($a->id);
+
+        $image=$request->file('foto');
+        $filename=rand().'.'.$image->getClientOriginalExtension();
+        $path=public_path('uploads/adminsekolah');
+        $image->move($path,$filename);
+
+        if ($a){
+            $data =  Calon::findOrFail($id);
+            $data->id_siswa = $a->id;
+            $data->visi = $request->visi;
+            $data->misi = $request->misi;
+            $data->foto = $request->file('foto') == '' ? $request->old_foto : $filename;
+            $data->update();
+
+            return redirect()->route('datacalon.index')->with('create', 'Berhasil mengubah Data');
+        }else{
+            return redirect()->back()->with('datacalon.create');
+        }
     }
 
     /**
@@ -100,6 +127,8 @@ class DataCalonController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Calon::findOrFail($id);
+        $data ->update(['status' => '0']);
+        return redirect()->route('datacalon.index')->with('delete', 'berhasil menghapus data');
     }
 }

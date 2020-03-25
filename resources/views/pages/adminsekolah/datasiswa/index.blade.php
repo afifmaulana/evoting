@@ -27,9 +27,17 @@
                     <div class="card-body">
                         <h4 class="card-title">Data Siswa</h4>
                         <div class="button-right">
-                            <button type="button" class="btn btn-primary btn-fw"><i
-                                        class="mdi mdi-plus-box-outline"></i>Primary
-                            </button>
+                            {{--<a href="{{route('datasiswa.create')}}">
+                                <button type="button" class="btn btn-primary btn-fw"><i
+                                            class="mdi mdi-plus-box-outline"></i>Primary
+                                </button>
+                            </a>--}}
+
+                            <form action="{{ route('datasiswa.store') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <input type="file" name="file" accept=".csv">
+                                <button class="btn btn-success">Import User Data</button>
+                            </form>
                         </div>
                         <div class="row">
                             <div class="col-12 table-responsive">
@@ -42,7 +50,6 @@
                                         <th>Email</th>
                                         <th>Kelas</th>
                                         <th>Sekolah</th>
-                                        <th>Status</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
@@ -54,16 +61,17 @@
                                             <td>{{$data->nama_siswa}}</td>
                                             <td>{{$data->email}}</td>
                                             <td>{{$data->kelas}}</td>
-                                            <td>{{$data->id_adminsekolah}}</td>
-                                            <td>
-                                                <label class="badge badge-info">On hold</label>
-                                            </td>
+                                            <td>{{$data->adminsekolah->nama_sekolah}}</td>
+
                                             <td class="text-right">
                                                 <button class="btn btn-light">
-                                                    <i class="mdi mdi-eye text-primary"></i>View
+                                                    <i class="mdi mdi-eye text-primary"></i>
                                                 </button>
-                                                <button class="btn btn-light">
-                                                    <i class="mdi mdi-close text-danger"></i>Remove
+                                                <button class="btn btn-warning">
+                                                    <i class="icon-note"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="icon-trash"></i>
                                                 </button>
                                             </td>
                                         </tr>

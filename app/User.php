@@ -18,8 +18,19 @@ class User extends Authenticatable
     protected $guard = 'siswa';
     protected $table = 'users';
     protected $fillable = [
-        'name', 'email', 'password',
+        'id_adminsekolah',
+        'nis',
+        'nama_siswa',
+        'kelas',
+        'email',
+        'api_token',
+        'password'
     ];
+
+    public function adminsekolah(){
+
+        return $this->belongsTo(AdminSekolah::class, 'id_adminsekolah', 'id');
+    }
 
     /**
      * The attributes that should be hidden for arrays.
