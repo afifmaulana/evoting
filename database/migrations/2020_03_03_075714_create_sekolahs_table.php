@@ -17,7 +17,7 @@ class CreateSekolahsTable extends Migration
             $table->increments('id');
             $table->string('nama_sekolah', '50')->unique();
             $table->string('kategori', '20');
-            $table->enum('status',['1','0']);
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

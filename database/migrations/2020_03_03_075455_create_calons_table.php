@@ -19,7 +19,7 @@ class CreateCalonsTable extends Migration
             $table->text('visi');
             $table->text('misi');
             $table->text('foto');
-            $table->enum('status',['1','0']);
+            $table->boolean('status')->default(1);
             $table->timestamps();
             $table->foreign('id_siswa')->references('id')->on('users')->onDelete('CASCADE');
         });
