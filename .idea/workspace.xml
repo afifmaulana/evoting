@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9d15b66-b303-4f34-87e5-946cddb4711a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +18,41 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DataCalonController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+              <folding>
+                <marker date="1585123772409" expanded="true" signature="9:33" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="44:53" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="374:399" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="1424:1439" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="1613:1629" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="1687:1711" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="1893:1909" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="1992:2034" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="2732:2767" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="3113:3150" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="3616:3632" ph="..." />
+                <marker date="1585123772409" expanded="true" signature="4802:4844" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -111,7 +145,6 @@
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_head.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_script.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/edit.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/Procfile" />
@@ -120,6 +153,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
       </list>
     </option>
   </component>
@@ -266,18 +300,63 @@
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="datacalon" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
@@ -373,17 +452,18 @@
       <workItem from="1584930295767" duration="506000" />
       <workItem from="1584944082754" duration="9247000" />
       <workItem from="1585026127281" duration="20548000" />
-      <workItem from="1585108978744" duration="4707000" />
+      <workItem from="1585108978744" duration="6198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287372000" />
+    <option name="totallyTimeSpent" value="288863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26701966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26701966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -659,27 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="92" lean-forward="false" selection-start-line="52" selection-start-column="92" selection-end-line="52" selection-end-column="92" />
-          <folding>
-            <marker date="1585067864867" expanded="true" signature="9:33" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="44:53" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="374:399" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="1424:1439" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="1613:1629" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="1687:1711" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="1893:1909" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="1992:2034" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="2732:2768" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="3114:3152" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="3618:3634" ph="..." />
-            <marker date="1585067864867" expanded="true" signature="4804:4846" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -718,16 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="81" column="7" lean-forward="false" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
-          <folding>
-            <element signature="e#53#67#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,6 +913,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding>
+            <marker date="1585123772409" expanded="true" signature="9:33" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="44:53" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="374:399" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="1424:1439" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="1613:1629" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="1687:1711" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="1893:1909" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="1992:2034" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="2732:2767" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="3113:3150" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="3616:3632" ph="..." />
+            <marker date="1585123772409" expanded="true" signature="4802:4844" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
