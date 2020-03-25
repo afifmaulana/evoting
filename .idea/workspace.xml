@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9d15b66-b303-4f34-87e5-946cddb4711a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Evoting.iml" afterPath="$PROJECT_DIR$/.idea/Evoting.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Calon.php" afterPath="$PROJECT_DIR$/app/Calon.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataSiswaController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataSiswaController.php" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/index.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/index.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_head.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_head.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_script.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_script.blade.php" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,11 +19,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppServiceProvider.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -95,8 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/superusers/SekolahController.php" />
         <option value="$USER_HOME$/Downloads/Compressed/libertyui/pages/samples/landing.html" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminhome/_script.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminhome/_navbar.blade.php" />
@@ -146,6 +149,8 @@
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/edit.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -292,85 +297,7 @@
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Imports" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="datacalon" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="superadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="superadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -461,12 +388,12 @@
       <workItem from="1584930295767" duration="506000" />
       <workItem from="1584944082754" duration="9247000" />
       <workItem from="1585026127281" duration="20548000" />
-      <workItem from="1585108978744" duration="3189000" />
+      <workItem from="1585108978744" duration="3652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285854000" />
+    <option name="totallyTimeSpent" value="286317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -512,20 +439,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/superusers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminhome/_head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminhome/_navbar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -886,7 +799,7 @@
         <state relative-caret-position="1309">
           <caret line="81" column="7" lean-forward="false" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
           <folding>
-            <element signature="e#53#67#0#PHP" expanded="true" />
+            <element signature="e#53#67#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -943,6 +856,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
