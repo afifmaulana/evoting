@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="demo-image">
-                            <img src="{{ asset ('assets-sekolah/images/samples/landing/voteonline.jpg') }}" alt="image"/>
+                            <img src="{{ asset ('assets-sekolah/images/samples/landing/page.png') }}" alt="image"/>
                         </div>
                     </div>
                 </div>
@@ -124,17 +124,6 @@
                         <img class="card-img-top"
                              src="{{ asset ('assets-sekolah/images/samples/landing/landing-8.png') }}" alt="image">
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid newsletter-section">
-        <div class="row">
-            <div class="col-md-9 mx-auto">
-                <div class="d-lg-flex justify-content-between">
-                    <h3 class="text-white">Subscribe to our newsletter</h3>
-                    <input type="email" class="form-control my-2 my-lg-0" placeholder="Enter your email address"/>
-                    <button class="btn btn-light">Subscribe now</button>
                 </div>
             </div>
         </div>

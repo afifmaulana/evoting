@@ -36,7 +36,7 @@
                             <form action="{{ route('datasiswa.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <input type="file" name="file" accept=".csv">
-                                <button class="btn btn-success">Import User Data</button>
+                                <button class="btn btn-success">Import file CSV</button>
                             </form>
                         </div>
                         <div class="row">

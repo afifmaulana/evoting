@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LibertyUI Premium Bootstrap Admin Dashboard Template</title>
+    <title>Daftar Admin Sekolah</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset ('assets-sekolah/vendors/iconfonts/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset ('assets-sekolah/vendors/css/vendor.bundle.base.css') }}">
@@ -25,7 +25,7 @@
         <div class="content-wrapper d-flex align-items-center auth register-bg-1 theme-one">
             <div class="row w-100 mx-auto">
                 <div class="col-lg-4 mx-auto">
-                    <h2 class="text-center mb-4">Register</h2>
+                    <h2 class="text-center mb-4">Daftar Admin Sekolah</h2>
                     <div class="auto-form-wrapper">
                         <form action="{{route('adminsekolah.register.submit')}}" method="post">
                             @csrf
@@ -63,9 +63,9 @@
 
                             <div class="form-group">
                                 <select name="kategori" class="select-kategori custom-select mb-3">
-                                    <option value="">Pilih jenis sekolah</option>
-                                    <option value="SMP">SMP/MTS</option>
-                                    <option value="SMA">SMA/SMK</option>
+                                    <option value="">Pilih jenjang sekolah</option>
+                                    <option value="SMP">SMP/MTS/Sederajat</option>
+                                    <option value="SMA">SMA/SMK/MA/Sederajat</option>
                                 </select>
                             </div>
 
@@ -123,18 +123,15 @@
                             </div>
                             <div class="form-group d-flex justify-content-center">
                                 <div class="form-check form-check-flat mt-0">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" checked>
-                                        I agree to the terms
-                                    </label>
+
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-primary submit-btn btn-block">Register</button>
+                                <button class="btn btn-primary submit-btn btn-block">Daftar</button>
                             </div>
                             <div class="text-block text-center my-3">
-                                <span class="text-small font-weight-semibold">Already have and account ?</span>
-                                <a href="login.html" class="text-black text-small">Login</a>
+                                <span class="text-small font-weight-semibold">Sudah punya Akun ?</span>
+                                <a href="{{route('adminsekolah.login')}}" class="text-black text-small">Masuk</a>
                             </div>
                         </form>
                     </div>
@@ -165,7 +162,7 @@
             let data;
             if (this.value === 'SMA'){
                 dataSekolah = Array.from(sekolah).map(s => s.value)
-                .filter(s => s.includes('SMA') || s.includes('MAN') || s.includes('SMK'));
+                .filter(s => s.includes('SMA') || s.includes('MA') || s.includes('SMK'));
             }else {
                 dataSekolah = Array.from(sekolah).map(s => s.value)
                 .filter(s => s.includes('SMP') || s.includes('MTS'));

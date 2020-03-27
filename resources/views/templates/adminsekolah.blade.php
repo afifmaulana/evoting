@@ -17,8 +17,9 @@
             <div class="content-wrapper">
                 @yield('content')
             </div>
+            <div class="footer-bottom">
             @include('templates.partials.adminsekolah._footer')
-
+            </div>
         </div>
 
     </div>

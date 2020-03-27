@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-transparent">
     <div class="row flex-grow">
         <div class="col-md-8 d-lg-flex flex-row mx-auto">
-            <a class="navbar-brand p-2 bg-white" href="../../index.html">
-                <img src="{{ asset ('assets-sekolah/images/logo-inverse.svg') }}" alt="logo"/>
+            <a class="navbar-brand p-2" href="#">
+                <img src="{{ asset ('assets-sekolah/images/evoting-logo.png') }}" alt="logo"/>
             </a>
             <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon mdi mdi-menu text-white"></span>
