@@ -13,5 +13,5 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ asset ('assets-sekolah/css/style.css') }}">
     <!-- endinject -->
-    <link rel="shortcut icon" href="{{ asset ('assets-sekolah/images/favicon.png') }}" />
+    <link rel="shortcut icon" href="{{ asset ('assets-sekolah/images/logo.png') }}" />
 </head>

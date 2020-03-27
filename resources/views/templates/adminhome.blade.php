@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="demo-image">
-                            <img src="{{ asset ('assets-sekolah/images/samples/landing/mac.png') }}" alt="image"/>
+                            <img src="{{ asset ('assets-sekolah/images/samples/landing/voteonline.jpg') }}" alt="image"/>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     <div class="container-fluid middle-section bg-white">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h3 class="mb-5">Why Use External It Support</h3>
+                <h3 class="mb-5">Keunggulan E-Voting</h3>
                 <div class="row">
                     <div class="col-md-4 grid-margin stretch-card">
                         <div class="card card-icon-top">
@@ -43,8 +43,7 @@
                                      class="card-icon"/>
                                 <h4>Features</h4>
                                 <p class="card-text">
-                                    Shure’s Music Phone Adapter (MPA) is our favorite iPhone solution, since it lets you
-                                    use the headphones you’re most comfortable with
+                                    Mempermudah users menggunakan Aplikasi ini
                                 </p>
                             </div>
                         </div>
