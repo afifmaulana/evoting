@@ -45,7 +45,7 @@ Route::get('/adminsekolah-logout', 'adminsekolah\Auth\LoginController@logout')->
 Route::group(['prefix' => 'superusers'], function (){
     Route::resource('dashboard1', 'superusers\DashboardController');
     Route::resource('users', 'superusers\UsersController');
-    Route::resource('profil', 'superusers\ProfilController');
+    Route::resource('profiladmin', 'superusers\ProfilController');
     Route::resource('sekolah', 'superusers\SekolahController')->except(['show', 'destroy']);
     Route::get('sekolah/{id}', 'superusers\SekolahController@destroy')->name('sekolah.destroy');
 });
@@ -58,7 +58,7 @@ Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('datasiswa', 'adminsekolah\DataSiswaController');
 
     Route::resource('pemilihan', 'adminsekolah\PemilihanController');
-    Route::resource('profil', 'adminsekolah\ProfilController');
+    Route::resource('profilsekolah', 'adminsekolah\ProfilController');
 
 });
 

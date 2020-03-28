@@ -55,8 +55,7 @@
                                      class="card-icon"/>
                                 <h4>Support</h4>
                                 <p class="card-text">
-                                    We connected the adapter to the Shure SE110 in-ear headphones, whose cabling is
-                                    modular; the top half is fairly short
+                                    Mempermudah dalam proses pemilihan ketua dan wakil OSIS terutama dalam perhitungan suara
                                 </p>
                             </div>
                         </div>
@@ -68,9 +67,7 @@
                                      class="card-icon"/>
                                 <h4>Video tutorials</h4>
                                 <p class="card-text">
-                                    Shure’s coated memory-foam tips are the most comfortable on the market, and they
-                                    stay in your ear securely–especially if you wear the cables over the tops of your
-                                    ears
+                                    Tersedia cara penggunaan aplikasi ini
                                 </p>
                             </div>
                         </div>

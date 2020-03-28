@@ -15,7 +15,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
 
-                    <a href="{{route('profil.index')}}" class="dropdown-item mt-2">
+                    <a href="{{route('profilsekolah.index')}}" class="dropdown-item mt-2">
                         Profil
                     </a>
                     <a href="{{route('adminsekolah.logout')}}" class="dropdown-item">

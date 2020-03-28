@@ -149,7 +149,7 @@
                         <li class="body">
                             <ul class="user_dw_menu">
                                 <li>
-                                    <a href="{{route('profil.index')}}">
+                                    <a href="{{route('profiladmin.index')}}">
                                         <i class="material-icons">person</i>Profile
                                     </a>
                                 </li>

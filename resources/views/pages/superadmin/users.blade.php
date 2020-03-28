@@ -10,7 +10,7 @@
                                 <h4 class="page-title">Data Users</h4>
                             </li>
                             <li class="breadcrumb-item bcrumb-1">
-                                <a href="../../index.html">
+                                <a href="#">
                                     <i class="fas fa-home"></i> Home</a>
                             </li>
                             <li class="breadcrumb-item bcrumb-2">
@@ -42,23 +42,35 @@
                                        style="width:100%;">
                                     <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
+                                        <th>No</th>
+                                        <th>Nama Admin</th>
+                                        <th>Nama Sekolah</th>
+                                        <th>Email</th>
+                                        <th>Foto</th>
+                                        <th>Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($admins as $admin)
                                     <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
+                                        <td>{{$loop->iteration}}</td>
+                                        <td>{{$admin->nama_admin}}</td>
+                                        <td>{{$admin->nama_sekolah}}</td>
+                                        <td>{{$admin->email}}</td>
+                                        <td>foto</td>
+                                        <td class="text-right">
+                                            <button class="btn btn-light">
+                                                <i class="mdi mdi-eye text-primary"></i>
+                                            </button>
+                                            <button class="btn btn-warning">
+                                                <i class="icon-note"></i>
+                                            </button>
+                                            <button class="btn btn-danger">
+                                                <i class="icon-trash"></i>
+                                            </button>
+                                        </td>
                                     </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

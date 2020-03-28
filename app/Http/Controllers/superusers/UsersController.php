@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\superusers;
 
+use App\AdminSekolah;
+use App\SuperAdmin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +16,9 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('pages.superadmin.users');
+        $datas = SuperAdmin::all();
+        $admins = AdminSekolah::all();
+        return view('pages.superadmin.users', compact('datas', 'admins'));
     }
 
     /**

@@ -38,18 +38,34 @@
             <div class="card-body">
                 <h4 class="card-title">Ubah Profil</h4>
 
-                <form class="forms-sample">
+                <form class="forms-sample" method="POST" action="#">
+                    @csrf
                     <div class="form-group">
                         <label for="exampleInputName1">Nama Lengkap</label>
-                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Masukkan Nama Lengkap">
+                        <input type="text" class="form-control @error('nama_admin') is-invalid @enderror"
+                               id="exampleInputName1" placeholder="Masukkan Nama Lengkap" name="nama_admin"
+                               value="{{ old('nama_admin') }}">
+                        @error('nama_admin')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail3">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Masukkan Email">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror"
+                               id="exampleInputEmail3" placeholder="Masukkan Email" name="email"
+                        value="{{ old('email') }}">
+                        @error('email')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword4">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                        <input type="password" class="form-control @error('password') is-invalid @enderror"
+                               id="exampleInputPassword4" placeholder="Password" name="password">
                     </div>
                     <div class="form-group">
                         <label>Upload Foto</label>
@@ -63,7 +79,10 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleTextarea1">Alamat</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="2"></textarea>
+                        <textarea class="form-control @error('alamat') is-invalid @enderror"
+                                  id="exampleTextarea1" rows="2" name="alamat">
+
+                        </textarea>
                     </div>
                     <button type="submit" class="btn btn-success mr-2">Submit</button>
                     <button class="btn btn-light">Cancel</button>
