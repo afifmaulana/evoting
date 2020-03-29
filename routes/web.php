@@ -54,7 +54,8 @@ Route::group(['prefix' => 'superusers'], function (){
 
 Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('dashboard2', 'adminsekolah\DashboardController');
-    Route::resource('datacalon', 'adminsekolah\DataCalonController');
+    Route::resource('datacalon', 'adminsekolah\DataCalonController')->except(['show', 'destroy']);
+    Route::get('datacalon/{id}', 'adminsekolah\DataCalonController@destroy')->name('datacalon.destroy');
     Route::resource('datasiswa', 'adminsekolah\DataSiswaController');
 
     Route::resource('pemilihan', 'adminsekolah\PemilihanController');

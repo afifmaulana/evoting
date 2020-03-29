@@ -17,7 +17,7 @@ class DataCalonController extends Controller
      */
     public function index()
     {
-        $datas = Calon::all();
+        $datas = Calon::all()->where('status', '1');
         return view('pages.adminsekolah.datacalon.index', compact('datas'));
     }
 
@@ -82,8 +82,8 @@ class DataCalonController extends Controller
      */
     public function edit($id)
     {
-        $datas = Calon::find($id);
-        return view('pages.adminsekolah.datacalon.edit', compact('datas'));
+        $data = Calon::find($id);
+        return view('pages.adminsekolah.datacalon.edit', compact('data'));
     }
 
     /**
@@ -106,14 +106,14 @@ class DataCalonController extends Controller
         $image->move($path,$filename);
 
         if ($a){
-            $data =  Calon::findOrFail($id);
+            $data = Calon::find($id);
             $data->id_siswa = $a->id;
             $data->visi = $request->visi;
             $data->misi = $request->misi;
-            $data->foto = $request->file('foto') == '' ? $request->old_foto : $filename;
+            $data->foto = $filename;
             $data->update();
 
-            return redirect()->route('datacalon.index')->with('create', 'Berhasil mengubah Data');
+            return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');
         }else{
             return redirect()->back()->with('datacalon.create');
         }

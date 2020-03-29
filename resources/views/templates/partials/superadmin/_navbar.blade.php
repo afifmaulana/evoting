@@ -164,7 +164,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" onClick="return false;">
+                                    <a href="{{route('superadmin.logout')}}">
                                         <i class="material-icons">power_settings_new</i>Logout
                                     </a>
                                 </li>

@@ -20,4 +20,5 @@
 
     <!-- endinject -->
     <link rel="shortcut icon" href="{{ asset ('assets-sekolah/images/favicon.png') }}" />
+    <link rel="stylesheet" href="{{ asset ('asset-sekolah/vendors/icheck/skins/all.css') }}">
 </head>

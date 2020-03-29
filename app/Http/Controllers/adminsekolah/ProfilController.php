@@ -40,7 +40,7 @@ class ProfilController extends Controller
     public function store(Request $request)
     {
         //dd(Auth::user());
-        $data =  Auth::guard('adminsekolah')->user();
+        $data = Auth::guard('adminsekolah')->user();
         $data->nama_admin = $request->nama_admin;
         $data->nama_sekolah = $request->nama_sekolah;
         $data->alamat = $request->alamat;
