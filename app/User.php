@@ -32,6 +32,10 @@ class User extends Authenticatable
         return $this->belongsTo(AdminSekolah::class, 'id_adminsekolah', 'id');
     }
 
+    public function calons(){
+        return $this->hasMany(Calon::class, 'id_siswa', 'id');
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *

@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'siswa',
         'passwords' => 'users',
     ],
 
@@ -36,12 +36,12 @@ return [
     */
 
     'guards' => [
-        'web' => [
+        'siswa' => [
             'driver' => 'session',
             'provider' => 'users',
         ],
 
-        'api' => [
+        'api-siswa' => [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,

@@ -35,7 +35,7 @@
                                             <td><a class="btn btn-circle" data-toggle="modal"
                                                    data-target="#exampleModal{{$loop->iteration}}" type="button">
                                                     <img src="{{asset('uploads/adminsekolah/'.$data->foto)}}"
-                                                         width="100" height="100">
+                                                         style="height: 50px; width: 50px;">
                                                 </a></td>
 
                                             <td>
@@ -72,7 +72,7 @@
                                                     <div class="modal-body">
                                                         <div class="d-flex justify-content-center">
                                                             <img src="{{asset('uploads/adminsekolah/'.$data->foto)}}"
-                                                                 style="height: 480px; width: 480px;">
+                                                                 style="height: 80px; width: 80px;">
                                                         </div>
                                                     </div>
                                                 </div>

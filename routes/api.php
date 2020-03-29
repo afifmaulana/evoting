@@ -13,6 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+
+Route::group(['prefix' => 'siswa'], function (){
+   Route::post('login', 'v1\siswa\Auth\LoginController@login');
+   Route::get('calon', 'v1\siswa\CalonController@index')->middleware('auth:api-siswa');
+
 });
+
