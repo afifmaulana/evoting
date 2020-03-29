@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\adminsekolah;
 
+use App\AdminSekolah;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+
 
 class ProfilController extends Controller
 {
@@ -14,6 +17,7 @@ class ProfilController extends Controller
      */
     public function index()
     {
+
         return view('pages.adminsekolah.profil.index');
     }
 
@@ -35,7 +39,24 @@ class ProfilController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd(Auth::user());
+        $data =  Auth::guard('adminsekolah')->user();
+        $data->nama_admin = $request->nama_admin;
+        $data->nama_sekolah = $request->nama_sekolah;
+        $data->alamat = $request->alamat;
+        if ($request->file('foto') == ''){
+            $data->foto = $request->old_foto;
+        }else{
+            $image=$request->file('foto');
+            $filename=rand().'.'.$image->getClientOriginalExtension();
+            $path=public_path('uploads/adminsekolah');
+            $image->move($path,$filename);
+            $data->foto = $filename;
+        }
+        $data->save();
+
+        return redirect()->route('profilsekolah.index')->with('create', 'Berhasil mengubah Data');
+
     }
 
     /**
@@ -69,7 +90,9 @@ class ProfilController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        //dd($a->id);
+
     }
 
     /**

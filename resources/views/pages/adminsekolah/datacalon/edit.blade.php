@@ -11,7 +11,7 @@
                     {{method_field('PATCH')}}
                     <div class="form-group">
                         <label for="exampleInputName1">Nama Calon</label>
-                        <input type="text" class="form-control {{$errors->has('nama_sekolah')?'is-invalid':''}}"
+                        <input type="text" class="form-control {{$errors->has('nama_siswa')?'is-invalid':''}}"
                                id="exampleInputName1" placeholder="Nama Ketua dan Wakil Osis" name="nama_siswa"
                                value="{{$datas->nama_siswa}}">
                         @if ($errors->has('nama_siswa'))

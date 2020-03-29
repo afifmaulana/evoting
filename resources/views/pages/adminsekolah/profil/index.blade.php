@@ -5,9 +5,9 @@
     <div class="col-md-4 col-sm-6 grid-margin stretch-card">
         <div class="card text-center">
             <div class="card-body">
-                <img src="{{ asset ('assets-sekolah/images/faces/face1.jpg') }}" class="img-lg rounded-circle mb-2" alt="profile image"/>
+                <img src="{{asset('uploads/adminsekolah/'.Auth::guard('adminsekolah')->user()->foto)}}" class="img-lg rounded-circle mb-2" alt="profile image"/>
                 <h4>{{Auth::guard('adminsekolah')->user()->nama_admin}}</h4>
-                <p class="text-muted">Developer</p>
+                <p class="text-muted">Admin Sekolah</p>
                 <p class="mt-4 card-text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Lorem
@@ -38,14 +38,26 @@
             <div class="card-body">
                 <h4 class="card-title">Ubah Profil</h4>
 
-                <form class="forms-sample" method="POST" action="#">
+                <form class="forms-sample" method="POST" action="{{route('profilsekolah.store')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="exampleInputName1">Nama Lengkap</label>
-                        <input type="text" class="form-control @error('nama_admin') is-invalid @enderror"
+                        <input type="text" class="form-control {{$errors->has('nama_admin')?'is-invalid':''}}"
                                id="exampleInputName1" placeholder="Masukkan Nama Lengkap" name="nama_admin"
-                               value="{{ old('nama_admin') }}">
+                               value="{{Auth::guard('adminsekolah')->user()->nama_admin}}">
                         @error('nama_admin')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputName1">Nama Sekolah</label>
+                        <input type="text" class="form-control {{$errors->has('nama_sekolah')?'is-invalid':''}}"
+                               id="exampleInputName1" placeholder="Masukkan Nama Lengkap" name="nama_sekolah"
+                               value="{{Auth::guard('adminsekolah')->user()->nama_sekolah}}">
+                        @error('nama_sekolah')
                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -53,36 +65,30 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail3">Email</label>
-                        <input type="email" class="form-control @error('email') is-invalid @enderror"
-                               id="exampleInputEmail3" placeholder="Masukkan Email" name="email"
-                        value="{{ old('email') }}">
-                        @error('email')
-                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                        @enderror
+                        <input type="email" class="form-control" readonly value="{{Auth::guard('adminsekolah')->user()->email}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword4">Password</label>
                         <input type="password" class="form-control @error('password') is-invalid @enderror"
-                               id="exampleInputPassword4" placeholder="Password" name="password">
+                               id="exampleInputPassword4" placeholder="*********" name="password">
                     </div>
                     <div class="form-group">
-                        <label>Upload Foto</label>
-                        <input type="file" name="img[]" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                            <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Foto">
-                            <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-info" type="button">Upload</button>
-                        </span>
-                        </div>
+                        <label>File upload</label>
+                        <input type="hidden" name="old_foto" value="{{Auth::guard('adminsekolah')->user()->foto}}"/>
+                        <input class="form-control {{$errors->has('foto')?'is-invalid':''}}"
+                               type="file" name="foto" onchange="loadfile(event)">
+                        @error('foto')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
+                        <img id="output" class="img-fluid" height="100" width="100"
+                             src="{{asset('uploads/adminsekolah/'.Auth::guard('adminsekolah')->user()->foto)}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleTextarea1">Alamat</label>
                         <textarea class="form-control @error('alamat') is-invalid @enderror"
-                                  id="exampleTextarea1" rows="2" name="alamat">
-
-                        </textarea>
+                                  id="exampleTextarea1" rows="2" name="alamat">{{Auth::guard('adminsekolah')->user()->alamat}}</textarea>
                     </div>
                     <button type="submit" class="btn btn-success mr-2">Submit</button>
                     <button class="btn btn-light">Cancel</button>
