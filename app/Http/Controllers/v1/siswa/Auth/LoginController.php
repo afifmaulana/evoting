@@ -34,16 +34,14 @@ class LoginController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'Berhasil login',
-                'data' => new SiswaResource($user),
-                'meta' => [
-                    'token' => $user->api_token,
-                ]
+                'data' => $user,
             ], 200);
         }
 
         return response()->json([
            'status' => false,
-            'message' => 'masukkan username dan password yang benar'
+            'message' => 'masukkan username dan password yang benar',
+            'data' => (object) []
         ], 401);
 
     }

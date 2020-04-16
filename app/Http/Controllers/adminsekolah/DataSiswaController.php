@@ -74,7 +74,8 @@ class DataSiswaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = User::find($id);
+        return view('pages.adminsekolah.datasiswa.edit', compact('data'));
     }
 
     /**
@@ -86,7 +87,13 @@ class DataSiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = User::find($id);
+        $data->nis          = $request->nis;
+        $data->nama_siswa   = $request->nama_siswa;
+        $data->kelas        = $request->kelas;
+        $data->email        = $request->email;
+
+        $data->update();
     }
 
     /**

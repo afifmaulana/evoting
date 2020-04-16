@@ -110,7 +110,7 @@ class DataCalonController extends Controller
             $data->id_siswa = $a->id;
             $data->visi = $request->visi;
             $data->misi = $request->misi;
-            $data->foto = $filename;
+            $data->foto = $request->file('foto') == '' ? $request->old_foto : $filename;
             $data->update();
 
             return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');

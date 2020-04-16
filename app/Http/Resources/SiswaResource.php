@@ -21,7 +21,6 @@ class SiswaResource extends JsonResource
             'nama_siswa'            => $this->nama_siswa,
             'kelas'                 => $this->kelas,
             'email'                 => $this->email,
-
         ];
     }
 }

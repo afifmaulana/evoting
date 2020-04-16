@@ -18,7 +18,7 @@
 
                     <div class="form-group">
                         <label>File upload</label>
-                        <input type="hidden" name="old_foto" class="dropify"/>
+                        <input type="hidden" name="old_foto" class="dropify" value="{{ $data->foto }}"/>
                         <input class="form-control {{$errors->has('foto')?'is-invalid':''}}"
                                type="file" name="foto" onchange="loadfile(event)" id="foto">
                         <img id="output" class="img-fluid" height="100" width="100"

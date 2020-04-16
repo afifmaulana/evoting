@@ -67,9 +67,11 @@
                                                 <button class="btn btn-light">
                                                     <i class="mdi mdi-eye text-primary"></i>
                                                 </button>
+                                                <a href="{{route('datasiswa.edit', $data->id)}}">
                                                 <button class="btn btn-warning">
                                                     <i class="icon-note"></i>
                                                 </button>
+                                                </a>
                                                 <button class="btn btn-danger">
                                                     <i class="icon-trash"></i>
                                                 </button>
