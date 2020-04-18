@@ -14,7 +14,7 @@
                 </div>
             </li>
             <li>
-                <a href="{{route('dashboard2.index')}}">
+                <a href="{{route('dashboard1.index')}}">
                     <i class="fa fa-home"></i>
                     <span>Home</span>
                 </a>

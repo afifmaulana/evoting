@@ -28,7 +28,9 @@ class DataCalonController extends Controller
      */
     public function create()
     {
-        return view('pages.adminsekolah.datacalon.create');
+        $datas = User::all();
+
+        return view('pages.adminsekolah.datacalon.create', compact('datas'));
     }
 
     /**
@@ -71,7 +73,8 @@ class DataCalonController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = Calon::find($id);
+        return view('pages.adminsekolah.datacalon.show', compact('data'));
     }
 
     /**

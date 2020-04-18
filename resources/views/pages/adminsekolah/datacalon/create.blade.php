@@ -5,12 +5,21 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Tambah Calon</h4>
-                <form class="forms-sample" method="post" action="{{route('datacalon.store')}}" enctype="multipart/form-data">
+                <form class="forms-sample" method="post" action="{{route('datacalon.store')}}"
+                      enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
+                        <label>Nama Calon</label>
+                        <select class="js-example-basic-multiple" multiple="multiple" style="width:100%" name="name">
+                            @foreach($datas as $data)
+                                <option value="{{$data->nama_siswa}}">{{$data->nama_siswa}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    {{--<div class="form-group">
                         <label for="exampleInputName1">Nama Calon</label>
                         <input type="text" class="form-control" id="exampleInputName1" placeholder="Nama Ketua dan Wakil Osis" name="name">
-                    </div>
+                    </div>--}}
 
                     <div class="form-group">
                         <label>File upload</label>

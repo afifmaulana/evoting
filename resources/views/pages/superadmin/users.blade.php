@@ -59,14 +59,14 @@
                                         <td>{{$admin->email}}</td>
                                         <td>foto</td>
                                         <td class="text-right">
-                                            <button class="btn btn-light">
-                                                <i class="mdi mdi-eye text-primary"></i>
+                                            <button class="btn-light">
+                                                <i class="fa fa-eye"></i>
                                             </button>
-                                            <button class="btn btn-warning">
-                                                <i class="icon-note"></i>
+                                            <button class="btn-warning">
+                                                <i class="fa fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-danger">
-                                                <i class="icon-trash"></i>
+                                            <button class="btn-danger">
+                                                <i class="fa fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>

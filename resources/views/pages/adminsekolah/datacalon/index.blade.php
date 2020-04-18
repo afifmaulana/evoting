@@ -42,10 +42,12 @@
                                                 <label class="badge badge-info">On hold</label>
                                             </td>
                                             <td class="text-right">
+                                                <a href="{{route('datacalon.show', $data->id)}}">
                                                 <button class="btn btn-light">
                                                     <i class="mdi mdi-eye text-primary"></i>
                                                 </button>
-                                                <a href="{{route('datacalon.edit', $data-> id)}}">
+                                                </a>
+                                                <a href="{{route('datacalon.edit', $data->id)}}">
                                                     <button class="btn btn-warning">
                                                         <i class="icon-note"></i>
                                                     </button>
