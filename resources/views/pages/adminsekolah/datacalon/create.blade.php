@@ -2,17 +2,27 @@
 @section('content')
 
     <div class="col-md-12 grid-margin stretch-card">
+
         <div class="card">
             <div class="card-body">
+                @if($errors->any())
+                    <h4>{{$errors->first()}}</h4>
+                @endif
                 <h4 class="card-title">Tambah Calon</h4>
                 <form class="forms-sample" method="post" action="{{route('datacalon.store')}}"
                       enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label>Nama Calon</label>
-                        <select class="js-example-basic-multiple" multiple="multiple" style="width:100%" name="name">
+                        <select class="js-example-basic-multiple form-control{{$errors->has('name')?'is-invalid':''}}"
+                                multiple="multiple" style="width:100%" name="name[]">
+                            @if ($errors->has('name'))
+                                <span class="invalid-feedback" role="alert">
+                                    <p><b>{{ $errors->first('name') }}</b></p>
+                                </span>
+                            @endif
                             @foreach($datas as $data)
-                                <option value="{{$data->nama_siswa}}">{{$data->nama_siswa}}</option>
+                                <option value="{{$data->id}}">{{$data->nama_siswa}}</option>
                             @endforeach
                         </select>
                     </div>

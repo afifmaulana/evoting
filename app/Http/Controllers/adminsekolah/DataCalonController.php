@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\adminsekolah;
 
 use App\Calon;
+use foo\bar;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 use Illuminate\Http\Request;
@@ -28,8 +29,7 @@ class DataCalonController extends Controller
      */
     public function create()
     {
-        $datas = User::all();
-
+        $datas = User::where('id_adminsekolah',Auth::guard('adminsekolah')->user()->id)->get();
         return view('pages.adminsekolah.datacalon.create', compact('datas'));
     }
 
@@ -42,27 +42,41 @@ class DataCalonController extends Controller
     public function store(Request $request)
     {
 
-        $a = User::where('nama_siswa', '=',$request->name)
-            ->where('id_adminsekolah', '=', Auth::guard('adminsekolah')->user()->id)->first();
+        /*$a = User::where('nama_siswa', '=',$request->name)
+            ->where('id_adminsekolah', '=', Auth::guard('adminsekolah')->user()->id)->first();*/
         //dd($a->id);
+
+        //dd($request->name);
+
+        $this->validate($request, [
+            'id_ketua'  => 'unique:calons',
+            'id_wakil'  => 'unique:calons',
+            'visi'      => 'required',
+            'misi'      => 'required',
+            'foto'      => 'required',
+
+        ]);
 
         $image=$request->file('foto');
         $filename=rand().'.'.$image->getClientOriginalExtension();
         $path=public_path('uploads/adminsekolah');
         $image->move($path,$filename);
 
-        if ($a){
-            $data = new Calon();
-            $data->id_siswa = $a->id;
-            $data->visi = $request->visi;
-            $data->misi = $request->misi;
-            $data->foto = $filename;
-            $data->save();
+        $names = $request->name;
 
-            return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');
-        }else{
-            return redirect()->back()->with('datacalon.create');
+        if (count($names) > 2 ){
+            return redirect()->back()->withErrors(['msg', 'The Message']);
         }
+
+        $data = new Calon();
+        $data->id_ketua = $names[0];
+        $data->id_wakil = $names[1];
+        $data->visi = $request->visi;
+        $data->misi = $request->misi;
+        $data->foto = $filename;
+        $data->save();
+        return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');
+
     }
 
     /**
@@ -130,8 +144,8 @@ class DataCalonController extends Controller
      */
     public function destroy($id)
     {
-        $data = Calon::findOrFail($id);
-        $data ->update(['status' => '0']);
+        $data = Calon::find($id);
+        $data ->delete();
         return redirect()->route('datacalon.index')->with('delete', 'berhasil menghapus data');
     }
 }

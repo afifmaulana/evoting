@@ -17,9 +17,13 @@ class AdminSekolah extends Authenticatable
      */
     protected $table = 'admin_sekolahs';
     protected $guard = 'adminsekolah';
-    protected $fillable = [
-        'nama_admin', 'nama_sekolah', 'email', 'password',
-    ];
+    protected $guarded =[];
+        /*'nama_admin',
+        'nama_sekolah',
+        'email',
+        'password',
+
+    ];*/
 
     /**
      * The attributes that should be hidden for arrays.

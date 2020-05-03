@@ -46,21 +46,6 @@
                                 </div>
                             </div>
 
-                            {{--<div class="form-group">
-                                <div class="input-group">
-                                    <input type="text" class="form-control @error('nama_sekolah') is-invalid @enderror" value="{{ old('nama_sekolah') }}"
-                                           name="nama_sekolah" placeholder="Nama Sekolah">
-                                    @error('nama_sekolah')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="mdi mdi-check-circle-outline"></i></span>
-                                    </div>
-                                </div>
-                            </div>--}}
-
                             <div class="form-group">
                                 <select name="kategori" class="select-kategori custom-select mb-3">
                                     <option value="">Pilih jenjang sekolah</option>

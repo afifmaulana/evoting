@@ -6,10 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="c9d15b66-b303-4f34-87e5-946cddb4711a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/AdminSekolah.php" afterPath="$PROJECT_DIR$/app/AdminSekolah.php" />
+      <change beforePath="$PROJECT_DIR$/app/Calon.php" afterPath="$PROJECT_DIR$/app/Calon.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/superusers/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/superusers/UsersController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/LoginController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/LoginController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/AdminSekolahResource.php" afterPath="$PROJECT_DIR$/app/Http/Resources/AdminSekolahResource.php" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth_adminsekolah/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth_adminsekolah/register.blade.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/create.blade.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/superadmin/users.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/superadmin/users.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/superadmin/users.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/superadmin/user/users.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbar.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_navbar.blade.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
@@ -25,113 +39,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php">
+      <file leaf-file-name="AdminSekolahActivationEmail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Events/AdminSekolah/Auth/AdminSekolahActivationEmail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
-              <folding>
-                <marker date="1587100453409" expanded="true" signature="9:33" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="44:53" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="374:399" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="1424:1439" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="1613:1629" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="1687:1711" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="1893:1909" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="1992:2034" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="2512:2546" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="2893:2927" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="3273:3310" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="3776:3792" ph="..." />
-                <marker date="1587100453409" expanded="true" signature="4962:5004" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-              <folding>
-                <marker date="1585461213222" expanded="true" signature="9:33" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="44:53" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="238:310" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="393:440" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="1683:1711" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="1958:2000" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="2152:2199" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="2368:2378" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="2682:2726" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="2880:2929" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="3100:3110" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="3425:3467" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="4020:4061" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="4120:4156" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="4401:4411" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="4621:4693" ph="..." />
-                <marker date="1585461213222" expanded="true" signature="5013:5056" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataCalonController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="170">
+              <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/edit.blade.php">
+      <file leaf-file-name="SendActivationEmail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Listeners/AdminSekolah/Auth/SendActivationEmail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="26" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="372">
+              <caret line="33" column="95" lean-forward="false" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
               <folding>
-                <element signature="e#618#636#0#HTML" expanded="true" />
-                <marker date="1585633995599" expanded="true" signature="9:33" ph="..." />
-                <marker date="1585633995599" expanded="true" signature="44:53" ph="..." />
-                <marker date="1585633995599" expanded="true" signature="294:330" ph="..." />
-                <marker date="1585633995599" expanded="true" signature="435:456" ph="..." />
-                <marker date="1585633995599" expanded="true" signature="701:725" ph="..." />
-                <marker date="1585633995599" expanded="true" signature="731:755" ph="..." />
-                <marker date="1585633995599" expanded="true" signature="1011:1024" ph="..." />
-                <marker date="1585633995599" expanded="true" signature="1083:1119" ph="..." />
-                <marker date="1585633995599" expanded="true" signature="1336:1378" ph="..." />
+                <element signature="e#51#112#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/create.blade.php">
+      <file leaf-file-name="ActivationEmail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Mail/AdminSekolah/Auth/ActivationEmail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
-                <marker date="1587198986913" expanded="true" signature="9:33" ph="..." />
-                <marker date="1587198986913" expanded="true" signature="44:53" ph="..." />
-                <marker date="1587198986913" expanded="true" signature="296:320" ph="..." />
-                <marker date="1587198986913" expanded="true" signature="653:668" ph="..." />
-                <marker date="1587198986913" expanded="true" signature="659:663" ph="..." />
-                <marker date="1587198986913" expanded="true" signature="719:736" ph="..." />
-                <marker date="1587198986913" expanded="true" signature="724:736" ph="..." />
-                <marker date="1587198986913" expanded="true" signature="742:759" ph="..." />
+                <element signature="e#46#67#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basic_elements.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/libertyui/pages/forms/basic_elements.html">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="439" column="85" lean-forward="false" selection-start-line="439" selection-start-column="66" selection-end-line="439" selection-end-column="85" />
+            <state relative-caret-position="250">
+              <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivationController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/ActivationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="86" lean-forward="false" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
+              <folding>
+                <element signature="e#58#79#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activation.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/emails/auth/activation.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="65" />
+              <folding>
+                <marker date="1588498748915" expanded="true" signature="11:26" ph="..." />
+                <marker date="1588498748915" expanded="true" signature="118:374" ph="..." />
+                <marker date="1588498748915" expanded="true" signature="135:373" ph="..." />
+                <marker date="1588498748915" expanded="true" signature="150:370" ph="..." />
+                <marker date="1588498748915" expanded="true" signature="176:369" ph="..." />
+                <marker date="1588498748915" expanded="true" signature="414:434" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -188,26 +193,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Imports/CsvImport.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_03_03_075714_create_sekolahs_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/partials/adminhome/_head.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/partials/adminhome/_navbar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth_adminsekolah/register.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth_adminsekolah/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/adminsekolah.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth_superadmin/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth_superadmin/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_footer.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/superusers/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/adminhome.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php" />
         <option value="$PROJECT_DIR$/config/auth.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/ForgotPasswordController.php" />
@@ -216,11 +206,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/VerificationController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/CalonResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/AdminSekolahResource.php" />
         <option value="$PROJECT_DIR$/app/Siswa.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/CalonController.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_navbar.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/ProfilController.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_head.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_script.blade.php" />
@@ -230,15 +217,33 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataSiswaController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/SiswaResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/LoginController.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/superadmin/users.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php" />
         <option value="$USER_HOME$/Downloads/Compressed/libertyui/pages/forms/basic_elements.html" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/AdminSekolahResource.php" />
+        <option value="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/LoginController.php" />
+        <option value="$PROJECT_DIR$/app/Calon.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth_adminsekolah/register.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/superusers/UsersController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" />
+        <option value="$PROJECT_DIR$/app/AdminSekolah.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/app/Events/AdminSekolah/Auth/AdminSekolahActivationEmail.php" />
+        <option value="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Listeners/AdminSekolah/Auth/SendActivationEmail.php" />
+        <option value="$PROJECT_DIR$/app/Mail/AdminSekolah/Auth/ActivationEmail.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/emails/auth/activation.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/ActivationController.php" />
       </list>
     </option>
   </component>
@@ -347,10 +352,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="370" />
-    <option name="y" value="175" />
-    <option name="width" value="780" />
-    <option name="height" value="405" />
+    <option name="x" value="-8" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -368,6 +372,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -404,33 +410,90 @@
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Listeners" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Listeners" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminSekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Listeners" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminSekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mail" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mail" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminSekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mail" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminSekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="emails" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="emails" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
@@ -438,17 +501,6 @@
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="datacalon" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="profil" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
@@ -465,7 +517,31 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="superadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="superadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
@@ -476,8 +552,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,16 +561,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../GMC" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\adminsekolah" />
-      <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\superadmin\smp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\superadmin\user" />
       <recent name="C:\xampp\htdocs\Evoting\app\Http\Controllers\v1\siswa" />
       <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\adminsekolah\datacalon" />
       <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\superadmin" />
       <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\superadmin\sekolah" />
-      <recent name="C:\xampp\htdocs\Evoting\resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\superadmin\user" />
+      <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\adminsekolah" />
+      <recent name="C:\xampp\htdocs\Evoting\resources\views\pages\superadmin\smp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -582,18 +657,26 @@
       <workItem from="1587014606430" duration="3181000" />
       <workItem from="1587097553970" duration="10220000" />
       <workItem from="1587120173884" duration="732000" />
-      <workItem from="1587192052889" duration="4897000" />
+      <workItem from="1587192052889" duration="5495000" />
+      <workItem from="1587296352955" duration="941000" />
+      <workItem from="1587699494723" duration="10841000" />
+      <workItem from="1587734908756" duration="3855000" />
+      <workItem from="1588144248939" duration="6568000" />
+      <workItem from="1588215074028" duration="13914000" />
+      <workItem from="1588395060390" duration="5925000" />
+      <workItem from="1588418424376" duration="5361000" />
+      <workItem from="1588491195742" duration="7231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384275000" />
+    <option name="totallyTimeSpent" value="439509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27987897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20550162" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
@@ -602,7 +685,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20853859" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23786408" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -633,242 +716,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/superusers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/adminhome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="88" column="25" lean-forward="false" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="136" lean-forward="false" selection-start-line="13" selection-start-column="136" selection-end-line="13" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/superusers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="61" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/ForgotPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/ResetPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/VerificationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Siswa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="35" column="53" lean-forward="false" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/CalonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/superadmin/_navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="160" column="35" lean-forward="false" selection-start-line="160" selection-start-column="35" selection-end-line="160" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="84" lean-forward="false" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_script.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/superusers/SekolahController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/ProfilController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataSiswaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="99" lean-forward="false" selection-start-line="13" selection-start-column="99" selection-end-line="13" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="73" column="52" lean-forward="false" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/AdminSekolahResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/SiswaResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/CalonResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -879,20 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="63" lean-forward="false" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
@@ -900,38 +737,263 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth_superadmin/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/user/users.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520">
+          <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/libertyui/pages/forms/basic_elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="439" column="85" lean-forward="false" selection-start-line="439" selection-start-column="66" selection-end-line="439" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/AdminSekolahResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/SiswaResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/CalonResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/adminsekolah.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_03_084156_add_fk_adminsekolah.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/profil.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="124" column="48" lean-forward="false" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/superadmin/_navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/CalonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_11_103547_create_pemilihans_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_11_102011_create_super_admins_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Calon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="61" lean-forward="false" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/superusers/SekolahController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/superusers/ProfilController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="44" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth_adminsekolah/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="33" column="116" lean-forward="true" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="46" column="57" lean-forward="false" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1271">
+          <caret line="77" column="78" lean-forward="false" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="95" lean-forward="false" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/lorax/lorax/source/light/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="249" column="25" lean-forward="false" selection-start-line="233" selection-start-column="19" selection-end-line="249" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/superusers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="40" column="7" lean-forward="false" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
           <folding>
-            <marker date="1585303577112" expanded="true" signature="228:265" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="338:372" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="436:468" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="510:554" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="801:833" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="949:986" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="1296:1310" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="1551:1561" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="2156:2166" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="2845:2877" ph="..." />
-            <marker date="1585303577112" expanded="true" signature="2929:2974" ph="..." />
+            <marker date="1588398147406" expanded="true" signature="277:313" ph="..." />
+            <marker date="1588398147406" expanded="true" signature="700:725" ph="..." />
+            <marker date="1588398147406" expanded="true" signature="1174:1194" ph="..." />
+            <marker date="1588398147406" expanded="true" signature="1322:1343" ph="..." />
+            <marker date="1588398147406" expanded="true" signature="1480:1505" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/users.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/user/users_verification.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        <state relative-caret-position="17">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding>
             <marker date="1587192829087" expanded="true" signature="9:31" ph="..." />
             <marker date="1587192829087" expanded="true" signature="42:51" ph="..." />
@@ -944,160 +1006,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-          <folding>
-            <marker date="1587195190572" expanded="true" signature="277:313" ph="..." />
-            <marker date="1587195190572" expanded="true" signature="700:725" ph="..." />
-            <marker date="1587195190572" expanded="true" signature="898:921" ph="..." />
-            <marker date="1587195190572" expanded="true" signature="1096:1121" ph="..." />
-          </folding>
+        <state relative-caret-position="372">
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Sekolah.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AdminSekolah.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Events/AdminSekolah/Auth/AdminSekolahActivationEmail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="43" column="59" lean-forward="true" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
-          <folding>
-            <marker date="1584430770145" expanded="true" signature="9:31" ph="..." />
-            <marker date="1584430770145" expanded="true" signature="42:51" ph="..." />
-            <marker date="1584430770145" expanded="true" signature="1539:1561" ph="..." />
-            <marker date="1584430770145" expanded="true" signature="1896:1940" ph="..." />
-            <marker date="1584430770145" expanded="true" signature="2112:2131" ph="..." />
-            <marker date="1584430770145" expanded="true" signature="2181:2209" ph="..." />
-            <marker date="1584430770145" expanded="true" signature="2364:2396" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
-          <folding>
-            <marker date="1584091092079" expanded="true" signature="9:31" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="42:51" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="1533:1567" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="1644:1665" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="1960:2004" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="2176:2195" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="2245:2273" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="2428:2460" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="2935:2957" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="2960:2972" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="3063:3085" ph="..." />
-            <marker date="1584091092079" expanded="true" signature="3088:3100" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-          <folding>
-            <marker date="1585461213222" expanded="true" signature="9:33" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="44:53" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="238:310" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="393:440" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="1683:1711" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="1958:2000" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="2152:2199" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="2368:2378" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="2682:2726" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="2880:2929" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="3100:3110" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="3425:3467" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="4020:4061" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="4120:4156" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="4401:4411" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="4621:4693" ph="..." />
-            <marker date="1585461213222" expanded="true" signature="5013:5056" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#618#636#0#HTML" expanded="true" />
-            <marker date="1585633995599" expanded="true" signature="9:33" ph="..." />
-            <marker date="1585633995599" expanded="true" signature="44:53" ph="..." />
-            <marker date="1585633995599" expanded="true" signature="294:330" ph="..." />
-            <marker date="1585633995599" expanded="true" signature="435:456" ph="..." />
-            <marker date="1585633995599" expanded="true" signature="701:725" ph="..." />
-            <marker date="1585633995599" expanded="true" signature="731:755" ph="..." />
-            <marker date="1585633995599" expanded="true" signature="1011:1024" ph="..." />
-            <marker date="1585633995599" expanded="true" signature="1083:1119" ph="..." />
-            <marker date="1585633995599" expanded="true" signature="1336:1378" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Calon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Listeners/AdminSekolah/Auth/SendActivationEmail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+        <state relative-caret-position="372">
+          <caret line="33" column="95" lean-forward="false" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
           <folding>
-            <marker date="1587100453409" expanded="true" signature="9:33" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="44:53" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="374:399" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="1424:1439" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="1613:1629" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="1687:1711" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="1893:1909" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="1992:2034" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="2512:2546" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="2893:2927" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="3273:3310" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="3776:3792" ph="..." />
-            <marker date="1587100453409" expanded="true" signature="4962:5004" ph="..." />
+            <element signature="e#51#112#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/libertyui/pages/forms/basic_elements.html">
+    <entry file="file://$PROJECT_DIR$/app/Mail/AdminSekolah/Auth/ActivationEmail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="439" column="85" lean-forward="false" selection-start-line="439" selection-start-column="66" selection-end-line="439" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
-            <marker date="1587198986913" expanded="true" signature="9:33" ph="..." />
-            <marker date="1587198986913" expanded="true" signature="44:53" ph="..." />
-            <marker date="1587198986913" expanded="true" signature="296:320" ph="..." />
-            <marker date="1587198986913" expanded="true" signature="653:668" ph="..." />
-            <marker date="1587198986913" expanded="true" signature="659:663" ph="..." />
-            <marker date="1587198986913" expanded="true" signature="719:736" ph="..." />
-            <marker date="1587198986913" expanded="true" signature="724:736" ph="..." />
-            <marker date="1587198986913" expanded="true" signature="742:759" ph="..." />
+            <element signature="e#46#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/auth/activation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="65" />
+          <folding>
+            <marker date="1588498748915" expanded="true" signature="11:26" ph="..." />
+            <marker date="1588498748915" expanded="true" signature="118:374" ph="..." />
+            <marker date="1588498748915" expanded="true" signature="135:373" ph="..." />
+            <marker date="1588498748915" expanded="true" signature="150:370" ph="..." />
+            <marker date="1588498748915" expanded="true" signature="176:369" ph="..." />
+            <marker date="1588498748915" expanded="true" signature="414:434" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/ActivationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="86" lean-forward="false" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
+          <folding>
+            <element signature="e#58#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

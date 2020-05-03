@@ -20,10 +20,18 @@
                 </a>
             </li>
             <li>
-                <a href="{{ route ('users.index') }}">
-                    <i class="fa fa-users"></i>
+                <a href="#" onClick="return false;" class="menu-toggle">
+                    <i class="fas fa-tachometer-alt"></i>
                     <span>Users</span>
                 </a>
+                <ul class="ml-menu">
+                    <li class="active">
+                        <a href="{{route('users.index')}}">Belum dikonfirmasi</a>
+                    </li>
+                    <li class="active">
+                        <a href="{{route('users.create')}}">Sudah dikonfirmasi</a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a href="{{ route ('sekolah.index') }}">

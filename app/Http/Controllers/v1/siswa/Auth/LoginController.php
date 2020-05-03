@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\v1\siswa\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\SiswaResource;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

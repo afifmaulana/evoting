@@ -16,11 +16,14 @@
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
 
                     <a href="{{route('profilsekolah.index')}}" class="dropdown-item mt-2">
-                        Profil
+                        <i class="icon-user"></i>Profil
                     </a>
+
+
                     <a href="{{route('adminsekolah.logout')}}" class="dropdown-item">
-                        Keluar
+                        <i class="icon-power"></i>Keluar
                     </a>
+                    </i>
                 </div>
             </li>
 

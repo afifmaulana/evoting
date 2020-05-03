@@ -17,8 +17,8 @@ class UsersController extends Controller
     public function index()
     {
         $datas = SuperAdmin::all();
-        $admins = AdminSekolah::all();
-        return view('pages.superadmin.users', compact('datas', 'admins'));
+        $admins = AdminSekolah::all()->where('status','1');
+        return view('pages.superadmin.user.users', compact('datas', 'admins'));
     }
 
     /**
@@ -28,7 +28,9 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        $datas = SuperAdmin::orderBy('id','DESC')->where('status','1');
+        $admins = AdminSekolah::all()->where('status','0');
+        return view('pages.superadmin.user.users_verification', compact('datas', 'admins'));
     }
 
     /**

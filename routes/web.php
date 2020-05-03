@@ -39,6 +39,7 @@ Route::post('/adminsekolah-login', 'adminsekolah\Auth\LoginController@login')->n
 Route::get('/adminsekolah-register', 'adminsekolah\Auth\RegisterController@showRegisterForm')->name('adminsekolah.register');
 Route::post('/adminsekolah-register', 'adminsekolah\Auth\RegisterController@store')->name('adminsekolah.register.submit');
 Route::get('/adminsekolah-logout', 'adminsekolah\Auth\LoginController@logout')->name('adminsekolah.logout');
+Route::get('/activate', 'adminsekolah\Auth\ActivationController@activate')->name('adminsekolah.activate');
 
 
 
@@ -55,7 +56,7 @@ Route::group(['prefix' => 'superusers'], function (){
 Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('dashboard2', 'adminsekolah\DashboardController');
     Route::resource('datacalon', 'adminsekolah\DataCalonController')->except(['destroy']);
-    Route::get('datacalon/{id}', 'adminsekolah\DataCalonController@destroy')->name('datacalon.destroy');
+    Route::get('datacalon/{id}/destroy', 'adminsekolah\DataCalonController@destroy')->name('datacalon.destroy');
     Route::resource('datasiswa', 'adminsekolah\DataSiswaController');
 
     Route::resource('pemilihan', 'adminsekolah\PemilihanController');

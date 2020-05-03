@@ -17,15 +17,7 @@ class User extends Authenticatable
      */
     protected $guard = 'siswa';
     protected $table = 'users';
-    protected $fillable = [
-        'id_adminsekolah',
-        'nis',
-        'nama_siswa',
-        'kelas',
-        'email',
-        'api_token',
-        'password'
-    ];
+    protected $guarded = [];
 
     public function adminsekolah(){
 

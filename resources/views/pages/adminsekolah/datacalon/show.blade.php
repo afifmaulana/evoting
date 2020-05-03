@@ -7,7 +7,7 @@
                 <h4 class="card-title">CALON 1</h4>
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="img-fluid rounded" src="{{asset('uploads/adminsekolah/'.$data->foto)}}" alt="tab preview">
+                        <img class="img-fluid rounded" src="{{asset('uploads/adminsekolah/'.$data->foto)}}" alt="tab preview" width="200px" height="200px">
                     </div>
                     <div class="col-md-6 pl-md-5 pt-4 pt-md-0">
                         <h5 class="mb-4 pb-3">BIO DATA CALON</h5>
@@ -35,7 +35,17 @@
                                         <label>Nama Calon</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>{{$data->siswa->nama_siswa}}</p>
+                                        <p>{{$data->ketua->nama_siswa}}</p>
+                                        <p>{{$data->wakil->nama_siswa}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Kelas</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>{{$data->ketua->kelas}}</p>
+                                        <p>{{$data->wakil->kelas}}</p>
                                     </div>
                                 </div>
                             </div>

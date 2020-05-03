@@ -30,12 +30,13 @@
                                         <tr>
                                             {{--{!! $dataCalon->visi !!}--}}
                                             <td>{{$loop->iteration}}</td>
-                                            <td>{{$data->siswa->nama_siswa}}</td>
+                                            <td><p>{{$data->ketua->nama_siswa}}</p>
+                                                <p>{{$data->wakil->nama_siswa}}</p></td>
 
                                             <td><a class="btn btn-circle" data-toggle="modal"
                                                    data-target="#exampleModal{{$loop->iteration}}" type="button">
                                                     <img src="{{asset('uploads/adminsekolah/'.$data->foto)}}"
-                                                         style="height: 50px; width: 50px;">
+                                                         style="height: 50px; width: 100px;">
                                                 </a></td>
 
                                             <td>
@@ -74,7 +75,7 @@
                                                     <div class="modal-body">
                                                         <div class="d-flex justify-content-center">
                                                             <img src="{{asset('uploads/adminsekolah/'.$data->foto)}}"
-                                                                 style="height: 80px; width: 80px;">
+                                                                 style="height: 200px; width: 400px;">
                                                         </div>
                                                     </div>
                                                 </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\adminsekolah\Auth;
 
 use App\AdminSekolah;
+use App\Events\AdminSekolah\Auth\AdminSekolahActivationEmail;
 use App\Sekolah;
 use App\User;
 use App\Http\Controllers\Controller;
@@ -10,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -69,11 +71,13 @@ class RegisterController extends Controller
         $data->kategori     = $request->kategori;
         $data->email        = $request->email;
         $data->password     = bcrypt($request->password);
+        $data->activation_token = Str::random(100);
         if ($data->save()){
+            event(new AdminSekolahActivationEmail($data));
             return redirect()->route('adminsekolah.login');
         }else{
             return back()->withErrors();
         }
-
+        //return redirect()->route('adminsekolah.login')->with('succes', 'Berhasil Register, Silahkan Verifikasi Email');
     }
 }
