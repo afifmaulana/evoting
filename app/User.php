@@ -17,23 +17,25 @@ class User extends Authenticatable
      */
     protected $guard = 'siswa';
     protected $table = 'users';
-    protected $fillable = ['id_adminsekolah',
+    /*protected $fillable = ['id_adminsekolah',
                             'nis',
                             'nama_siswa',
                             'kelas',
                             'email',
-        ];
-//    protected $guarded = [];
+        ];*/
+    protected $guarded = [];
 
     public function adminsekolah(){
 
         return $this->belongsTo(AdminSekolah::class, 'id_adminsekolah', 'id');
     }
 
-    public function calons(){
-        return $this->hasMany(Calon::class, 'id_siswa', 'id');
+    public function ketua(){
+        return $this->hasMany(Calon::class, 'id_ketua', 'id');
     }
-
+    public function wakil(){
+        return $this->hasMany(Calon::class, 'id_wakil', 'id');
+    }
     /**
      * The attributes that should be hidden for arrays.
      *
