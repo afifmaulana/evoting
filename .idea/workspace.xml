@@ -6,26 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9d15b66-b303-4f34-87e5-946cddb4711a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/AdminSekolah.php" afterPath="$PROJECT_DIR$/app/AdminSekolah.php" />
-      <change beforePath="$PROJECT_DIR$/app/Calon.php" afterPath="$PROJECT_DIR$/app/Calon.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DataCalonController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/superusers/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/superusers/UsersController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/LoginController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/Auth/LoginController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/AdminSekolahResource.php" afterPath="$PROJECT_DIR$/app/Http/Resources/AdminSekolahResource.php" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_03_03_075455_create_calons_table.php" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_03_03_075557_create_admin_sekolahs_table.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth_adminsekolah/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth_adminsekolah/register.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/create.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/superadmin/users.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/superadmin/user/users.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbar.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_navbar.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/superadmin/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/superadmin/dashboard.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,111 +19,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminSekolahActivationEmail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Events/AdminSekolah/Auth/AdminSekolahActivationEmail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendActivationEmail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Listeners/AdminSekolah/Auth/SendActivationEmail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="33" column="95" lean-forward="false" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
-              <folding>
-                <element signature="e#51#112#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivationEmail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Mail/AdminSekolah/Auth/ActivationEmail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding>
-                <element signature="e#46#67#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivationController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/ActivationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="86" lean-forward="false" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
-              <folding>
-                <element signature="e#58#79#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activation.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/emails/auth/activation.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="65" />
-              <folding>
-                <marker date="1588498748915" expanded="true" signature="11:26" ph="..." />
-                <marker date="1588498748915" expanded="true" signature="118:374" ph="..." />
-                <marker date="1588498748915" expanded="true" signature="135:373" ph="..." />
-                <marker date="1588498748915" expanded="true" signature="150:370" ph="..." />
-                <marker date="1588498748915" expanded="true" signature="176:369" ph="..." />
-                <marker date="1588498748915" expanded="true" signature="414:434" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -193,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/templates/adminsekolah.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth_superadmin/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth_superadmin/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_footer.blade.php" />
@@ -244,6 +120,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/auth/activation.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/ActivationController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/superadmin/dashboard.blade.php" />
       </list>
     </option>
   </component>
@@ -373,7 +250,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -395,78 +271,6 @@
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Listeners" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Listeners" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminSekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Listeners" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminSekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Mail" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Mail" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminSekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Mail" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminSekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -483,75 +287,13 @@
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="emails" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="emails" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="superadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="superadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="superadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -665,18 +407,18 @@
       <workItem from="1588215074028" duration="13914000" />
       <workItem from="1588395060390" duration="5925000" />
       <workItem from="1588418424376" duration="5361000" />
-      <workItem from="1588491195742" duration="7231000" />
+      <workItem from="1588491195742" duration="9977000" />
+      <workItem from="1589181966679" duration="1007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439509000" />
+    <option name="totallyTimeSpent" value="443262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27987897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28441754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20550162" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
@@ -685,7 +427,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23786408" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21197411" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -716,13 +458,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/datasiswa/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="73" column="52" lean-forward="false" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Compressed/libertyui/pages/ui-features/tabs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -972,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="40" column="7" lean-forward="false" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,13 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
           <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-          <folding>
-            <marker date="1588398147406" expanded="true" signature="277:313" ph="..." />
-            <marker date="1588398147406" expanded="true" signature="700:725" ph="..." />
-            <marker date="1588398147406" expanded="true" signature="1174:1194" ph="..." />
-            <marker date="1588398147406" expanded="true" signature="1322:1343" ph="..." />
-            <marker date="1588398147406" expanded="true" signature="1480:1505" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -994,15 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <marker date="1587192829087" expanded="true" signature="9:31" ph="..." />
-            <marker date="1587192829087" expanded="true" signature="42:51" ph="..." />
-            <marker date="1587192829087" expanded="true" signature="2678:2695" ph="..." />
-            <marker date="1587192829087" expanded="true" signature="2784:2800" ph="..." />
-            <marker date="1587192829087" expanded="true" signature="2854:2872" ph="..." />
-            <marker date="1587192829087" expanded="true" signature="2926:2946" ph="..." />
-            <marker date="1587192829087" expanded="true" signature="3000:3013" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,13 +742,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="1122">
           <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
           <folding />
         </state>
@@ -1048,7 +763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Listeners/AdminSekolah/Auth/SendActivationEmail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
+        <state relative-caret-position="493">
           <caret line="33" column="95" lean-forward="false" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
           <folding>
             <element signature="e#51#112#0#PHP" expanded="true" />
@@ -1059,7 +774,7 @@
     <entry file="file://$PROJECT_DIR$/app/Mail/AdminSekolah/Auth/ActivationEmail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
             <element signature="e#46#67#0#PHP" expanded="true" />
           </folding>
@@ -1068,15 +783,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="510">
+          <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="510">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
@@ -1084,7 +799,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
+        <state relative-caret-position="357">
           <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding />
         </state>
@@ -1107,10 +822,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/adminsekolah/Auth/ActivationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="86" lean-forward="false" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
+        <state relative-caret-position="340">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="e#58#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1589182120622" expanded="true" signature="9:31" ph="..." />
+            <marker date="1589182120622" expanded="true" signature="42:51" ph="..." />
           </folding>
         </state>
       </provider>
