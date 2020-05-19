@@ -30,10 +30,10 @@ class User extends Authenticatable
         return $this->belongsTo(AdminSekolah::class, 'id_adminsekolah', 'id');
     }
 
-    public function ketua(){
+    public function ketuas(){
         return $this->hasMany(Calon::class, 'id_ketua', 'id');
     }
-    public function wakil(){
+    public function wakils(){
         return $this->hasMany(Calon::class, 'id_wakil', 'id');
     }
     /**

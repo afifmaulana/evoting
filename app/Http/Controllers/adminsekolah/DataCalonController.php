@@ -69,6 +69,7 @@ class DataCalonController extends Controller
         }
 
         $data = new Calon();
+        $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
         $data->id_ketua = $names[0];
         $data->id_wakil = $names[1];
         $data->visi = $request->visi;
@@ -121,10 +122,17 @@ class DataCalonController extends Controller
         $filename=rand().'.'.$image->getClientOriginalExtension();
         $path=public_path('uploads/adminsekolah');
         $image->move($path,$filename);
+        $names = $request->name;
+
+        if (count($names) > 2 ){
+            return redirect()->back()->withErrors(['msg', 'The Message']);
+        }
 
         if ($a){
             $data = Calon::find($id);
-            $data->id_siswa = $a->id;
+            $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
+            $data->id_ketua = $names[0];
+            $data->id_wakil = $names[1];
             $data->visi = $request->visi;
             $data->misi = $request->misi;
             $data->foto = $request->file('foto') == '' ? $request->old_foto : $filename;

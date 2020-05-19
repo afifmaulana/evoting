@@ -15,11 +15,13 @@ class CalonResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'siswa'     => new SiswaResource($this->siswa),
+            "id"        => $this->id,
             'visi'      => $this->visi,
             'misi'      => $this->misi,
             'foto'      => $this->foto,
-
+            'adminsekolah'          => new AdminSekolahResource($this->adminsekolah),
+            'ketua'     => new SiswaResource($this->ketua),
+            'wakil'     => new SiswaResource($this->wakil),
         ];
     }
 }

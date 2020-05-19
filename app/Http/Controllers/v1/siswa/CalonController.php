@@ -4,6 +4,7 @@ namespace App\Http\Controllers\v1\siswa;
 
 use App\Calon;
 use App\Http\Resources\CalonResource;
+use App\Http\Resources\SiswaResource;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -26,19 +27,21 @@ class CalonController extends Controller
     public function index()
     {
         $siswa = Auth::user();
-        $x = User::where('id_adminsekolah',$siswa->id_adminsekolah)->get();
-        $results = [];
+        /*$results = [];
         foreach ($x as $calon){
-            if(count($calon->calons) > 0){
-                $results[] = $calon->calons;
+            if(count($calon->ketuas) > 0){
+                $results[] = $calon;
             }
 
-        }
+        }*/
+
+        $calon = Calon::where('id_adminsekolah', $siswa->id_adminsekolah)->get();
+
 
         return response()->json([
            'status'     => true,
            'message'    => 'berhasil menampilkan data',
-            'data'      => $results,
+            'data'      => CalonResource::collection($calon),
         ]);
     }
 

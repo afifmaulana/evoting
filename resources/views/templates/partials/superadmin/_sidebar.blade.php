@@ -5,12 +5,12 @@
             <li class="sidebar-user-panel active">
                 <div class="user-panel">
                     <div class=" image">
-                        <img src="{{ asset ('assets/images/usrbig.jpg') }}" class="img-circle user-img-circle" alt="User Image" />
+                        <img src="{{asset('uploads/superadmin/'.Auth::guard('superadmin')->user()->path_avatar)}}" class="img-circle user-img-circle" alt="User Image" />
                     </div>
                 </div>
                 <div class="profile-usertitle">
-                    <div class="sidebar-userpic-name"> Emily Smith </div>
-                    <div class="profile-usertitle-job ">Manager </div>
+                    <div class="sidebar-userpic-name"> {{Auth::guard('superadmin')->user()->name}} </div>
+                    <div class="profile-usertitle-job ">Admin </div>
                 </div>
             </li>
             <li>

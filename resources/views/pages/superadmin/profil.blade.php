@@ -28,10 +28,10 @@
                         <div class="m-b-20">
                             <div class="contact-grid">
                                 <div class="profile-header bg-dark">
-                                    <div class="user-name">John Smith</div>
+                                    <div class="user-name">{{Auth::guard('superadmin')->user()->name}}</div>
                                     <div class="name-center">Software Engineer</div>
                                 </div>
-                                <img src="../../assets/images/user/usrbig3.jpg" class="user-img" alt="">
+                                <img src="{{asset('uploads/superadmin/'.Auth::guard('superadmin')->user()->path_avatar)}}" class="user-img" alt="Profile image">
                                 <p>
                                     456, Estern evenue, Courtage area,
                                     <br />New York
@@ -69,14 +69,7 @@
                         <div class="tab-content">
                             <div class="tab-pane body active" id="about">
                                 <p class="text-default">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived
-                                    not only five centuries, but also the leap into electronic typesetting, remaining
-                                    essentially
-                                    unchanged.</p>
+                                    typesetting industry.</p>
                                 <small class="text-muted">Email address: </small>
                                 <p>john@gmail.com</p>
                                 <hr>
@@ -172,97 +165,11 @@
                                                 to M.S. University. I ranker in University exams from the same
                                                 university
                                                 from 1996-01.</p>
-                                            <p>Worked as Professor and Head of the department at Sarda Collage, Rajkot,
-                                                Gujarat
-                                                from 2003-2015 </p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem
-                                                Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                                when
-                                                an unknown printer took a galley of type and scrambled it to make a
-                                                type
-                                                specimen book. It has survived not only five centuries, but also the
-                                                leap
-                                                into electronic typesetting, remaining essentially unchanged.</p>
                                             <br>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="card project_widget">
-                                        <div class="header">
-                                            <h2>Education</h2>
-                                        </div>
-                                        <div class="body">
-                                            <ul>
-                                                <li>B.A.,Gujarat University, Ahmedabad,India.</li>
-                                                <li>M.A.,Gujarat University, Ahmedabad, India.</li>
-                                                <li>P.H.D., Shaurashtra University, Rajkot</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="card project_widget">
-                                        <div class="header">
-                                            <h2>Experience</h2>
-                                        </div>
-                                        <div class="body">
-                                            <ul>
-                                                <li>One year experience as Jr. Professor from April-2009 to march-2010
-                                                    at B.
-                                                    J. Arts College, Ahmedabad.</li>
-                                                <li>Three year experience as Jr. Professor at V.S. Arts &amp; Commerse
-                                                    Collage
-                                                    from April - 2008 to April - 2011.</li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="card project_widget">
-                                        <div class="header">
-                                            <h2>Conferences, Cources &amp; Workshop Attended</h2>
-                                        </div>
-                                        <div class="body">
-                                            <ul>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="timeline" aria-expanded="false">
@@ -273,97 +180,29 @@
                                     <h2>
                                         <strong>Security</strong> Settings</h2>
                                 </div>
-                                <div class="body">
+                                <form class="body" method="POST" action="{{route('profiladmin.store')}}" enctype="multipart/form-data">
+                                    @csrf
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Username">
+                                        <input type="text" class="form-control {{$errors->has('name')?'is-invalid':''}}"
+                                               name="name" value="{{Auth::guard('superadmin')->user()->name}}"
+                                               placeholder="Masukkan Nama">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Current Password">
+                                        <input type="text" class="form-control"
+                                               name="email" readonly value="{{Auth::guard('superadmin')->user()->email}}">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="New Password">
+                                        <input type="password" class="form-control @error('password') is-invalid @enderror"
+                                               placeholder="Masukkan Password Anda" name="password">
                                     </div>
-                                    <button class="btn btn-info btn-round">Save Changes</button>
-                                </div>
+                                    <div class="form-group">
+                                        <input type="file" class="form-control" name="path_avatar">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-info btn-round">Save Changes</button>
+                                </form>
                             </div>
-                            <div class="card">
-                                <div class="header">
-                                    <h2>
-                                        <strong>Account</strong> Settings</h2>
-                                </div>
-                                <div class="body">
-                                    <div class="row clearfix">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="First Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="City">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="E-mail">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Country">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea rows="4" class="form-control no-resize" placeholder="Address Line 1"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <div class="form-check m-l-10">
-                                                    <label class="form-check-label">
-                                                        <input class="form-check-input" type="checkbox" id="checkbox"
-                                                               name="checkbox"> Profile Visibility For Everyone
-                                                        <span class="form-check-sign">
-                                                            <span class="check"></span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="form-check m-l-10">
-                                                    <label class="form-check-label">
-                                                        <input class="form-check-input" type="checkbox" id="checkbox1"
-                                                               name="checkbox"> New task notifications
-                                                        <span class="form-check-sign">
-                                                            <span class="check"></span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="form-check m-l-10">
-                                                    <label class="form-check-label">
-                                                        <input class="form-check-input" type="checkbox" id="checkbox2"
-                                                               name="checkbox"> New friend request notifications
-                                                        <span class="form-check-sign">
-                                                            <span class="check"></span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <button class="btn btn-primary btn-round">Save Changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>

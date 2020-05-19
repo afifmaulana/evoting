@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\adminsekolah;
 
+use App\Pemilihan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+
 
 class PemilihanController extends Controller
 {
@@ -14,7 +17,8 @@ class PemilihanController extends Controller
      */
     public function index()
     {
-        return view('pages.adminsekolah.pemilihan.index');
+        $datas = Pemilihan::all();
+        return view('pages.adminsekolah.pemilihan.index', compact('datas'));
     }
 
     /**
@@ -24,7 +28,7 @@ class PemilihanController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.adminsekolah.pemilihan.create');
     }
 
     /**
@@ -35,7 +39,19 @@ class PemilihanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $date = date('Y-m-d');
+
+
+
+        $data = new Pemilihan();
+        $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
+        $data->tanggal = $date;
+        $data->waktu = $request->waktu;
+        $data->tahun_ajaran = $request->tahun_ajaran;
+
+        $data->save();
+
+        return redirect()->route('pemilihan.index')->with('create', 'Berhasil mengubah Data');
     }
 
     /**

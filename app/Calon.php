@@ -17,4 +17,9 @@ class Calon extends Model
 
         return $this->belongsTo(User::class, 'id_wakil', 'id');
     }
+
+    public function adminsekolah(){
+
+        return $this->belongsTo(AdminSekolah::class, 'id_adminsekolah', 'id');
+    }
 }

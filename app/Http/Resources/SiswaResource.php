@@ -16,7 +16,7 @@ class SiswaResource extends JsonResource
     {
         return [
             'id'                    => $this->id,
-            'adminsekolah'          => new AdminSekolahResource($this->adminsekolah),
+            //'adminsekolah'          => new AdminSekolahResource($this->adminsekolah),
             'nis'                   => $this->nis,
             'nama_siswa'            => $this->nama_siswa,
             'kelas'                 => $this->kelas,

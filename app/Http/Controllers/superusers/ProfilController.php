@@ -4,6 +4,8 @@ namespace App\Http\Controllers\superusers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+
 
 class ProfilController extends Controller
 {
@@ -35,7 +37,20 @@ class ProfilController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = Auth::guard('superadmin')->user();
+        $data->name = $request->name;
+        if ($request->file('path_avatar') == ''){
+            $data->foto = $request->old_path_avatar;
+        }else{
+            $image=$request->file('path_avatar');
+            $filename=rand().'.'.$image->getClientOriginalExtension();
+            $path=public_path('uploads/superadmin');
+            $image->move($path,$filename);
+            $data->path_avatar = $filename;
+        }
+        $data->save();
+
+        return redirect()->route('profiladmin.index')->with('create', 'Berhasil mengubah Data');
     }
 
     /**
