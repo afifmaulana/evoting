@@ -27,14 +27,6 @@ class CalonController extends Controller
     public function index()
     {
         $siswa = Auth::user();
-        /*$results = [];
-        foreach ($x as $calon){
-            if(count($calon->ketuas) > 0){
-                $results[] = $calon;
-            }
-
-        }*/
-
         $calon = Calon::where('id_adminsekolah', $siswa->id_adminsekolah)->get();
 
 

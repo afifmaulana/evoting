@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\adminsekolah;
 
+use App\Calon;
+use App\Hasil;
 use App\Pemilihan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -17,8 +19,11 @@ class PemilihanController extends Controller
      */
     public function index()
     {
-        $datas = Pemilihan::all();
-        return view('pages.adminsekolah.pemilihan.index', compact('datas'));
+        $data = Pemilihan::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)->first();
+        $tahun = substr($data->tahun_ajaran, 0, 4);
+        $datas = Pemilihan::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)->get();
+        //$datas = Pemilihan::all();
+        return view('pages.adminsekolah.pemilihan.index', compact(['datas', 'tahun']));
     }
 
     /**
@@ -40,16 +45,25 @@ class PemilihanController extends Controller
     public function store(Request $request)
     {
         $date = date('Y-m-d');
-
-
-
         $data = new Pemilihan();
         $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
         $data->tanggal = $date;
         $data->waktu = $request->waktu;
         $data->tahun_ajaran = $request->tahun_ajaran;
-
         $data->save();
+
+        $calons = Calon::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)->get();
+        foreach ($calons as $calon){
+            $item = [
+                'id_calon' => $calon->id,
+                'id_adminsekolah' => Auth::guard('adminsekolah')->user()->id,
+                'id_pemilihan' => $data->id,
+                'total' => 0
+            ];
+            Hasil::create($item);
+        }
+
+
 
         return redirect()->route('pemilihan.index')->with('create', 'Berhasil mengubah Data');
     }
