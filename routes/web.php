@@ -15,21 +15,13 @@ Route::get('/', function () {
     return view('templates.adminhome');
 });
 
-//Route::get('/adminhome', function (){
-//    return view('templates.adminhome');
-//});
-//
-//Route::get('/adminsekolah', function (){
-//   return view('templates.adminsekolah');
-//});
-
 
 //Auth SuperAdmin
-Route::get('/superadmin-login', 'superusers\Auth\LoginController@showLoginForm')->name('superadmin.login');
-Route::post('/superadmin-login', 'superusers\Auth\LoginController@login')->name('superadmin.login.submit');
-Route::get('/superadmin-register', 'superusers\Auth\RegisterController@showRegisterForm')->name('superadmin.register');
-Route::post('/superadmin-register', 'superusers\Auth\RegisterController@store')->name('superadmin.register.submit');
-Route::get('/superadmin-logout', 'superusers\Auth\LoginController@logout')->name('superadmin.logout');
+Route::get('/superadmin-login', 'superadmin\Auth\LoginController@showLoginForm')->name('superadmin.login');
+Route::post('/superadmin-login', 'superadmin\Auth\LoginController@login')->name('superadmin.login.submit');
+Route::get('/superadmin-register', 'superadmin\Auth\RegisterController@showRegisterForm')->name('superadmin.register');
+Route::post('/superadmin-register', 'superadmin\Auth\RegisterController@store')->name('superadmin.register.submit');
+Route::get('/superadmin-logout', 'superadmin\Auth\LoginController@logout')->name('superadmin.logout');
 
 
 
@@ -43,12 +35,12 @@ Route::get('/activate', 'adminsekolah\Auth\ActivationController@activate')->name
 
 
 
-Route::group(['prefix' => 'superusers'], function (){
-    Route::resource('dashboard1', 'superusers\DashboardController');
-    Route::resource('users', 'superusers\UsersController');
-    Route::resource('profiladmin', 'superusers\ProfilController');
-    Route::resource('sekolah', 'superusers\SekolahController')->except(['show', 'destroy']);
-    Route::get('sekolah/{id}', 'superusers\SekolahController@destroy')->name('sekolah.destroy');
+Route::group(['prefix' => 'superadmin'], function (){
+    Route::resource('dashboard1', 'superadmin\DashboardController');
+    Route::resource('users', 'superadmin\UsersController');
+    Route::resource('profiladmin', 'superadmin\ProfilController');
+    Route::resource('sekolah', 'superadmin\SekolahController')->except(['show', 'destroy']);
+    Route::get('sekolah/{id}', 'superadmin\SekolahController@destroy')->name('sekolah.destroy');
 });
 
 /*Route::post('import/create', 'adminsekolah\DataSiswaController@import')->name('import.store');*/
@@ -63,15 +55,6 @@ Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('profilsekolah', 'adminsekolah\ProfilController');
 
 });
-
-
-
-
-/*Route::get('/users', 'SuperAdminController@users')->name('users');
-Route::get('/profil', 'SuperAdminController@profil')->name('profil');*/
-
-//Route::get('/sekolah', 'SuperAdminController@sekolah')->name('sekolah');
-//Route::get('/sekolah/create', 'SuperAdminController@smpcreate')->name('sekolah.create');
 
 Auth::routes();
 

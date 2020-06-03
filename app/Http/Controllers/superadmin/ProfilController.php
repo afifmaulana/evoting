@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\superadmin;
 
-use App\Siswa;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
-class SiswaController extends Controller
+
+class ProfilController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +16,7 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.superadmin.profil');
     }
 
     /**
@@ -35,16 +37,29 @@ class SiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = Auth::guard('superadmin')->user();
+        $data->name = $request->name;
+        if ($request->file('path_avatar') == ''){
+            $data->foto = $request->old_path_avatar;
+        }else{
+            $image=$request->file('path_avatar');
+            $filename=rand().'.'.$image->getClientOriginalExtension();
+            $path=public_path('uploads/superadmin');
+            $image->move($path,$filename);
+            $data->path_avatar = $filename;
+        }
+        $data->save();
+
+        return redirect()->route('profiladmin.index')->with('create', 'Berhasil mengubah Data');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Siswa  $siswa
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Siswa $siswa)
+    public function show($id)
     {
         //
     }
@@ -52,10 +67,10 @@ class SiswaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Siswa  $siswa
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Siswa $siswa)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +79,10 @@ class SiswaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Siswa  $siswa
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Siswa $siswa)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +90,10 @@ class SiswaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Siswa  $siswa
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Siswa $siswa)
+    public function destroy($id)
     {
         //
     }

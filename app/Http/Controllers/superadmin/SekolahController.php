@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\superusers;
+namespace App\Http\Controllers\superadmin;
 
+use App\Sekolah;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
 
-
-class ProfilController extends Controller
+class SekolahController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +15,8 @@ class ProfilController extends Controller
      */
     public function index()
     {
-        return view('pages.superadmin.profil');
+        $datas = Sekolah::all();
+        return view('pages.superadmin.sekolah.index', compact('datas'));
     }
 
     /**
@@ -26,7 +26,7 @@ class ProfilController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.superadmin.sekolah.create');
     }
 
     /**
@@ -37,20 +37,19 @@ class ProfilController extends Controller
      */
     public function store(Request $request)
     {
-        $data = Auth::guard('superadmin')->user();
-        $data->name = $request->name;
-        if ($request->file('path_avatar') == ''){
-            $data->foto = $request->old_path_avatar;
-        }else{
-            $image=$request->file('path_avatar');
-            $filename=rand().'.'.$image->getClientOriginalExtension();
-            $path=public_path('uploads/superadmin');
-            $image->move($path,$filename);
-            $data->path_avatar = $filename;
-        }
+        $this->validate($request, [
+           'nama_sekolah' => 'required|unique:sekolahs',
+
+        ]);
+
+        $data = new Sekolah();
+        $data->nama_sekolah = $request->nama_sekolah;
+        $data->kategori = $request->kategori;
+        //dd($request->all());
         $data->save();
 
-        return redirect()->route('profiladmin.index')->with('create', 'Berhasil mengubah Data');
+        return redirect()->route('sekolah.index')->with('create', 'Berhasil Menambahkan Data');
+
     }
 
     /**
@@ -72,7 +71,8 @@ class ProfilController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Sekolah::find($id);
+        return view('pages.superadmin.sekolah.edit', compact('data'));
     }
 
     /**
@@ -84,7 +84,12 @@ class ProfilController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = Sekolah::find($id);
+        $data->nama_sekolah = $request->nama_sekolah;
+        $data->kategori = $request->kategori;
+
+        $data->update();
+        return redirect()->route('sekolah.index')->with('update', 'Berhasil Mengubah Data');
     }
 
     /**
@@ -95,6 +100,8 @@ class ProfilController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Sekolah::find($id);
+        $data->delete();
+        return redirect()->route('sekolah.index')->with('delete', 'Berhasil Menghapus Data');
     }
 }

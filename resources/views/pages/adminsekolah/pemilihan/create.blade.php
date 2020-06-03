@@ -21,9 +21,14 @@
                            name="tanggal" placeholder="Tanggal">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword4">Jam</label>
+                    <label for="exampleInputPassword4">Waktu Mulai</label>
                     <input type="time" class="form-control" id="exampleInputPassword4"
-                           name="waktu" placeholder="Jam">
+                           name="waktu_mulai" placeholder="Waktu Mulai">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Waktu Selesai</label>
+                    <input type="time" class="form-control" id="exampleInputPassword4"
+                           name="waktu_selesai" placeholder="Waktu Selesai">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputCity1">Tahun Ajaran</label>

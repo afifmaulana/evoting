@@ -20,7 +20,9 @@ use Illuminate\Http\Request;
 
 Route::group(['prefix' => 'siswa'], function (){
    Route::post('login', 'v1\siswa\Auth\LoginController@login');
-   Route::get('calon', 'v1\siswa\CalonController@index')->middleware('auth:api-siswa');
-
 });
+
+Route::get('pemilihan', 'v1\siswa\VotingController@pemilihan');
+Route::post('voting', 'v1\siswa\VotingController@voting');
+Route::get('calon', 'v1\siswa\CalonController@index');
 

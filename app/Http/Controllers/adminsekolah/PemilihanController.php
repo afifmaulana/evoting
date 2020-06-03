@@ -20,7 +20,11 @@ class PemilihanController extends Controller
     public function index()
     {
         $data = Pemilihan::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)->first();
-        $tahun = substr($data->tahun_ajaran, 0, 4);
+        if ($data){
+            $tahun = substr($data->tahun_ajaran, 0, 4);
+        }else{
+            $tahun = 0;
+        }
         $datas = Pemilihan::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)->get();
         //$datas = Pemilihan::all();
         return view('pages.adminsekolah.pemilihan.index', compact(['datas', 'tahun']));
@@ -48,7 +52,8 @@ class PemilihanController extends Controller
         $data = new Pemilihan();
         $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
         $data->tanggal = $date;
-        $data->waktu = $request->waktu;
+        $data->waktu_mulai = $request->waktu_mulai;
+        $data->waktu_selesai = $request->waktu_selesai;
         $data->tahun_ajaran = $request->tahun_ajaran;
         $data->save();
 

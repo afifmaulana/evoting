@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\superusers;
+namespace App\Http\Controllers\superadmin;
 
-use App\Sekolah;
+use App\AdminSekolah;
+use App\SuperAdmin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class SekolahController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,9 @@ class SekolahController extends Controller
      */
     public function index()
     {
-        $datas = Sekolah::all();
-        return view('pages.superadmin.sekolah.index', compact('datas'));
+        $datas = SuperAdmin::all();
+        $admins = AdminSekolah::all()->where('status','1');
+        return view('pages.superadmin.user.users', compact('datas', 'admins'));
     }
 
     /**
@@ -26,7 +28,9 @@ class SekolahController extends Controller
      */
     public function create()
     {
-        return view('pages.superadmin.sekolah.create');
+        $datas = SuperAdmin::orderBy('id','DESC')->where('status','1');
+        $admins = AdminSekolah::all()->where('status','0');
+        return view('pages.superadmin.user.users_verification', compact('datas', 'admins'));
     }
 
     /**
@@ -37,19 +41,7 @@ class SekolahController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-           'nama_sekolah' => 'required|unique:sekolahs',
-
-        ]);
-
-        $data = new Sekolah();
-        $data->nama_sekolah = $request->nama_sekolah;
-        $data->kategori = $request->kategori;
-        //dd($request->all());
-        $data->save();
-
-        return redirect()->route('sekolah.index')->with('create', 'Berhasil Menambahkan Data');
-
+        //
     }
 
     /**
@@ -71,8 +63,7 @@ class SekolahController extends Controller
      */
     public function edit($id)
     {
-        $data = Sekolah::find($id);
-        return view('pages.superadmin.sekolah.edit', compact('data'));
+        //
     }
 
     /**
@@ -84,12 +75,7 @@ class SekolahController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = Sekolah::find($id);
-        $data->nama_sekolah = $request->nama_sekolah;
-        $data->kategori = $request->kategori;
-
-        $data->update();
-        return redirect()->route('sekolah.index')->with('update', 'Berhasil Mengubah Data');
+        //
     }
 
     /**
@@ -100,8 +86,6 @@ class SekolahController extends Controller
      */
     public function destroy($id)
     {
-        $data = Sekolah::find($id);
-        $data->delete();
-        return redirect()->route('sekolah.index')->with('delete', 'Berhasil Menghapus Data');
+        //
     }
 }

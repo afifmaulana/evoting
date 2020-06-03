@@ -23,9 +23,9 @@
                                         <th>No</th>
                                         <th>Sekolah</th>
                                         <th>Tanggal</th>
-                                        <th>Jam</th>
+                                        <th>Waktu Mulai</th>
+                                        <th>Waktu Selesai</th>
                                         <th>Tahun Ajaran</th>
-                                        <th>Status</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
@@ -35,11 +35,10 @@
                                             <td>{{$loop->iteration}}</td>
                                             <td>Edinburgh</td>
                                             <td>{{$data->tanggal}}</td>
-                                            <td>{{$data->waktu}}</td>
+                                            <td>{{$data->waktu_mulai}}</td>
+                                            <td>{{$data->waktu_selesai}}</td>
                                             <td>{{$data->tahun_ajaran}}</td>
-                                            <td>
-                                                <label class="badge badge-info">On hold</label>
-                                            </td>
+
                                             <td class="text-right">
                                                 <button class="btn btn-light">
                                                     <i class="mdi mdi-eye text-primary"></i>

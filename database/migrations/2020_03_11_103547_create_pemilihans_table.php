@@ -19,7 +19,8 @@ class CreatePemilihansTable extends Migration
             $table->integer('id_adminsekolah')->unsigned();
 //            $table->integer('total');
             $table->date('tanggal');
-            $table->time('waktu');
+            $table->time('waktu_mulai');
+            $table->time('waktu_selesai');
             $table->string('tahun_ajaran');
             $table->timestamps();
 

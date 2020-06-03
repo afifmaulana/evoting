@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\superusers\Auth;
+namespace App\Http\Controllers\superadmin\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;

@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\superusers;
+namespace App\Http\Controllers\superadmin;
 
-use App\AdminSekolah;
-use App\SuperAdmin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UsersController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +14,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $datas = SuperAdmin::all();
-        $admins = AdminSekolah::all()->where('status','1');
-        return view('pages.superadmin.user.users', compact('datas', 'admins'));
+        return view('pages.superadmin.dashboard');
     }
 
     /**
@@ -28,9 +24,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        $datas = SuperAdmin::orderBy('id','DESC')->where('status','1');
-        $admins = AdminSekolah::all()->where('status','0');
-        return view('pages.superadmin.user.users_verification', compact('datas', 'admins'));
+        //
     }
 
     /**
