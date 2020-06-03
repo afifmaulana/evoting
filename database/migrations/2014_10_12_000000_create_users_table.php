@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->text('api_token');
             $table->text('password');
             $table->rememberToken();
-            $table->boolean('status')->default(1);
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

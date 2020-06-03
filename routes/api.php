@@ -20,6 +20,7 @@ use Illuminate\Http\Request;
 
 Route::group(['prefix' => 'siswa'], function (){
    Route::post('login', 'v1\siswa\Auth\LoginController@login');
+   Route::get('profile', 'v1\siswa\SiswaController@profile');
 });
 
 Route::get('pemilihan', 'v1\siswa\VotingController@pemilihan');

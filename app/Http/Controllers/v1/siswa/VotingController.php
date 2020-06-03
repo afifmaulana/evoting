@@ -40,9 +40,12 @@ class VotingController extends Controller
     {
         $hasil = Hasil::where('id_calon', $request->id_calon)
             ->where('id_adminsekolah', $request->id_adminsekolah)->first();
-
         $hasil->total = $hasil->total + 1;
         $hasil->update();
+
+        $user = Auth::user();
+        $user->status = true;
+        $user->update();
 
         return response()->json([
             'message' => 'successfully voting',
