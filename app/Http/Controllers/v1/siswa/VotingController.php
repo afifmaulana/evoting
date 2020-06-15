@@ -50,7 +50,10 @@ class VotingController extends Controller
         return response()->json([
             'message' => 'successfully voting',
             'status' => true,
-            'data' => $hasil
+            'data' => [
+            'hasil' => $hasil,
+            'user' => $user
+            ]
         ]);
     }
 }

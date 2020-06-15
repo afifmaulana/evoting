@@ -25,7 +25,6 @@ class CsvImport implements ToModel, WithHeadingRow
             'id_adminsekolah'   => $logged_admin,
             'nis'               => $row["nis"],
             'nama_siswa'        => $row["nama_siswa"],
-            'kelas'             => $row["kelas"],
             'email'             => $row["email"],
             'api_token'         => $api_token,
             'password'          => $password

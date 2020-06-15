@@ -8,32 +8,37 @@
                 <img src="{{asset('uploads/adminsekolah/'.Auth::guard('adminsekolah')->user()->foto)}}" class="img-lg rounded-circle mb-2" alt="profile image"/>
                 <h4>{{Auth::guard('adminsekolah')->user()->nama_admin}}</h4>
                 <p class="text-muted">Admin Sekolah</p>
-                <p class="mt-4 card-text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Lorem
-                </p>
-                <button class="btn btn-primary btn-sm mt-3 mb-4">Follow</button>
+
                 <div class="border-top pt-3">
+
                     <div class="row">
-                        <div class="col-4">
-                            <h6>5896</h6>
-                            <p>Post</p>
+                        <div class="col-md-6">
+                            <label>Nama Admin</label>
+                            <label>Nama Sekolah</label>
+                            <label>Email</label>
+                            <label>NIP</label>
+                            <label>No HP</label>
+                            <label>No Izin</label>
+                            <label>Alamat</label>
                         </div>
-                        <div class="col-4">
-                            <h6>1596</h6>
-                            <p>Followers</p>
-                        </div>
-                        <div class="col-4">
-                            <h6>7896</h6>
-                            <p>Likes</p>
+                        <div class="col-md-6">
+                            <p>{{Auth::guard('adminsekolah')->user()->nama_admin}}</p>
+                            <p>{{Auth::guard('adminsekolah')->user()->nama_sekolah}}</p>
+                            <p>{{Auth::guard('adminsekolah')->user()->email}}</p>
+                            <p>{{Auth::guard('adminsekolah')->user()->nip}}</p>
+                            <p>{{Auth::guard('adminsekolah')->user()->no_hp}}</p>
+                            <p>{{Auth::guard('adminsekolah')->user()->no_izin}}</p>
+                            <p>{{Auth::guard('adminsekolah')->user()->alamat}}</p>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="col-md-6 grid-margin stretch-card">
+    <div class="col-md-8 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Ubah Profil</h4>
@@ -85,11 +90,35 @@
                         <img id="output" class="img-fluid" height="100" width="100"
                              src="{{asset('uploads/adminsekolah/'.Auth::guard('adminsekolah')->user()->foto)}}">
                     </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea1">NIP</label>
+                        <input type="text" class="form-control @error('nip') is-invalid @enderror"
+                               id="exampleTextarea1" rows="2" name="nip" value="{{Auth::guard('adminsekolah')->user()->nip}}"
+                        placeholder="Masukkan NIP Anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea1">No HP</label>
+                        <input type="text" class="form-control @error('no_hp') is-invalid @enderror"
+                               id="exampleTextarea1" rows="2" name="no_hp" value="{{Auth::guard('adminsekolah')->user()->no_hp}}"
+                        placeholder="Masukkan No HP Anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea1">No Izin</label>
+                        <input type="text" class="form-control @error('no_izin') is-invalid @enderror"
+                               id="exampleTextarea1" rows="2" name="no_izin" value="{{Auth::guard('adminsekolah')->user()->no_izin}}"
+                        placeholder="Masukkan No Izin">
+                    </div>
+
                     <div class="form-group">
                         <label for="exampleTextarea1">Alamat</label>
                         <textarea class="form-control @error('alamat') is-invalid @enderror"
-                                  id="exampleTextarea1" rows="2" name="alamat">{{Auth::guard('adminsekolah')->user()->alamat}}</textarea>
+                                  id="exampleTextarea1" rows="2" name="alamat"
+                        placeholder="Masukkan Alamat Sekolah">{{Auth::guard('adminsekolah')->user()->alamat}}</textarea>
                     </div>
+
                     <button type="submit" class="btn btn-success mr-2">Submit</button>
                     <button class="btn btn-light">Cancel</button>
                 </form>

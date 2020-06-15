@@ -18,7 +18,6 @@ class CreateUsersTable extends Migration
             $table->integer('id_adminsekolah')->unsigned();
             $table->integer('nis')->unique();
             $table->string('nama_siswa', '30');
-            $table->string('kelas', '10');
             $table->string('email', '30')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->text('api_token');

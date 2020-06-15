@@ -15,7 +15,8 @@ class SiswaController extends Controller
 
     public function profile()
     {
-    	$user = Auth::user();
+    	$user = Auth::guard('api-siswa')->user();
+        $user->status == 1 ? $user->status = true : $user->status = false;
 
     	return response()->json([
             'message' => 'successfully get user is login',

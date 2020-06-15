@@ -26,4 +26,5 @@ Route::group(['prefix' => 'siswa'], function (){
 Route::get('pemilihan', 'v1\siswa\VotingController@pemilihan');
 Route::post('voting', 'v1\siswa\VotingController@voting');
 Route::get('calon', 'v1\siswa\CalonController@index');
+Route::get('hasil', 'v1\siswa\HasilController@hasil');
 

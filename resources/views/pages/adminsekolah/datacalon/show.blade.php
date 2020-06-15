@@ -39,15 +39,7 @@
                                         <p>{{$data->wakil->nama_siswa}}</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label>Kelas</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p>{{$data->ketua->kelas}}</p>
-                                        <p>{{$data->wakil->kelas}}</p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>

@@ -19,6 +19,9 @@ class CreateAdminSekolahsTable extends Migration
             $table->string('nama_sekolah', '50');
             $table->string('kategori', '20');
             $table->text('alamat')->nullable();
+            $table->text('nip')->nullable();
+            $table->text('no_hp')->nullable();
+            $table->text('no_izin')->nullable();
             $table->text('foto')->nullable();
             $table->string('email', '30')->unique();
             $table->timestamp('email_verified_at')->nullable();

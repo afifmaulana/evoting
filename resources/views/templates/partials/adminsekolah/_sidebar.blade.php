@@ -13,14 +13,6 @@
             <li class="nav-item">
                 <a href="{{route('pemilihan.index')}}" class="nav-link"><i class="link-icon mdi mdi-apple-safari"></i><span class="menu-title">DATA PEMILIHAN</span></a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"><i class="link-icon mdi mdi-asterisk"></i><span class="menu-title">APPS</span><i class="menu-arrow"></i></a>
-                <div class="submenu">
-                    <ul class="submenu-item">
-                        <li class="nav-item"><a class="nav-link" href="pages/apps/email.html">Email</a></li>
-                    </ul>
-                </div>
-            </li>
         </ul>
     </div>
 </div>

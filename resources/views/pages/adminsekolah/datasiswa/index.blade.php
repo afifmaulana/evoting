@@ -27,11 +27,13 @@
                     <div class="card-body">
                         <h4 class="card-title">Data Siswa</h4>
                         <div class="button-right">
-                            {{--<a href="{{route('datasiswa.create')}}">
-                                <button type="button" class="btn btn-primary btn-fw"><i
-                                            class="mdi mdi-plus-box-outline"></i>Primary
-                                </button>
-                            </a>--}}
+                            <div class="button">
+                                <a href="{{route('datasiswa.create')}}">
+                                    <button type="button" class="btn btn-primary btn-fw"><i
+                                                class="mdi mdi-plus-box-outline"></i>Tambah
+                                    </button>
+                                </a>
+                            </div>
 
                             <form action="{{ route('datasiswa.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
@@ -48,8 +50,6 @@
                                         <th>Nis</th>
                                         <th>Nama</th>
                                         <th>Email</th>
-                                        <th>Kelas</th>
-                                        <th>Sekolah</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
@@ -60,8 +60,6 @@
                                             <td>{{$data->nis}}</td>
                                             <td>{{$data->nama_siswa}}</td>
                                             <td>{{$data->email}}</td>
-                                            <td>{{$data->kelas}}</td>
-                                            <td>{{$data->adminsekolah->nama_sekolah}}</td>
 
                                             <td class="text-right">
                                                 <button class="btn btn-light">
