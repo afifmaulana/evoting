@@ -51,12 +51,12 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($admins as $admin)
+                                    @foreach($datas as $data)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
-                                        <td>{{$admin->nama_admin}}</td>
-                                        <td>{{$admin->nama_sekolah}}</td>
-                                        <td>{{$admin->email}}</td>
+                                        <td>{{$data->nama_admin}}</td>
+                                        <td>{{$data->nama_sekolah}}</td>
+                                        <td>{{$data->email}}</td>
                                         <td>foto</td>
                                         <td class="text-right">
                                             <button class="btn-light">

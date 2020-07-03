@@ -37,7 +37,10 @@ Route::get('/activate', 'adminsekolah\Auth\ActivationController@activate')->name
 
 Route::group(['prefix' => 'superadmin'], function (){
     Route::resource('dashboard1', 'superadmin\DashboardController');
-    Route::resource('users', 'superadmin\UsersController');
+    Route::resource('users', 'superadmin\UsersController')->only('index');
+    Route::resource('users_verified', 'superadmin\UsersVerifiedController')->only('index');
+    Route::get('users/{id}/update', 'superadmin\UsersController@update')->name('users.update');
+    Route::get('users/{id}/destroy', 'superadmin\UsersController@destroy')->name('users.destroy');
     Route::resource('profiladmin', 'superadmin\ProfilController');
     Route::resource('sekolah', 'superadmin\SekolahController')->except(['show', 'destroy']);
     Route::get('sekolah/{id}', 'superadmin\SekolahController@destroy')->name('sekolah.destroy');

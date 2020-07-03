@@ -79,10 +79,10 @@
                                             <td>{{$data->kategori}}</td>
                                             <td>
                                                 <a href="{{route('sekolah.edit', $data->id)}}"
-                                                   class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
+                                                   class="btn tblActnBtn"><i class="material-icons">mode_edit</i></a>
                                                 <a href="{{route('sekolah.destroy', $data->id)}}"
                                                    onclick="return confirm('Apakah Anda akan menghapus data ini?')"
-                                                   class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                                                   class="btn tblActnBtn danger"><i class="material-icons">delete</i></a>
                                             </td>
                                         </tr>
                                     @endforeach

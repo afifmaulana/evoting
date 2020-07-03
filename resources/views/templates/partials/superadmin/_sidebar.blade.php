@@ -29,7 +29,7 @@
                         <a href="{{route('users.index')}}">Belum dikonfirmasi</a>
                     </li>
                     <li class="active">
-                        <a href="{{route('users.create')}}">Sudah dikonfirmasi</a>
+                        <a href="{{route('users_verified.index')}}">Sudah dikonfirmasi</a>
                     </li>
                 </ul>
             </li>

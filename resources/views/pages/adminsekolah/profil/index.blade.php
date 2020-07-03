@@ -16,19 +16,11 @@
                             <label>Nama Admin</label>
                             <label>Nama Sekolah</label>
                             <label>Email</label>
-                            <label>NIP</label>
-                            <label>No HP</label>
-                            <label>No Izin</label>
-                            <label>Alamat</label>
                         </div>
                         <div class="col-md-6">
                             <p>{{Auth::guard('adminsekolah')->user()->nama_admin}}</p>
                             <p>{{Auth::guard('adminsekolah')->user()->nama_sekolah}}</p>
                             <p>{{Auth::guard('adminsekolah')->user()->email}}</p>
-                            <p>{{Auth::guard('adminsekolah')->user()->nip}}</p>
-                            <p>{{Auth::guard('adminsekolah')->user()->no_hp}}</p>
-                            <p>{{Auth::guard('adminsekolah')->user()->no_izin}}</p>
-                            <p>{{Auth::guard('adminsekolah')->user()->alamat}}</p>
 
                         </div>
                     </div>

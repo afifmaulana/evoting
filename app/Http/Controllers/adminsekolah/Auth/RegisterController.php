@@ -73,7 +73,7 @@ class RegisterController extends Controller
         $data->password     = bcrypt($request->password);
         $data->activation_token = Str::random(100);
         if ($data->save()){
-            event(new AdminSekolahActivationEmail($data));
+            //event(new AdminSekolahActivationEmail($data));
             return redirect()->route('adminsekolah.login');
         }else{
             return back()->withErrors();

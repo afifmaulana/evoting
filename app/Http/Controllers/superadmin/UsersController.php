@@ -16,9 +16,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $datas = SuperAdmin::all();
-        $admins = AdminSekolah::all()->where('status','1');
-        return view('pages.superadmin.user.users', compact('datas', 'admins'));
+        $datas = AdminSekolah::all()->where('status','1');
+        return view('pages.superadmin.user.users', compact('datas'));
     }
 
     /**
@@ -28,9 +27,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        $datas = SuperAdmin::orderBy('id','DESC')->where('status','1');
-        $admins = AdminSekolah::all()->where('status','0');
-        return view('pages.superadmin.user.users_verification', compact('datas', 'admins'));
+       //
     }
 
     /**
@@ -75,7 +72,9 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = AdminSekolah::find($id);
+        $data->update(['status' => '2']);
+        return redirect()->route('users.index')->with('create', 'Berhasil Mengkonfirmasi Admin Sekolah');
     }
 
     /**
@@ -86,6 +85,8 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = AdminSekolah::find($id);
+        $data->update(['status' => '0']);
+        return redirect()->route('users.index')->with('create', 'Berhasil Tidak Mengkonfirmasi Admin Sekolah');
     }
 }

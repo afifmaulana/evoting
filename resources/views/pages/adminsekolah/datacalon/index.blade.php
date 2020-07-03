@@ -40,7 +40,7 @@
                                                 </a></td>
 
                                             <td>
-                                                <label class="badge badge-info">On hold</label>
+                                                <label class="badge badge-primary">Aktif</label>
                                             </td>
                                             <td class="text-right">
                                                 <a href="{{route('datacalon.show', $data->id)}}">

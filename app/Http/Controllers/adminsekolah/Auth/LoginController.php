@@ -56,11 +56,25 @@ class LoginController extends Controller
             'password' => $request->password,
         ];
 
-        if (Auth::guard('adminsekolah')->attempt($credential, $request->remember)){
-            return redirect()->intended(route('dashboard2.index'));
+
+        if (Auth::guard('adminsekolah')->attempt($credential)){
+            $user = Auth::guard('adminsekolah')->user();
+            if ($user->status == '2'){
+                return redirect()->intended(route('dashboard2.index'));
+            }else{
+                return redirect()->back()
+                    ->withInput($request->only('email'))
+                    ->with('error', 'Mohon Verifikasi Email Dahulu!');
+            }
         }
 
-        return redirect()->back()->withInput($request->only('email', 'remember'));
+        /*if (Auth::guard('adminsekolah')->attempt($credential, $request->remember)){
+            return redirect()->intended(route('dashboard2.index'));
+        }*/
+
+        return redirect()->back()->withInput($request->only('email'))
+            ->with('error', 'masukkan email dan passsword yang benar');
+
     }
 
     public function logout()

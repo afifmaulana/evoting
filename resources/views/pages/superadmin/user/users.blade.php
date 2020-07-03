@@ -51,23 +51,19 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($admins as $admin)
+                                    @foreach($datas as $data)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
-                                        <td>{{$admin->nama_admin}}</td>
-                                        <td>{{$admin->nama_sekolah}}</td>
-                                        <td>{{$admin->email}}</td>
+                                        <td>{{$data->nama_admin}}</td>
+                                        <td>{{$data->nama_sekolah}}</td>
+                                        <td>{{$data->email}}</td>
                                         <td>foto</td>
                                         <td class="text-right">
-                                            <button class="btn-light">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button class="btn-warning">
-                                                <i class="fa fa-pen"></i>
-                                            </button>
-                                            <button class="btn-danger">
+                                            <a href="{{route('users.update', $data->id)}}">
+                                                <i class="fa fa-check-circle"></i>
+                                            </a>
+                                            <a href="{{route('users.destroy', $data->id)}}">
                                                 <i class="fa fa-trash"></i>
-                                            </button>
                                         </td>
                                     </tr>
                                         @endforeach
