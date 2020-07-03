@@ -20,19 +20,24 @@ class VotingController extends Controller
 
     public function pemilihan()
     {
-        $tahun = Carbon::now()->format('Y-m-d');
-        $jam = Carbon::now()->format('H:i');
+        $tahun = Carbon::now()->format('Y-m-d H:i');
+        $jam = Carbon::now()->format('H');
         $id_sekolah = Auth::user()->id_adminsekolah;
         $pemilihan = Pemilihan::where('id_adminsekolah', $id_sekolah)
-            ->where('tanggal', $tahun)
-            ->where('waktu_mulai','<=', $jam)
-            ->where('waktu_selesai', '>=', $jam)
-            ->first();
+            ->whereYear('tanggal', $tahun)->first();
+
+        $jam_mulai = substr($pemilihan->waktu_mulai, 0, 2);
+        $jam_selesai = substr($pemilihan->waktu_selesai, 0, 2);
+
+        $result = [];
+        if ($jam_mulai <= $jam && $jam_selesai >= $jam){
+            array_push($result, $pemilihan);
+        }
 
         return response()->json([
             'message' => 'successfully get pemilihan',
             'status' => true,
-            'data' => $pemilihan
+            'data' => $result
         ]);
     }
 
@@ -50,10 +55,10 @@ class VotingController extends Controller
         return response()->json([
             'message' => 'successfully voting',
             'status' => true,
-            'data' => [
-            'hasil' => $hasil,
-            'user' => $user
-            ]
+//            'data' => [
+//            'hasil' => $hasil,
+//            'user' => $user
+//            ]
         ]);
     }
 }
