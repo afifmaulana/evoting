@@ -48,7 +48,7 @@
                                                         <i class="icon-note"></i>
                                                     </button>
                                                 </a>
-                                                <a href="{{route('pemilihan.destroy')}}">
+                                                <a href="{{route('pemilihan.destroy', $data->id)}}">
                                                 <button class="btn btn-danger">
                                                     <i class="icon-trash"></i>
                                                 </button>
