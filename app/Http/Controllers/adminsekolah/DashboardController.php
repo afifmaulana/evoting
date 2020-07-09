@@ -12,6 +12,11 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth:adminsekolah');
+    }
+
     public function index()
     {
         return view('pages.adminsekolah.dashboard');

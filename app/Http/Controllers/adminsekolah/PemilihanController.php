@@ -17,6 +17,11 @@ class PemilihanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth:adminsekolah');
+    }
+
     public function index()
     {
         $data = Pemilihan::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)->first();

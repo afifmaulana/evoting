@@ -8,6 +8,11 @@ use App\Http\Controllers\Controller;
 
 class UsersVerifiedController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:superadmin');
+    }
+
     public function index()
     {
         $datas = AdminSekolah::all()->where('status','2');

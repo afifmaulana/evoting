@@ -17,7 +17,10 @@ class DataSiswaController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-
+    public function __construct()
+    {
+        $this->middleware('auth:adminsekolah');
+    }
 
     public function index()
     {
