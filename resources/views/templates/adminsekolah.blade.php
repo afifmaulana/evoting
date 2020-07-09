@@ -8,7 +8,7 @@
 
     <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
         @include('templates.partials.adminsekolah._navbar')
-        @include('templates.partials.adminsekolah._sidebar')
+        @include('templates.partials.adminsekolah._navbottom')
     </nav>
 
 

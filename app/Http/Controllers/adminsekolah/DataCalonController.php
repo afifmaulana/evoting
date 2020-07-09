@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class DataCalonController extends Controller
 {
@@ -29,14 +30,14 @@ class DataCalonController extends Controller
      */
     public function create()
     {
-        $datas = User::where('id_adminsekolah',Auth::guard('adminsekolah')->user()->id)->get();
+        $datas = User::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)->get();
         return view('pages.adminsekolah.datacalon.create', compact('datas'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -49,22 +50,22 @@ class DataCalonController extends Controller
         //dd($request->name);
 
         $this->validate($request, [
-            'id_ketua'  => 'unique:calons',
-            'id_wakil'  => 'unique:calons',
-            'visi'      => 'required',
-            'misi'      => 'required',
-            'foto'      => 'required',
+            'id_ketua' => 'unique:calons',
+            'id_wakil' => 'unique:calons',
+            'visi' => 'required',
+            'misi' => 'required',
+            'foto' => 'required',
 
         ]);
 
-        $image=$request->file('foto');
-        $filename=rand().'.'.$image->getClientOriginalExtension();
-        $path=public_path('uploads/adminsekolah');
-        $image->move($path,$filename);
+//        $image=$request->file('foto');
+//        $filename=rand().'.'.$image->getClientOriginalExtension();
+//        $path=public_path('uploads/adminsekolah');
+//        $image->move($path,$filename);
 
         $names = $request->name;
 
-        if (count($names) > 2 ){
+        if (count($names) > 2) {
             return redirect()->back()->withErrors(['msg', 'The Message']);
         }
 
@@ -74,8 +75,16 @@ class DataCalonController extends Controller
         $data->id_wakil = $names[1];
         $data->visi = $request->visi;
         $data->misi = $request->misi;
-        $data->foto = $filename;
+//        $data->foto = $file_name;
+
+        $file = $request->file('foto');
+        $file_name = date('ymdHis') . "-" . $file->getClientOriginalName();
+        $file_path = 'data-calon/' . $file_name;
+        Storage::disk('s3')->put($file_path, file_get_contents($file));
+        $data->foto = Storage::disk('s3')->url($file_path, $file_name);
+
         $data->save();
+
         return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');
 
     }
@@ -83,7 +92,7 @@ class DataCalonController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -95,7 +104,7 @@ class DataCalonController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -107,28 +116,28 @@ class DataCalonController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
 
-        $a = User::where('nama_siswa', '=',$request->name)
+        $a = User::where('nama_siswa', '=', $request->name)
             ->where('id_adminsekolah', '=', Auth::guard('adminsekolah')->user()->id)->first();
         //dd($a->id);
 
-        $image=$request->file('foto');
-        $filename=rand().'.'.$image->getClientOriginalExtension();
-        $path=public_path('uploads/adminsekolah');
-        $image->move($path,$filename);
+        $image = $request->file('foto');
+        $filename = rand() . '.' . $image->getClientOriginalExtension();
+        $path = public_path('uploads/adminsekolah');
+        $image->move($path, $filename);
         $names = $request->name;
 
-        if (count($names) > 2 ){
+        if (count($names) > 2) {
             return redirect()->back()->withErrors(['msg', 'The Message']);
         }
 
-        if ($a){
+        if ($a) {
             $data = Calon::find($id);
             $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
             $data->id_ketua = $names[0];
@@ -139,7 +148,7 @@ class DataCalonController extends Controller
             $data->update();
 
             return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');
-        }else{
+        } else {
             return redirect()->back()->with('datacalon.create');
         }
     }
@@ -147,13 +156,13 @@ class DataCalonController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         $data = Calon::find($id);
-        $data ->delete();
+        $data->delete();
         return redirect()->route('datacalon.index')->with('delete', 'berhasil menghapus data');
     }
 }

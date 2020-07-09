@@ -35,7 +35,7 @@
 
                                             <td><a class="btn btn-circle" data-toggle="modal"
                                                    data-target="#exampleModal{{$loop->iteration}}" type="button">
-                                                    <img src="{{asset('uploads/adminsekolah/'.$data->foto)}}"
+                                                    <img src="{{$data->foto}}"
                                                          style="height: 50px; width: 100px;">
                                                 </a></td>
 

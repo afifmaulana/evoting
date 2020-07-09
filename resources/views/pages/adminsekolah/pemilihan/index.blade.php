@@ -48,9 +48,11 @@
                                                         <i class="icon-note"></i>
                                                     </button>
                                                 </a>
+                                                <a href="{{route('pemilihan.destroy')}}">
                                                 <button class="btn btn-danger">
                                                     <i class="icon-trash"></i>
                                                 </button>
+                                                </a>
                                             </td>
                                         </tr>
                                     @endforeach

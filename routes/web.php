@@ -54,7 +54,8 @@ Route::group(['prefix' => 'adminsekolah'], function (){
     Route::get('datacalon/{id}/destroy', 'adminsekolah\DataCalonController@destroy')->name('datacalon.destroy');
     Route::resource('datasiswa', 'adminsekolah\DataSiswaController');
 
-    Route::resource('pemilihan', 'adminsekolah\PemilihanController');
+    Route::resource('pemilihan', 'adminsekolah\PemilihanController')->except(['destroy']);
+    Route::get('pemilihan/{id}/destroy', 'adminsekolah\PemilihanController@destroy')->name('pemilihan.destroy');
     Route::resource('profilsekolah', 'adminsekolah\ProfilController');
 
 });

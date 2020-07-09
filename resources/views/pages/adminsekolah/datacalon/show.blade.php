@@ -7,7 +7,7 @@
                 <h4 class="card-title">CALON 1</h4>
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="img-fluid rounded" src="{{asset('uploads/adminsekolah/'.$data->foto)}}" alt="tab preview" width="200px" height="200px">
+                        <img class="img-fluid rounded" src="{{$data->foto}}" alt="tab preview" width="200px" height="200px">
                     </div>
                     <div class="col-md-6 pl-md-5 pt-4 pt-md-0">
                         <h5 class="mb-4 pb-3">BIO DATA CALON</h5>

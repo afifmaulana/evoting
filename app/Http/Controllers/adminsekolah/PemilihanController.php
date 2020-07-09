@@ -115,6 +115,8 @@ class PemilihanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Pemilihan::find($id);
+        $data->delete();
+        return redirect()->route('pemilihan.index')->with('delete', 'berhasil menghapus data');
     }
 }
