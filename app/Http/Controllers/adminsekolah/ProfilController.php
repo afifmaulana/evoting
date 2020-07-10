@@ -7,6 +7,7 @@ use App\Sekolah;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 
 class ProfilController extends Controller
@@ -57,11 +58,11 @@ class ProfilController extends Controller
         if ($request->file('foto') == ''){
             $data->foto = $request->old_foto;
         }else{
-            $image=$request->file('foto');
-            $filename=rand().'.'.$image->getClientOriginalExtension();
-            $path=public_path('uploads/adminsekolah');
-            $image->move($path,$filename);
-            $data->foto = $filename;
+            $file = $request->file('foto');
+            $file_name = date('ymdHis') . "-" . $file->getClientOriginalName();
+            $file_path = 'data-calon/' . $file_name;
+            Storage::disk('s3')->put($file_path, file_get_contents($file));
+            $data->foto = Storage::disk('s3')->url($file_path, $file_name);
         }
         $data->save();
 
