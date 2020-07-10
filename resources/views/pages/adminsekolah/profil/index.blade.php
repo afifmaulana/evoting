@@ -5,7 +5,7 @@
     <div class="col-md-4 col-sm-6 grid-margin stretch-card">
         <div class="card text-center">
             <div class="card-body">
-                <img src="{{asset(Auth::guard('adminsekolah')->user()->foto)}}" class="img-lg rounded-circle mb-2" alt="profile image"/>
+                <img src="{{Auth::guard('adminsekolah')->user()->foto}}" class="img-lg rounded-circle mb-2" alt="profile image"/>
                 <h4>{{Auth::guard('adminsekolah')->user()->nama_admin}}</h4>
                 <p class="text-muted">Admin Sekolah</p>
 
@@ -80,7 +80,7 @@
                                     </span>
                         @enderror
                         <img id="output" class="img-fluid" height="100" width="100"
-                             src="{{asset(Auth::guard('adminsekolah')->user()->foto)}}">
+                             src="{{Auth::guard('adminsekolah')->user()->foto}}">
                     </div>
 
                     <div class="form-group">

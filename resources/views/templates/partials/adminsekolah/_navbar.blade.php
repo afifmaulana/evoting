@@ -11,7 +11,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                    <img class="img-xs rounded-circle" src="{{asset(Auth::guard('adminsekolah')->user()->foto)}}" alt="Profile image">
+                    <img class="img-xs rounded-circle" src="{{Auth::guard('adminsekolah')->user()->foto}}" alt="Profile image">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
 
