@@ -31,7 +31,7 @@
                                     <div class="user-name">{{Auth::guard('superadmin')->user()->name}}</div>
                                     <div class="name-center">Super Admin</div>
                                 </div>
-                                <img src="{{asset('uploads/superadmin/'.Auth::guard('superadmin')->user()->path_avatar)}}" class="user-img" alt="Profile image">
+                                <img src="{{asset(Auth::guard('superadmin')->user()->path_avatar)}}" class="user-img" alt="Profile image">
                                 <p>
                                     456, Estern evenue, Courtage area,
                                     <br />New York

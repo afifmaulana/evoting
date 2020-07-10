@@ -5,7 +5,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Data Pemilihan</h4>
+                        <h4 class="card-title">Atur Pemilihan</h4>
                         <div class="button">
                             @if($tahun != \Carbon\Carbon::now()->year)
                                 <a href="{{route('pemilihan.create')}}">
@@ -21,7 +21,6 @@
                                     <thead>
                                     <tr class="bg-light">
                                         <th>No</th>
-                                        <th>Sekolah</th>
                                         <th>Tanggal</th>
                                         <th>Waktu Mulai</th>
                                         <th>Waktu Selesai</th>
@@ -33,7 +32,6 @@
                                     @foreach($datas as $data)
                                         <tr>
                                             <td>{{$loop->iteration}}</td>
-                                            <td>Edinburgh</td>
                                             <td>{{$data->tanggal}}</td>
                                             <td>{{$data->waktu_mulai}}</td>
                                             <td>{{$data->waktu_selesai}}</td>

@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c9d15b66-b303-4f34-87e5-946cddb4711a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/superadmin/profil.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/superadmin/profil.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,12 +21,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VotingController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VotingController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/VotingController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
               <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="47" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="86" column="51" lean-forward="false" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+              <folding>
+                <marker date="1594355742988" expanded="true" signature="9:33" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="44:53" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="238:286" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="369:416" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="883:930" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="970:1019" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="1059:1101" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="1476:1504" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="1751:1793" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="1945:1992" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="2161:2171" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="2475:2519" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="2673:2722" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="2893:2903" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="3218:3260" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="3813:3854" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="3913:3949" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="4194:4204" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="4414:4462" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="4787:4827" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="5214:5256" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="5651:5695" ph="..." />
+                <marker date="1594355742988" expanded="true" signature="6133:6176" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profil.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/profil.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2412">
+              <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+              <folding>
+                <marker date="1594355742813" expanded="true" signature="9:31" ph="..." />
+                <marker date="1594355742813" expanded="true" signature="42:51" ph="..." />
+                <marker date="1594355742813" expanded="true" signature="1481:1520" ph="..." />
+                <marker date="1594355742813" expanded="true" signature="1691:1744" ph="..." />
+                <marker date="1594355742813" expanded="true" signature="10856:10882" ph="..." />
+                <marker date="1594355742813" expanded="true" signature="11101:11137" ph="..." />
+                <marker date="1594355742813" expanded="true" signature="11209:11248" ph="..." />
+                <marker date="1594355742813" expanded="true" signature="11590:11630" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,8 +156,6 @@
         <option value="$PROJECT_DIR$/resources/views/pages/superadmin/user/users.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/superadmin/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/superadmin/profil.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/v1/siswa/VotingController.php" />
@@ -116,7 +169,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/adminsekolah.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbottom.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/hasil/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/datacalon/show.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
@@ -131,6 +183,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/superadmin/SekolahController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/superadmin/UsersController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/superadmin/UsersVerifiedController.php" />
+        <option value="$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbottom.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/superadmin/profil.blade.php" />
       </list>
     </option>
   </component>
@@ -247,7 +302,7 @@
       <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -302,15 +357,6 @@
               <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="v1" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="v1" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="siswa" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
@@ -370,6 +416,14 @@
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="superadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -379,6 +433,15 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
@@ -536,15 +599,15 @@
       <workItem from="1593769806053" duration="2625000" />
       <workItem from="1594275591478" duration="7715000" />
       <workItem from="1594301433807" duration="2007000" />
-      <workItem from="1594350212104" duration="266000" />
+      <workItem from="1594350212104" duration="4164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="535437000" />
+    <option name="totallyTimeSpent" value="539335000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35325265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -552,11 +615,11 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29126215" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33495146" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -620,13 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/profil.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="31" column="72" lean-forward="false" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -791,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbottom.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/hasil/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -809,13 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="73" lean-forward="false" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -962,11 +1004,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminsekolah/_navbottom.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <marker date="1594351126161" expanded="true" signature="155:180" ph="..." />
+            <marker date="1594351126161" expanded="true" signature="370:394" ph="..." />
+            <marker date="1594351126161" expanded="true" signature="587:611" ph="..." />
+            <marker date="1594351126161" expanded="true" signature="804:828" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/siswa/VotingController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/profil/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="86" column="51" lean-forward="false" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+          <folding>
+            <marker date="1594355742988" expanded="true" signature="9:33" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="44:53" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="238:286" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="369:416" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="883:930" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="970:1019" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="1059:1101" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="1476:1504" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="1751:1793" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="1945:1992" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="2161:2171" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="2475:2519" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="2673:2722" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="2893:2903" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="3218:3260" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="3813:3854" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="3913:3949" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="4194:4204" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="4414:4462" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="4787:4827" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="5214:5256" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="5651:5695" ph="..." />
+            <marker date="1594355742988" expanded="true" signature="6133:6176" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/profil.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2412">
+          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+          <folding>
+            <marker date="1594355742813" expanded="true" signature="9:31" ph="..." />
+            <marker date="1594355742813" expanded="true" signature="42:51" ph="..." />
+            <marker date="1594355742813" expanded="true" signature="1481:1520" ph="..." />
+            <marker date="1594355742813" expanded="true" signature="1691:1744" ph="..." />
+            <marker date="1594355742813" expanded="true" signature="10856:10882" ph="..." />
+            <marker date="1594355742813" expanded="true" signature="11101:11137" ph="..." />
+            <marker date="1594355742813" expanded="true" signature="11209:11248" ph="..." />
+            <marker date="1594355742813" expanded="true" signature="11590:11630" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
