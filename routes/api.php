@@ -21,6 +21,7 @@ use Illuminate\Http\Request;
 Route::group(['prefix' => 'siswa'], function (){
    Route::post('login', 'v1\siswa\Auth\LoginController@login');
    Route::get('profile', 'v1\siswa\SiswaController@profile');
+   Route::post('update/password', 'v1\siswa\UpdatePasswordController@updatePassword');
 });
 
 Route::get('pemilihan', 'v1\siswa\VotingController@pemilihan');

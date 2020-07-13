@@ -10,7 +10,7 @@
                             @if($tahun != \Carbon\Carbon::now()->year)
                                 <a href="{{route('pemilihan.create')}}">
                                     <button type="button" class="btn btn-primary btn-fw"><i
-                                                class="mdi mdi-plus-box-outline"></i>Tambah
+                                                class="mdi mdi-plus-box-outline"></i>Buat
                                     </button>
                                 </a>
                             @endif
