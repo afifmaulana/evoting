@@ -24,7 +24,8 @@ class DataCalonController extends Controller
 
     public function index()
     {
-        $datas = Calon::all()->where('status', '1');
+        $datas = Calon::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)
+        ->where('status', '1')->get();
         return view('pages.adminsekolah.datacalon.index', compact('datas'));
     }
 
