@@ -17,7 +17,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 table-responsive">
-                                <table id="order-listing" class="table">
+                                <table class="table">
                                     <thead>
                                     <tr class="bg-light">
                                         <th>No</th>
