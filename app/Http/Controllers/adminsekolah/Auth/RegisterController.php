@@ -62,21 +62,29 @@ class RegisterController extends Controller
             'nama_admin'        => 'required',
             'nama_sekolah'      => 'required|unique:admin_sekolahs',
             'email'             => 'required|unique:admin_sekolahs|email',
-            'password'          => 'required|confirmed'
+            'password'          => 'required|confirmed',
+            'no_izin'           => 'required|unique:admin_sekolahs'
+
         ]);
 
-        $data = new AdminSekolah();
-        $data->nama_admin   = $request->nama_admin;
-        $data->nama_sekolah = $request->nama_sekolah;
-        $data->kategori     = $request->kategori;
-        $data->email        = $request->email;
-        $data->password     = bcrypt($request->password);
-        $data->activation_token = Str::random(100);
-        if ($data->save()){
-            //event(new AdminSekolahActivationEmail($data));
-            return redirect()->route('adminsekolah.login');
+        $sekolah = Sekolah::where('no_izin', $request->no_izin)->first();
+        if ($sekolah){
+            $data = new AdminSekolah();
+            $data->nama_admin   = $request->nama_admin;
+            $data->nama_sekolah = $request->nama_sekolah;
+            $data->kategori     = $request->kategori;
+            $data->email        = $request->email;
+            $data->password     = bcrypt($request->password);
+            $data->no_izin      = $request->no_izin;
+            $data->activation_token = Str::random(100);
+            if ($data->save()){
+                //event(new AdminSekolahActivationEmail($data));
+                return redirect()->route('adminsekolah.login');
+            }else{
+                return redirect()->back()->withErrors();
+            }
         }else{
-            return back()->withErrors();
+            return redirect()->back()->with('error', 'no izin salah');
         }
         //return redirect()->route('adminsekolah.login')->with('succes', 'Berhasil Register, Silahkan Verifikasi Email');
     }

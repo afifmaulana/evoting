@@ -45,6 +45,19 @@
                                         @endif
                                     </div>
                                 </div>
+                                <div class="form-group form-float">
+                                    <label class="form-label">NOMOR IZIN</label>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control {{$errors->has('no_izin')?'is-invalid':''}}"
+                                               name="no_izin" required placeholder="Masukkan Nomor Izin Sekolah"
+                                               value="{{old('no_izin')}}">
+                                        @if ($errors->has('no_izin'))
+                                            <span class="invalid-feedback" role="alert">
+                                                        <p><b>{{ $errors->first('no_izin') }}</b></p>
+                                                    </span>
+                                        @endif
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <label>Jenis Sekolah</label>
                                     <select name="kategori" class="custom-select mb-3">

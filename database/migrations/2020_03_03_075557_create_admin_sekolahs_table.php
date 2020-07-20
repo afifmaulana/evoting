@@ -15,13 +15,13 @@ class CreateAdminSekolahsTable extends Migration
     {
         Schema::create('admin_sekolahs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama_admin');
+            $table->string('no_izin', '50')->unique();
+            $table->string('nama_admin', '50');
             $table->string('nama_sekolah', '50');
             $table->string('kategori', '20');
             $table->text('alamat')->nullable();
-            $table->text('nip')->nullable();
-            $table->text('no_hp')->nullable();
-            $table->text('no_izin')->nullable();
+            $table->string('nip', '20')->nullable();
+            $table->string('no_hp', '20')->nullable();
             $table->text('foto')->nullable();
             $table->string('email', '30')->unique();
             $table->timestamp('email_verified_at')->nullable();

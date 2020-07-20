@@ -44,11 +44,13 @@ class SekolahController extends Controller
     {
         $this->validate($request, [
            'nama_sekolah' => 'required|unique:sekolahs',
+           'no_izin' => 'required|unique:sekolahs',
 
         ]);
 
         $data = new Sekolah();
         $data->nama_sekolah = $request->nama_sekolah;
+        $data->no_izin = $request->no_izin;
         $data->kategori = $request->kategori;
         //dd($request->all());
         $data->save();

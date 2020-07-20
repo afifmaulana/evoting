@@ -25,10 +25,18 @@
         <div class="content-wrapper d-flex align-items-center auth register-bg-1 theme-one">
             <div class="row w-100 mx-auto">
                 <div class="col-lg-4 mx-auto">
+                    @if($message = Session::get('error'))
+                        <div class="alert alert-success alert-dismissible mb-2" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            {{$message}}
+                        </div>
+                    @endif
                     <h2 class="text-center mb-4">Daftar Admin Sekolah</h2>
                     <div class="auto-form-wrapper">
                         <form action="{{route('adminsekolah.register.submit')}}" method="post">
                             @csrf
+
+
                             <div class="form-group">
                                 <div class="input-group">
                                     <input type="text" class="form-control @error('nama_admin') is-invalid @enderror"
@@ -100,6 +108,23 @@
                                 <div class="input-group">
                                     <input type="password" class="form-control" name="password_confirmation"
                                            placeholder="Confirm Password">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i
+                                                    class="mdi mdi-check-circle-outline"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control @error('no_izin') is-invalid @enderror"
+                                           value="{{ old('no_izin') }}"
+                                           name="no_izin" placeholder="Nomor Izin Sekolah">
+                                    @error('no_izin')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i
                                                     class="mdi mdi-check-circle-outline"></i></span>

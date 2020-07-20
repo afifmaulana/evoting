@@ -15,6 +15,7 @@ class CreateSekolahsTable extends Migration
     {
         Schema::create('sekolahs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('no_izin', '50')->unique();
             $table->string('nama_sekolah', '50')->unique();
             $table->string('kategori', '20');
             $table->boolean('status')->default(1);

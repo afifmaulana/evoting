@@ -21,8 +21,8 @@
         <div class="row">
             <div class="col-lg-3 col-sm-6">
                 <div class="counter-box text-center white">
-                    <div class="text font-17 m-b-5">Total Income</div>
-                    <h3 class="m-b-10">$758
+                    <div class="text font-17 m-b-5">Total Sekolah</div>
+                    <h3 class="m-b-10">18
                         <i class="material-icons col-green">trending_up</i>
                     </h3>
                     <div class="icon">

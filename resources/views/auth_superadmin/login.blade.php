@@ -54,11 +54,7 @@
                     </button>
                 </div>
             </form>
-            <div class="text-center p-t-50">
-                <a class="txt1" href="sign-in.html">
-                    Forgot Password
-                </a>
-            </div>
+
         </div>
     </div>
 </div>

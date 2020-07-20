@@ -16,12 +16,12 @@
             <li>
                 <a href="{{route('dashboard1.index')}}">
                     <i class="fa fa-home"></i>
-                    <span>Home</span>
+                    <span>Dashboard</span>
                 </a>
             </li>
             <li>
                 <a href="#" onClick="return false;" class="menu-toggle">
-                    <i class="fas fa-tachometer-alt"></i>
+                    <i class="fas fa-users"></i>
                     <span>Users</span>
                 </a>
                 <ul class="ml-menu">

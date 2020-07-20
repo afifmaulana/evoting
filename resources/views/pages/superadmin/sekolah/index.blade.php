@@ -30,7 +30,7 @@
                                 <h4 class="page-title">Data Sekolah</h4>
                             </li>
                             <li class="breadcrumb-item bcrumb-1">
-                                <a href="../../index.html">
+                                <a href="#">
                                     <i class="fas fa-home"></i> Home</a>
                             </li>
                             <li class="breadcrumb-item bcrumb-2">
@@ -67,6 +67,7 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama Sekolah</th>
+                                        <th>No Izin</th>
                                         <th>Kategori</th>
                                         <th>Action</th>
                                     </tr>
@@ -76,6 +77,7 @@
                                         <tr>
                                             <td>{{$loop->iteration}}</td>
                                             <td>{{$data->nama_sekolah}}</td>
+                                            <td>{{$data->no_izin}}</td>
                                             <td>{{$data->kategori}}</td>
                                             <td>
                                                 <a href="{{route('sekolah.edit', $data->id)}}"
