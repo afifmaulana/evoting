@@ -35,6 +35,9 @@ class CsvImport implements ToModel, WithHeadingRow
                 $message->subject('Password Anda');
             }
         );
+        if(env('MAIL_HOST', false) == 'smtp.mailtrap.io'){
+            sleep(1); //use usleep(500000) for half a second or less
+        }
 
         return new User([
             'id_adminsekolah' => $logged_admin,
