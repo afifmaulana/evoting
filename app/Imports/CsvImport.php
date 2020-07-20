@@ -36,7 +36,7 @@ class CsvImport implements ToModel, WithHeadingRow
             }
         );
         if(env('MAIL_HOST', false) == 'smtp.mailtrap.io'){
-            sleep(5); //use usleep(500000) for half a second or less
+            sleep(3); //use usleep(500000) for half a second or less
         }
 
         return new User([
