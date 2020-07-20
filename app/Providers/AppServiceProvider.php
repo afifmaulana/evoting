@@ -34,10 +34,10 @@ class AppServiceProvider extends ServiceProvider
         Carbon::setLocale('id');
         date_default_timezone_set('Asia/Jakarta');
 
-        $throttleRate = config('mail.throttleToMessagesPerMin');
-        if ($throttleRate) {
-            $throttlerPlugin = new \Swift_Plugins_ThrottlerPlugin($throttleRate, \Swift_Plugins_ThrottlerPlugin::MESSAGES_PER_MINUTE);
-            Mail::getSwiftMailer()->registerPlugin($throttlerPlugin);
-        }
+//        $throttleRate = config('mail.throttleToMessagesPerMin');
+//        if ($throttleRate) {
+//            $throttlerPlugin = new \Swift_Plugins_ThrottlerPlugin($throttleRate, \Swift_Plugins_ThrottlerPlugin::MESSAGES_PER_MINUTE);
+//            Mail::getSwiftMailer()->registerPlugin($throttlerPlugin);
+//        }
     }
 }
