@@ -42,23 +42,22 @@
                         <input type="text" class="form-control {{$errors->has('nama_admin')?'is-invalid':''}}"
                                id="exampleInputName1" placeholder="Masukkan Nama Lengkap" name="nama_admin"
                                value="{{Auth::guard('adminsekolah')->user()->nama_admin}}">
-                        @error('nama_admin')
-                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                        @enderror
+                        @if ($errors->has('nama_admin'))
+                            <span class="invalid-feedback" role="alert">
+                                <p><b>{{ $errors->first('nama_admin') }}</b></p>
+                            </span>
+                        @endif
                     </div>
-
                     <div class="form-group">
                         <label for="exampleInputName1">Nama Sekolah</label>
-                        <input type="text" class="form-control {{$errors->has('nama_sekolah')?'is-invalid':''}}"
+                        <input readonly class="form-control {{$errors->has('nama_sekolah')?'is-invalid':''}}"
                                id="exampleInputName1" placeholder="Masukkan Nama Lengkap" name="nama_sekolah"
                                value="{{Auth::guard('adminsekolah')->user()->nama_sekolah}}">
-                        @error('nama_sekolah')
-                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                        @enderror
+                        @if ($errors->has('nama_sekolah'))
+                            <span class="invalid-feedback" role="alert">
+                                <p><b>{{ $errors->first('nama_sekolah') }}</b></p>
+                            </span>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail3">Email</label>
@@ -69,6 +68,11 @@
                         <input type="password" class="form-control @error('password') is-invalid @enderror"
                                id="exampleInputPassword4" placeholder="*********" name="password">
                     </div>
+                    @if ($errors->has('password'))
+                        <span class="invalid-feedback" role="alert">
+                                <p><b>{{ $errors->first('password') }}</b></p>
+                            </span>
+                    @endif
                     <div class="form-group">
                         <label>File upload</label>
                         <input type="hidden" name="old_foto" value="{{Auth::guard('adminsekolah')->user()->foto}}"/>
@@ -84,10 +88,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleTextarea1">NIP</label>
+                        <label for="exampleTextarea1">NIP (opsional)</label>
                         <input type="text" class="form-control @error('nip') is-invalid @enderror"
                                id="exampleTextarea1" rows="2" name="nip" value="{{Auth::guard('adminsekolah')->user()->nip}}"
                         placeholder="Masukkan NIP Anda">
+                        @if ($errors->has('nip'))
+                            <span class="invalid-feedback" role="alert">
+                                <p><b>{{ $errors->first('nip') }}</b></p>
+                            </span>
+                        @endif
                     </div>
 
                     <div class="form-group">
@@ -95,6 +104,11 @@
                         <input type="text" class="form-control @error('no_hp') is-invalid @enderror"
                                id="exampleTextarea1" rows="2" name="no_hp" value="{{Auth::guard('adminsekolah')->user()->no_hp}}"
                         placeholder="Masukkan No HP Anda">
+                        @if ($errors->has('no_hp'))
+                            <span class="invalid-feedback" role="alert">
+                                <p><b>{{ $errors->first('no_hp') }}</b></p>
+                            </span>
+                        @endif
                     </div>
 
                     <div class="form-group">
@@ -102,6 +116,11 @@
                         <input type="text" class="form-control @error('no_izin') is-invalid @enderror"
                                id="exampleTextarea1" rows="2" name="no_izin" value="{{Auth::guard('adminsekolah')->user()->no_izin}}"
                         placeholder="Masukkan No Izin">
+                        @if ($errors->has('no_izin'))
+                            <span class="invalid-feedback" role="alert">
+                                <p><b>{{ $errors->first('no_izin') }}</b></p>
+                            </span>
+                        @endif
                     </div>
 
                     <div class="form-group">
@@ -109,6 +128,11 @@
                         <textarea class="form-control @error('alamat') is-invalid @enderror"
                                   id="exampleTextarea1" rows="2" name="alamat"
                         placeholder="Masukkan Alamat Sekolah">{{Auth::guard('adminsekolah')->user()->alamat}}</textarea>
+                        @if ($errors->has('alamat'))
+                            <span class="invalid-feedback" role="alert">
+                                <p><b>{{ $errors->first('alamat') }}</b></p>
+                            </span>
+                        @endif
                     </div>
 
                     <button type="submit" class="btn btn-success mr-2">Submit</button>

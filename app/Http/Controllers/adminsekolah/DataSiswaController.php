@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\adminsekolah;
 
 use App\User;
+use function GuzzleHttp\Promise\all;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Imports\CsvImport;
@@ -20,6 +21,38 @@ class DataSiswaController extends Controller
     public function __construct()
     {
         $this->middleware('auth:adminsekolah');
+    }
+
+    public function formtambah(){
+        return view('pages.adminsekolah.datasiswa.tambah_siswa');
+    }
+
+
+    public function tambahsiswa(Request $request){
+
+        $rules= [
+            'nis' => 'required|unique:users',
+            'nama_siswa' => 'required',
+            'email'      => 'required|unique:users|email',
+
+        ];
+
+        $message = [
+            'required'  => ':attribute tidak boleh kosong',
+            'unique'    => ':attribute data sudah ada',
+            'email'     => ':attribute harus sesuai format email',
+        ];
+
+        $this->validate($request, $rules, $message);
+
+        $data = new User();
+        $data->nis = $request->nis;
+        $data->nama_siswa = $request->nama_siswa;
+        $data->email = $request->email;
+
+        $data->save();
+
+        return redirect()->route('datasiswa.index')->with('create', 'Berhasil Menambahkan Data');
     }
 
     public function index()

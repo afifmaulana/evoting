@@ -21,7 +21,7 @@
                                         <th>No</th>
                                         <th>Nama Calon</th>
                                         <th>Foto</th>
-                                        <th>Status</th>
+                                        {{--<th>Status</th>--}}
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
@@ -36,23 +36,23 @@
                                             <td><a class="btn btn-circle" data-toggle="modal"
                                                    data-target="#exampleModal{{$loop->iteration}}" type="button">
                                                     <img src="{{$data->foto}}"
-                                                         style="height: 50px; width: 100px;">
+                                                         style="height: 100px; width: 100px;">
                                                 </a></td>
 
-                                            <td>
-                                                <label class="badge badge-primary">Aktif</label>
-                                            </td>
+                                            {{--<td>--}}
+                                                {{--<label class="badge badge-primary">Aktif</label>--}}
+                                            {{--</td>--}}
                                             <td class="text-right">
                                                 <a href="{{route('datacalon.show', $data->id)}}">
                                                 <button class="btn btn-light">
                                                     <i class="mdi mdi-eye text-primary"></i>
                                                 </button>
                                                 </a>
-                                                <a href="{{route('datacalon.edit', $data->id)}}">
-                                                    <button class="btn btn-warning">
-                                                        <i class="icon-note"></i>
-                                                    </button>
-                                                </a>
+                                                {{--<a href="{{route('datacalon.edit', $data->id)}}">--}}
+                                                    {{--<button class="btn btn-warning">--}}
+                                                        {{--<i class="icon-note"></i>--}}
+                                                    {{--</button>--}}
+                                                {{--</a>--}}
                                                 <a href="{{route('datacalon.destroy', $data->id)}}">
                                                     <button class="btn btn-danger">
                                                         <i class="icon-trash"></i>
@@ -74,7 +74,7 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="d-flex justify-content-center">
-                                                            <img src="{{asset('uploads/adminsekolah/'.$data->foto)}}"
+                                                            <img src="{{$data->foto}}"
                                                                  style="height: 200px; width: 400px;">
                                                         </div>
                                                     </div>

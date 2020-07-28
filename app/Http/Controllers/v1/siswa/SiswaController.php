@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\v1\siswa;
 
+use App\Http\Resources\ProfileResource;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +22,7 @@ class SiswaController extends Controller
     	return response()->json([
             'message' => 'successfully get user is login',
             'status' => true,
-            'data' => $user
+            'data' => new ProfileResource($user)
         ]);
     }
 }

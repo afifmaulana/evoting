@@ -53,6 +53,20 @@ class PemilihanController extends Controller
      */
     public function store(Request $request)
     {
+        $rules = [
+            'tanggal'       => 'required',
+            'waktu_mulai'   => 'required',
+            'waktu_selesai' => 'required',
+            'tahun_ajaran'  => 'required',
+            ];
+
+        $message = [
+            'required'  => ':attribute tidak boleh kosong',
+            'unique'  => ':attribute data sudah ada',
+        ];
+
+        $this->validate($request, $rules, $message);
+
         $date = date('Y-m-d');
         $data = new Pemilihan();
         $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
@@ -97,7 +111,7 @@ class PemilihanController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**
@@ -109,7 +123,43 @@ class PemilihanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $rules = [
+            'tanggal'       => 'required',
+            'waktu_mulai'   => 'required',
+            'waktu_selesai' => 'required',
+            'tahun_ajaran'  => 'required',
+        ];
+
+        $message = [
+            'required'  => ':attribute tidak boleh kosong',
+            'unique'  => ':attribute data sudah ada',
+        ];
+
+        $this->validate($request, $rules, $message);
+
+        $date = date('Y-m-d');
+        $data = Pemilihan::find($id);
+        $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
+        $data->tanggal = $date;
+        $data->waktu_mulai = $request->waktu_mulai;
+        $data->waktu_selesai = $request->waktu_selesai;
+        $data->tahun_ajaran = $request->tahun_ajaran;
+        $data->update();
+
+        $calons = Calon::where('id_adminsekolah', Auth::guard('adminsekolah')->user()->id)->get();
+        foreach ($calons as $calon){
+            $item = [
+                'id_calon' => $calon->id,
+                'id_adminsekolah' => Auth::guard('adminsekolah')->user()->id,
+                'id_pemilihan' => $data->id,
+                'total' => 0
+            ];
+            Hasil::create($item);
+        }
+
+
+
+        return redirect()->route('pemilihan.index')->with('create', 'Berhasil mengubah Data');
     }
 
     /**

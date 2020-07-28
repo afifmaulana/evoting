@@ -28,7 +28,7 @@
                         <h4 class="card-title">Data Siswa</h4>
                         <div class="button-right">
                             <div class="button">
-                                <a href="{{route('datasiswa.create')}}">
+                                <a href="{{route('form.siswa')}}">
                                     <button type="button" class="btn btn-primary btn-fw"><i
                                                 class="mdi mdi-plus-box-outline"></i>Tambah
                                     </button>

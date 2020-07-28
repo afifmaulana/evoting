@@ -27,14 +27,14 @@
                         <div class="header">
                             <h2>
                                  Data Admin Sekolah</h2>
-                            <ul class="header-dropdown m-r--5">
-                                <div class="btn-group m-l-15">
-                                    <button id="addRow" class="btn btn-info">
-                                        Add New
-                                        <i class="fa fa-plus"></i>
-                                    </button>
-                                </div>
-                            </ul>
+                            {{--<ul class="header-dropdown m-r--5">--}}
+                                {{--<div class="btn-group m-l-15">--}}
+                                    {{--<button id="addRow" class="btn btn-info">--}}
+                                        {{--Add New--}}
+                                        {{--<i class="fa fa-plus"></i>--}}
+                                    {{--</button>--}}
+                                {{--</div>--}}
+                            {{--</ul>--}}
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -59,11 +59,11 @@
                                         <td>{{$data->email}}</td>
                                         <td>foto</td>
                                         <td class="text-right">
-                                            <a href="{{route('users.update', $data->id)}}">
-                                                <i class="fa fa-check-circle"></i>
-                                            </a>
+                                            {{--<a href="{{route('users.update', $data->id)}}">--}}
+                                                {{--<i class="fa fa-check-circle"></i>--}}
+                                            {{--</a>--}}
                                             <a href="{{route('users.destroy', $data->id)}}">
-                                                <i class="fa fa-trash"></i>
+                                                <i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
                                         @endforeach

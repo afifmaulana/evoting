@@ -46,6 +46,32 @@ class ProfilController extends Controller
      */
     public function store(Request $request)
     {
+        $rules =[
+            'nama_admin'     => 'required|regex:/^[\pL\s\-]+$/u',
+            'password'       => 'required|string|min:6',
+            'foto'           => 'required|file|image|mimes:jpg,png,jpeg|max:2048',
+            'nip'            => 'required',
+            'no_hp'          => 'required|numeric|digits_between:11,13|regex:/(08)[0-9]{9}/|unique:admin_sekolahs',
+            'alamat'         => 'required',
+            'no_izin'        => 'required',
+
+
+
+        ];
+        $message = [
+            'required'  => ':attribute tidak boleh kosong',
+            'unique'    => ':attribute sudah terdaftar',
+            'max'       => ':attribute maksimal :max karakter',
+            'min'       => ':attribute minimal :min karakter',
+            'email'     => ':attribute harus sesuai format email',
+            'digits_between' => ':attribute setidaknya :min sampai :max karakter',
+            'numeric'   => ':attribute hanya boleh angka',
+            'digits'    => ':attribute harus :digits karakter',
+            'no_hp.regex'     => ':attribute harus sesuai format 08xx-xxxx-xxxx',
+            'nama_admin.regex'     => ':attribute harus huruf semua',
+        ];
+
+
         //dd(Auth::user());
         $data = Auth::guard('adminsekolah')->user();
         $data->nama_admin = $request->nama_admin;

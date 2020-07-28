@@ -19,48 +19,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-6 col-sm-6">
                 <div class="counter-box text-center white">
-                    <div class="text font-17 m-b-5">Total Sekolah</div>
-                    <h3 class="m-b-10">18
-                        <i class="material-icons col-green">trending_up</i>
+                    <div class="text font-17 m-b-5">Total Data Users</div>
+                    <h3 class="m-b-10">{{count(\App\User::all())}}
                     </h3>
                     <div class="icon">
                         <div class="chart chart-bar"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-6 col-sm-6">
                 <div class="counter-box text-center white">
-                    <div class="text font-17 m-b-5">Orders Received</div>
-                    <h3 class="m-b-10">1025
-                        <i class="material-icons col-red">trending_down</i>
-                    </h3>
-                    <div class="icon">
-                        <span class="chart chart-line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-box text-center white">
-                    <div class="text font-17 m-b-5">Total Sales</div>
-                    <h3 class="m-b-10">956
-                        <i class="material-icons col-green">trending_up</i>
-                    </h3>
-                    <div class="icon">
-                        <div class="chart chart-pie"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-box text-center white">
-                    <div class="text font-17 m-b-5">Total Active Users</div>
+                    <div class="text font-17 m-b-5">Total Data Sekolah</div>
                     <h3 class="m-b-10">214
-                        <i class="material-icons col-red">trending_down</i>
                     </h3>
-                    <div class="icon">
-                        <div class="chart" id="liveChart">Loading..</div>
-                    </div>
+
                 </div>
             </div>
         </div>

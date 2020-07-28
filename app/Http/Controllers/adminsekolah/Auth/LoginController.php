@@ -46,10 +46,17 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-        $this->validate($request, [
+        $rules =  [
             'email' => 'required|string',
             'password' => 'required|string|min:6'
-        ]);
+        ];
+
+        $message = [
+            'required' => ':attribute tidak boleh kosong',
+            'min' => ':attribute minimal :min',
+        ];
+
+        $this->validate($request, $rules, $message);
 
         $credential = [
             'email' => $request->email,

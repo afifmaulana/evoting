@@ -76,56 +76,55 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid features-section">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <div class="row mb-5">
-                    <div class="col-md-8 mx-auto">
-                        <h3>Built for everyone</h3>
-                        <h6>
-                            Shure’s Music Phone Adapter (MPA) is our favorite iPhone solution, since it lets you use the
-                            headphones you’re most comfortable with.
-                        </h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 grid-margin">
-                        <img class="card-img-top"
-                             src="{{ asset ('assets-sekolah/images/samples/landing/landing-1.png') }}" alt="image">
-                    </div>
-                    <div class="col-md-3 grid-margin">
-                        <img class="card-img-top"
-                             src="{{ asset ('assets-sekolah/images/samples/landing/landing-2.png') }}" alt="image">
-                    </div>
-                    <div class="col-md-3 grid-margin">
-                        <img class="card-img-top"
-                             src="{{ asset ('assets-sekolah/images/samples/landing/landing-3.png') }}" alt="image">
-                    </div>
-                    <div class="col-md-3 grid-margin">
-                        <img class="card-img-top"
-                             src="{{ asset ('assets-sekolah/images/samples/landing/landing-4.png') }}" alt="image">
-                    </div>
-                    <div class="col-md-3 grid-margin">
-                        <img class="card-img-top"
-                             src="{{ asset ('assets-sekolah/images/samples/landing/landing-5.png') }}" alt="image">
-                    </div>
-                    <div class="col-md-3 grid-margin">
-                        <img class="card-img-top"
-                             src="{{ asset ('assets-sekolah/images/samples/landing/landing-6.png') }}" alt="image">
-                    </div>
-                    <div class="col-md-3 grid-margin">
-                        <img class="card-img-top"
-                             src="{{ asset ('assets-sekolah/images/samples/landing/landing-7.png') }}" alt="image">
-                    </div>
-                    <div class="col-md-3 grid-margin">
-                        <img class="card-img-top"
-                             src="{{ asset ('assets-sekolah/images/samples/landing/landing-8.png') }}" alt="image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-@include('templates.partials.adminhome._footer')
+    {{--<div class="container-fluid features-section">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-8 mx-auto">--}}
+                {{--<div class="row mb-5">--}}
+                    {{--<div class="col-md-8 mx-auto">--}}
+                        {{--<h3>Built for everyone</h3>--}}
+                        {{--<h6>--}}
+                            {{--Shure’s Music Phone Adapter (MPA) is our favorite iPhone solution, since it lets you use the--}}
+                            {{--headphones you’re most comfortable with.--}}
+                        {{--</h6>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-3 grid-margin">--}}
+                        {{--<img class="card-img-top"--}}
+                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-1.png') }}" alt="image">--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-3 grid-margin">--}}
+                        {{--<img class="card-img-top"--}}
+                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-2.png') }}" alt="image">--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-3 grid-margin">--}}
+                        {{--<img class="card-img-top"--}}
+                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-3.png') }}" alt="image">--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-3 grid-margin">--}}
+                        {{--<img class="card-img-top"--}}
+                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-4.png') }}" alt="image">--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-3 grid-margin">--}}
+                        {{--<img class="card-img-top"--}}
+                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-5.png') }}" alt="image">--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-3 grid-margin">--}}
+                        {{--<img class="card-img-top"--}}
+                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-6.png') }}" alt="image">--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-3 grid-margin">--}}
+                        {{--<img class="card-img-top"--}}
+                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-7.png') }}" alt="image">--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-3 grid-margin">--}}
+                        {{--<img class="card-img-top"--}}
+                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-8.png') }}" alt="image">--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 <!-- page-body-wrapper ends -->
 </div>
 <!-- container-scroller -->

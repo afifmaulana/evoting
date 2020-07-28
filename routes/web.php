@@ -53,7 +53,8 @@ Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('datacalon', 'adminsekolah\DataCalonController')->except(['destroy']);
     Route::get('datacalon/{id}/destroy', 'adminsekolah\DataCalonController@destroy')->name('datacalon.destroy');
     Route::resource('datasiswa', 'adminsekolah\DataSiswaController');
-
+    Route::get('tambahsiswa', 'adminsekolah\DataSiswaController@formtambah')->name('form.siswa');
+    Route::post('tambahsiswa/tambah', 'adminsekolah\DataSiswaController@tambahsiswa')->name('tambah.siswa');
     Route::resource('pemilihan', 'adminsekolah\PemilihanController')->except(['destroy']);
     Route::get('pemilihan/{id}/destroy', 'adminsekolah\PemilihanController@destroy')->name('pemilihan.destroy');
     Route::resource('profilsekolah', 'adminsekolah\ProfilController');

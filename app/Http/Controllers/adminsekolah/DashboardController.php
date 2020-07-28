@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\adminsekolah;
 
+use App\Hasil;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

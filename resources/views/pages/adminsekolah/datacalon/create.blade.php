@@ -14,7 +14,7 @@
                     @csrf
                     <div class="form-group">
                         <label>Nama Calon</label>
-                        <select class="js-example-basic-multiple form-control{{$errors->has('name')?'is-invalid':''}}"
+                        <select class="js-example-basic-multiple form-control {{$errors->has('name')?'is-invalid':''}}"
                                 multiple="multiple" style="width:100%" name="name[]">
                             @if ($errors->has('name'))
                                 <span class="invalid-feedback" role="alert">

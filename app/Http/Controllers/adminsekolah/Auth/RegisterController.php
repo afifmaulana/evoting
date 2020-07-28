@@ -58,14 +58,22 @@ class RegisterController extends Controller
     }
 
     public function store(Request $request){
-        $this->validate($request, [
+        $rules = [
             'nama_admin'        => 'required',
             'nama_sekolah'      => 'required|unique:admin_sekolahs',
             'email'             => 'required|unique:admin_sekolahs|email',
             'password'          => 'required|confirmed',
             'no_izin'           => 'required|unique:admin_sekolahs'
 
-        ]);
+        ];
+
+        $message = [
+            'required' => ':attribute tidak boleh kosong',
+            'unique' => ':attribute sudah terdaftar',
+            'min' => ':attribute minimal :min',
+        ];
+
+        $this->validate($request, $rules, $message);
 
         $sekolah = Sekolah::where('no_izin', $request->no_izin)->first();
         if ($sekolah){

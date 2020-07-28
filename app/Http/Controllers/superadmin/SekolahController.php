@@ -42,11 +42,18 @@ class SekolahController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
+        $rules= [
            'nama_sekolah' => 'required|unique:sekolahs',
            'no_izin' => 'required|unique:sekolahs',
 
-        ]);
+        ];
+
+        $message = [
+            'required'  => ':tidak boleh kosong',
+            'unique'  => ':data sudah ada',
+        ];
+
+        $this->validate($request, $rules, $message);
 
         $data = new Sekolah();
         $data->nama_sekolah = $request->nama_sekolah;

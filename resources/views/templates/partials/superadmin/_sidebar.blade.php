@@ -13,27 +13,20 @@
                     <div class="profile-usertitle-job ">Admin </div>
                 </div>
             </li>
-            <li>
+            <li class="{{ request()->is('dashboard') ? 'active' : '' }}">
                 <a href="{{route('dashboard1.index')}}">
                     <i class="fa fa-home"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
-            <li>
-                <a href="#" onClick="return false;" class="menu-toggle">
+            <li class="{{ request()->is('datausers') ? 'active' : '' }}">
+                <a href="{{route('users.index')}}">
                     <i class="fas fa-users"></i>
-                    <span>Users</span>
+                    <span>Data Users</span>
                 </a>
-                <ul class="ml-menu">
-                    <li class="active">
-                        <a href="{{route('users.index')}}">Belum dikonfirmasi</a>
-                    </li>
-                    <li class="active">
-                        <a href="{{route('users_verified.index')}}">Sudah dikonfirmasi</a>
-                    </li>
-                </ul>
+
             </li>
-            <li>
+            <li class="{{ request()->is('datasekolah') ? 'active' : '' }}">
                 <a href="{{ route ('sekolah.index') }}">
                     <i class="fa fa-university"></i>
                     <span>Data Sekolah</span>

@@ -16,7 +16,7 @@
 <div class="limiter">
     <div class="container-login100 page-background">
         <div class="wrap-login100">
-            <form class="login100-form validate-form" method="post" action="{{route('superadmin.login.submit')}}">
+                <form class="login100-form" method="post" action="{{route('superadmin.login.submit')}}">
                 @csrf
                 <span class="login100-form-logo">
                     <img alt="" src="{{ asset ('assets/images/loading.png') }}">
@@ -24,7 +24,7 @@
                 <span class="login100-form-title p-b-34 p-t-27">Login SuperAdmin</span>
                 <div class="row">
 
-                    <div class="wrap-input100 validate-input">
+                    <div class="wrap-input100">
                         <input class="input100 @error('email') is-invalid @enderror"  value="{{ old('email') }}"
                                type="email" name="email" placeholder="Email">
                         @error('email')
@@ -35,7 +35,7 @@
                         <i class="material-icons focus-input1001">person</i>
                     </div>
 
-                    <div class="wrap-input100 validate-input">
+                    <div class="wrap-input100">
                         <input class="input100 @error('password') is-invalid @enderror"
                                type="password" name="password" placeholder="Password">
                         @error('password')
