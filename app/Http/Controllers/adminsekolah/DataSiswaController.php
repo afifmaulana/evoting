@@ -126,10 +126,11 @@ class DataSiswaController extends Controller
         $data = User::find($id);
         $data->nis          = $request->nis;
         $data->nama_siswa   = $request->nama_siswa;
-        $data->kelas        = $request->kelas;
         $data->email        = $request->email;
 
         $data->update();
+
+        return redirect()->route('datasiswa.index');
     }
 
     /**

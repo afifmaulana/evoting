@@ -28,11 +28,11 @@
                         <h4 class="card-title">Data Siswa</h4>
                         <div class="button-right">
                             <div class="button">
-                                <a href="{{route('form.siswa')}}">
-                                    <button type="button" class="btn btn-primary btn-fw"><i
-                                                class="mdi mdi-plus-box-outline"></i>Tambah
-                                    </button>
-                                </a>
+                                {{--<a href="{{route('form.siswa')}}">--}}
+                                    {{--<button type="button" class="btn btn-primary btn-fw"><i--}}
+                                                {{--class="mdi mdi-plus-box-outline"></i>Tambah--}}
+                                    {{--</button>--}}
+                                {{--</a>--}}
                             </div>
 
                             <form action="{{ route('datasiswa.store') }}" method="POST" enctype="multipart/form-data">
