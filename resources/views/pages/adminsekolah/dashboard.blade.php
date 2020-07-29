@@ -53,25 +53,26 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4 grid-margin">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title mb-0">Calon 1</h4>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p><label>Nama Admin</label></p>
-                            <p><label>Nama Sekolah</label></p>
-                           <p><label>Email</label></p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>#</p>
-                            <p>#</p>
-                            <p>#</p>
-
+        @foreach($hasils as $hasil)
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Calon {{ $loop->iteration }}</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><label>Nama Ketua</label></p>
+                                <p><label>Nama Wakil</label></p>
+                                <p><label>Total</label></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>{{ $hasil->calon->ketua->nama_siswa }}</p>
+                                <p>{{ $hasil->calon->wakil->nama_siswa }}</p>
+                                <p>{{ $hasil->total }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        @endforeach
     </div>
 @endsection
