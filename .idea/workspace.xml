@@ -19,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SiswaResource.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Resources/SiswaResource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="22" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserResource.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserResource.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/adminsekolah/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -120,6 +110,26 @@
                 <marker date="1596082140480" expanded="true" signature="2702:2736" ph="..." />
                 <marker date="1596082140480" expanded="true" signature="2780:2814" ph="..." />
                 <marker date="1596082140480" expanded="true" signature="2858:2873" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminhome.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/templates/adminhome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="77" selection-end-column="14" />
+              <folding>
+                <marker date="1596087789926" expanded="true" signature="43:79" ph="..." />
+                <marker date="1596087789926" expanded="true" signature="197:235" ph="..." />
+                <marker date="1596087789926" expanded="true" signature="566:593" ph="..." />
+                <marker date="1596087789926" expanded="true" signature="758:788" ph="..." />
+                <marker date="1596087789926" expanded="true" signature="1106:1164" ph="..." />
+                <marker date="1596087789926" expanded="true" signature="1816:1876" ph="..." />
+                <marker date="1596087789926" expanded="true" signature="2579:2640" ph="..." />
+                <marker date="1596087789926" expanded="true" signature="3388:3449" ph="..." />
+                <marker date="1596087789926" expanded="true" signature="7140:7178" ph="..." />
               </folding>
             </state>
           </provider>
@@ -211,7 +221,6 @@
         <option value="$PROJECT_DIR$/app/Imports/CsvImport.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/adminhome/_navbar.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/adminhome.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/superadmin/SekolahController.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/partials/superadmin/_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -247,6 +256,7 @@
         <option value="$PROJECT_DIR$/resources/views/pages/superadmin/user/users.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/adminsekolah/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/adminsekolah/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/templates/adminhome.blade.php" />
       </list>
     </option>
   </component>
@@ -363,7 +373,7 @@
       <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -451,8 +461,7 @@
               <item name="Evoting" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="adminsekolah" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Evoting" type="b2602c69:ProjectViewProjectNode" />
@@ -623,15 +632,15 @@
       <workItem from="1595834654273" duration="13484000" />
       <workItem from="1595913146000" duration="14848000" />
       <workItem from="1596002369438" duration="9873000" />
-      <workItem from="1596067403051" duration="6306000" />
+      <workItem from="1596067403051" duration="6970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="620231000" />
+    <option name="totallyTimeSpent" value="620895000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24130106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -675,13 +684,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/templates/partials/adminhome/_footer.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/adminhome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="78" column="10" lean-forward="true" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/superadmin/sekolah/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1087,6 +1089,24 @@
             <marker date="1596082140480" expanded="true" signature="2702:2736" ph="..." />
             <marker date="1596082140480" expanded="true" signature="2780:2814" ph="..." />
             <marker date="1596082140480" expanded="true" signature="2858:2873" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/adminhome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="77" selection-end-column="14" />
+          <folding>
+            <marker date="1596087789926" expanded="true" signature="43:79" ph="..." />
+            <marker date="1596087789926" expanded="true" signature="197:235" ph="..." />
+            <marker date="1596087789926" expanded="true" signature="566:593" ph="..." />
+            <marker date="1596087789926" expanded="true" signature="758:788" ph="..." />
+            <marker date="1596087789926" expanded="true" signature="1106:1164" ph="..." />
+            <marker date="1596087789926" expanded="true" signature="1816:1876" ph="..." />
+            <marker date="1596087789926" expanded="true" signature="2579:2640" ph="..." />
+            <marker date="1596087789926" expanded="true" signature="3388:3449" ph="..." />
+            <marker date="1596087789926" expanded="true" signature="7140:7178" ph="..." />
           </folding>
         </state>
       </provider>
