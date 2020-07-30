@@ -32,7 +32,7 @@
             <div class="col-lg-6 col-sm-6">
                 <div class="counter-box text-center white">
                     <div class="text font-17 m-b-5">Total Data Sekolah</div>
-                    <h3 class="m-b-10">214
+                    <h3 class="m-b-10">{{count(\App\Sekolah::all())}}
                     </h3>
 
                 </div>
