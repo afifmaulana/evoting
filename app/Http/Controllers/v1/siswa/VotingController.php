@@ -31,7 +31,8 @@ class VotingController extends Controller
 
         $result = [];
         if ($jam_mulai <= $jam && $jam_selesai >= $jam){
-            array_push($result, $pemilihan);
+            $result = $pemilihan;
+            //array_push($result, $pemilihan);
         }
 
         return response()->json([
