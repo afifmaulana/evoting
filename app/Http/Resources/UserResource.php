@@ -20,7 +20,7 @@ class UserResource extends JsonResource
             'nis'                   => $this->nis,
             'nama_siswa'            => $this->nama_siswa,
             'email'                 => $this->email,
-            'kelas'                 => $this->kelas
+            'api_token'                 => $this->api_token
         ];
     }
 }
