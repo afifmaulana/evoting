@@ -46,7 +46,6 @@
                                         <th>Nama Admin</th>
                                         <th>Nama Sekolah</th>
                                         <th>Email</th>
-                                        <th>Foto</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
@@ -57,7 +56,6 @@
                                         <td>{{$data->nama_admin}}</td>
                                         <td>{{$data->nama_sekolah}}</td>
                                         <td>{{$data->email}}</td>
-                                        <td>foto</td>
                                         <td class="text-right">
                                             {{--<a href="{{route('users.update', $data->id)}}">--}}
                                                 {{--<i class="fa fa-check-circle"></i>--}}
