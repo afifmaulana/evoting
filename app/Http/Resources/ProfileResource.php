@@ -21,6 +21,7 @@ class ProfileResource extends JsonResource
             'nama_siswa'            => $this->nama_siswa,
             'kelas'                 => $this->kelas,
             'email'                 => $this->email,
+            'status'                => $this->status == "1" ? true : false
         ];
     }
 }
