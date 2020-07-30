@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\v1\siswa\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\UserResource;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -33,7 +34,7 @@ class LoginController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'Berhasil login',
-                'data' => $user,
+                'data' => new UserResource($user),
             ], 200);
         }
 
