@@ -39,9 +39,8 @@
                     <div class="col-md-4 grid-margin stretch-card">
                         <div class="card card-icon-top">
                             <div class="card-body">
-                                <img src="#" alt="image"
-                                     class="card-icon"/>
-                                <h4>Features</h4>
+                                {{--<img src="#" alt="image"--}}
+                                     {{--class="card-icon"/>--}}
                                 <p class="card-text">
                                     Mempermudah users menggunakan Aplikasi ini
                                 </p>
@@ -51,9 +50,8 @@
                     <div class="col-md-4 grid-margin stretch-card">
                         <div class="card card-icon-top">
                             <div class="card-body">
-                                <img src="#" alt="image"
-                                     class="card-icon"/>
-                                <h4>Support</h4>
+                                {{--<img src="#" alt="image"--}}
+                                     {{--class="card-icon"/>--}}
                                 <p class="card-text">
                                     Mempermudah dalam proses pemilihan ketua dan wakil OSIS terutama dalam perhitungan suara
                                 </p>
@@ -63,9 +61,8 @@
                     <div class="col-md-4 grid-margin stretch-card">
                         <div class="card card-icon-top">
                             <div class="card-body">
-                                <img src="#" alt="image"
-                                     class="card-icon"/>
-                                <h4>Biaya</h4>
+                                {{--<img src="#" alt="image"--}}
+                                     {{--class="card-icon"/>--}}
                                 <p class="card-text">
                                     Mengurangi biaya yang dikeluarkan oleh sekolah
                                 </p>
