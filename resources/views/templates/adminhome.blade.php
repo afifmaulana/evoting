@@ -31,51 +31,51 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid middle-section bg-white">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <h3 class="mb-5">Keunggulan E-Voting</h3>
-                <div class="row">
-                    <div class="col-md-4 grid-margin stretch-card">
-                        <div class="card card-icon-top">
-                            <div class="card-body">
-                                <img src="{{ asset ('assets-sekolah/images/samples/landing/trophy.png') }}" alt="image"
-                                     class="card-icon"/>
-                                <h4>Features</h4>
-                                <p class="card-text">
-                                    Mempermudah users menggunakan Aplikasi ini
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 grid-margin stretch-card">
-                        <div class="card card-icon-top">
-                            <div class="card-body">
-                                <img src="{{ asset ('assets-sekolah/images/samples/landing/support.png') }}" alt="image"
-                                     class="card-icon"/>
-                                <h4>Support</h4>
-                                <p class="card-text">
-                                    Mempermudah dalam proses pemilihan ketua dan wakil OSIS terutama dalam perhitungan suara
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 grid-margin stretch-card">
-                        <div class="card card-icon-top">
-                            <div class="card-body">
-                                <img src="{{ asset ('assets-sekolah/images/samples/landing/youtube.png') }}" alt="image"
-                                     class="card-icon"/>
-                                <h4>Video tutorials</h4>
-                                <p class="card-text">
-                                    Tersedia cara penggunaan aplikasi ini
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{--<div class="container-fluid middle-section bg-white">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-8 mx-auto">--}}
+                {{--<h3 class="mb-5">Keunggulan E-Voting</h3>--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-4 grid-margin stretch-card">--}}
+                        {{--<div class="card card-icon-top">--}}
+                            {{--<div class="card-body">--}}
+                                {{--<img src="{{ asset ('assets-sekolah/images/samples/landing/trophy.png') }}" alt="image"--}}
+                                     {{--class="card-icon"/>--}}
+                                {{--<h4>Features</h4>--}}
+                                {{--<p class="card-text">--}}
+                                    {{--Mempermudah users menggunakan Aplikasi ini--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-4 grid-margin stretch-card">--}}
+                        {{--<div class="card card-icon-top">--}}
+                            {{--<div class="card-body">--}}
+                                {{--<img src="{{ asset ('assets-sekolah/images/samples/landing/support.png') }}" alt="image"--}}
+                                     {{--class="card-icon"/>--}}
+                                {{--<h4>Support</h4>--}}
+                                {{--<p class="card-text">--}}
+                                    {{--Mempermudah dalam proses pemilihan ketua dan wakil OSIS terutama dalam perhitungan suara--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-4 grid-margin stretch-card">--}}
+                        {{--<div class="card card-icon-top">--}}
+                            {{--<div class="card-body">--}}
+                                {{--<img src="{{ asset ('assets-sekolah/images/samples/landing/youtube.png') }}" alt="image"--}}
+                                     {{--class="card-icon"/>--}}
+                                {{--<h4>Video tutorials</h4>--}}
+                                {{--<p class="card-text">--}}
+                                    {{--Tersedia cara penggunaan aplikasi ini--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     {{--<div class="container-fluid features-section">--}}
         {{--<div class="row">--}}
             {{--<div class="col-md-8 mx-auto">--}}
