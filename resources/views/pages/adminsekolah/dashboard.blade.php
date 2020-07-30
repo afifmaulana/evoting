@@ -9,7 +9,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-inline-block pt-3">
                             <div class="d-flex">
-                                <h2 class="mb-0">{{count(\App\User::all())}}</h2>
+                                <h2 class="mb-0">{{ $siswa }}</h2>
 
                             </div>
                             <small class="text-gray">Data Siswa yang telah ditambahkan</small>
@@ -30,7 +30,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-inline-block pt-3">
                             <div class="d-flex">
-                                <h2 class="mb-0">{{count(\App\Calon::all())}}</h2>
+                                <h2 class="mb-0">{{ $calon }}</h2>
 
                             </div>
                             <small class="text-gray">Data Calon yang telah ditambahkan</small>

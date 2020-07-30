@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\adminsekolah;
 
+use App\Calon;
 use App\Hasil;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -22,8 +24,10 @@ class DashboardController extends Controller
     public function index()
     {
         $adminsekolah = Auth::guard('adminsekolah')->user();
+        $siswa = User::where('id_adminsekolah', $adminsekolah)->get()->count();
+        $calon = Calon::where('id_adminsekolah', $adminsekolah)->get()->count();
         $hasils = Hasil::where('id_adminsekolah', $adminsekolah->id)->get();
-        return view('pages.adminsekolah.dashboard', compact('hasils'));
+        return view('pages.adminsekolah.dashboard', compact(['hasils', 'calon', 'siswa']));
     }
 
     /**
