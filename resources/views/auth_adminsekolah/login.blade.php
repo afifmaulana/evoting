@@ -23,9 +23,9 @@
 <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="content-wrapper d-flex align-items-center auth auth-bg-1 theme-one">
-            <h2 class="text-center mb-4">Login Admin Sekolah</h2>
             <div class="row w-100 mx-auto">
                 <div class="col-lg-4 mx-auto">
+                    <h2 class="text-center mb-4">Login Admin Sekolah</h2>
                     <div class="auto-form-wrapper">
                         <form method="post" action="{{route('adminsekolah.login.submit')}}">
                             @csrf

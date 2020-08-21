@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
@@ -19,6 +20,13 @@ class CsvImport implements ToModel, WithHeadingRow
      */
     public function model(array $row)
     {
+
+        $this->validate($row,[
+            'nis' => 'unique:users',
+            'email' => 'unique:users',
+            'nama_siswa' => 'required'
+        ]);
+
         $logged_admin = Auth::guard('adminsekolah')->user()->id;
         $api_token = Hash::make($row["email"]);
         //$password = Hash::make($row["nis"]);

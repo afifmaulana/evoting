@@ -49,20 +49,23 @@ class DataCalonController extends Controller
     public function store(Request $request)
     {
 
-        /*$a = User::where('nama_siswa', '=',$request->name)
-            ->where('id_adminsekolah', '=', Auth::guard('adminsekolah')->user()->id)->first();*/
-        //dd($a->id);
-
-        //dd($request->name);
-
-        $this->validate($request, [
+        $rules = [
             'id_ketua' => 'unique:calons',
             'id_wakil' => 'unique:calons',
             'visi' => 'required',
             'misi' => 'required',
-            'foto' => 'required',
+            'foto' => 'required|file|image|mimes:jpg,png,jpeg|max:2048',
 
-        ]);
+        ];
+
+        $message = [
+            'required' => ':attribute tidak boleh kosong',
+            'unique' => ':attribute sudah terdaftar',
+            'mimes' => ':Upload File tidak sesuai'
+        ];
+
+        $this->validate($request, $rules, $message);
+        
 
 //        $image=$request->file('foto');
 //        $filename=rand().'.'.$image->getClientOriginalExtension();

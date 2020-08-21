@@ -80,10 +80,7 @@ class DataSiswaController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request,[
-           'nis' => 'unique:users',
-           'email' => 'unique:users'
-        ]);
+
 
 
         Excel::import(new CsvImport, request()->file('file'));

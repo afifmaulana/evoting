@@ -33,20 +33,35 @@
 
                     <div class="form-group">
                         <label>File upload</label>
-                        <input type="file" name="foto" class="dropify"/>
+                        <input type="file" name="foto" class="dropify {{$errors->has('foto')?'is-invalid':''}}"/>
+                        @if ($errors->has('foto'))
+                            <span class="invalid-feedback" role="alert">
+                                    <p><b>{{ $errors->first('foto') }}</b></p>
+                                </span>
+                        @endif
                     </div>
 
 
                     <div class="form-group">
                         <label>Visi</label>
-                        <textarea id="summernoteExample" name="visi">
+                        <textarea id="summernoteExample" name="visi" class="form-control {{$errors->has('visi')?'is-invalid':''}}">
+                         @if ($errors->has('visi'))
+                                <span class="invalid-feedback" role="alert">
+                                    <p><b>{{ $errors->first('visi') }}</b></p>
+                                </span>
+                            @endif
                         </textarea>
 
                     </div>
 
                     <div class="form-group">
                         <label>Misi</label>
-                        <textarea id="summernoteExample2" name="misi">
+                        <textarea id="summernoteExample2" name="misi" class="form-control {{$errors->has('misi')?'is-invalid':''}}">
+                         @if ($errors->has('misi'))
+                                <span class="invalid-feedback" role="alert">
+                                    <p><b>{{ $errors->first('misi') }}</b></p>
+                                </span>
+                            @endif
                         </textarea>
 
                     </div>
