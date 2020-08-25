@@ -24,8 +24,8 @@ class DashboardController extends Controller
     public function index()
     {
         $adminsekolah = Auth::guard('adminsekolah')->user();
-        $siswa = User::where('id_adminsekolah', $adminsekolah)->get()->count();
-        $calon = Calon::where('id_adminsekolah', $adminsekolah)->get()->count();
+        $siswa = User::where('id_adminsekolah', $adminsekolah->id)->get()->count();
+        $calon = Calon::where('id_adminsekolah', $adminsekolah->id)->get()->count();
         $hasils = Hasil::where('id_adminsekolah', $adminsekolah->id)->get();
         return view('pages.adminsekolah.dashboard', compact(['hasils', 'calon', 'siswa']));
     }

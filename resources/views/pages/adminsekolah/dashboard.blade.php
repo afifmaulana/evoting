@@ -45,7 +45,6 @@
             </div>
         </div>
     </div>
-
     <div class="row">
         @foreach($hasils as $hasil)
             <div class="col-md-4 grid-margin">
