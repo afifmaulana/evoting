@@ -15,7 +15,7 @@
                     <div class="form-group">
                         <label>Nama Calon</label>
                         <select class="js-example-basic-multiple form-control {{$errors->has('name')?'is-invalid':''}}"
-                                multiple="multiple" style="width:100%" name="name[]">
+                                multiple="multiple" style="width:100%" name="name[]" id="name">
                             @if ($errors->has('name'))
                                 <span class="invalid-feedback" role="alert">
                                     <p><b>{{ $errors->first('name') }}</b></p>
@@ -44,7 +44,8 @@
 
                     <div class="form-group">
                         <label>Visi</label>
-                        <textarea id="summernoteExample" name="visi" class="form-control {{$errors->has('visi')?'is-invalid':''}}">
+                        <textarea id="summernoteExample" name="visi"
+                                  class="form-control {{$errors->has('visi')?'is-invalid':''}}">
                          @if ($errors->has('visi'))
                                 <span class="invalid-feedback" role="alert">
                                     <p><b>{{ $errors->first('visi') }}</b></p>
@@ -56,7 +57,8 @@
 
                     <div class="form-group">
                         <label>Misi</label>
-                        <textarea id="summernoteExample2" name="misi" class="form-control {{$errors->has('misi')?'is-invalid':''}}">
+                        <textarea id="summernoteExample2" name="misi"
+                                  class="form-control {{$errors->has('misi')?'is-invalid':''}}">
                          @if ($errors->has('misi'))
                                 <span class="invalid-feedback" role="alert">
                                     <p><b>{{ $errors->first('misi') }}</b></p>
@@ -73,4 +75,12 @@
         </div>
     </div>
 
+@endsection
+
+@section('script')
+    <script>
+        $("#name").select2({
+            maximumSelectionLength: 2
+        });
+    </script>
 @endsection

@@ -76,7 +76,7 @@ class RegisterController extends Controller
         $this->validate($request, $rules, $message);
 
         $sekolah = Sekolah::where('no_izin', $request->no_izin)->first();
-        if ($sekolah){
+        if ($sekolah) {
             $data = new AdminSekolah();
             $data->nama_admin   = $request->nama_admin;
             $data->nama_sekolah = $request->nama_sekolah;
