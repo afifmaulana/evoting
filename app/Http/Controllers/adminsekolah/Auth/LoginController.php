@@ -70,8 +70,8 @@ class LoginController extends Controller
                 return redirect()->intended(route('dashboard2.index'));
             }else{
                 return redirect()->back()
-                    ->withInput($request->only('email'))
-                    ->with('error', 'Mohon Verifikasi Email Dahulu!');
+//                    ->withInput($request->only('email'))
+                    ->with('error', 'Mohon maaf, akun belum dapat digunakan. Mohon menunggu diverifikasi Admin!');
             }
         }
 

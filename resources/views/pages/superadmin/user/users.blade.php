@@ -57,11 +57,16 @@
                                         <td>{{$data->nama_sekolah}}</td>
                                         <td>{{$data->email}}</td>
                                         <td class="text-right">
-                                            {{--<a href="{{route('users.update', $data->id)}}">--}}
-                                                {{--<i class="fa fa-check-circle"></i>--}}
-                                            {{--</a>--}}
+                                            <a href="{{route('users.update', $data->id)}}">
+                                                <button class="btn-warning">
+                                                <i class="fa fa-check-circle"></i>
+                                                </button>
+                                            </a>
                                             <a href="{{route('users.destroy', $data->id)}}">
-                                                <i class="fa fa-trash"></i></a>
+                                                <button class="btn-danger">
+                                                <i class="fa fa-window-close btn-danger"></i>
+                                                </button>
+                                            </a>
                                         </td>
                                     </tr>
                                         @endforeach

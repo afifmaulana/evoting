@@ -30,7 +30,7 @@
                             <ul class="header-dropdown m-r--5">
                                 <div class="btn-group m-l-15">
                                     <button id="addRow" class="btn btn-info">
-                                        Add New
+                                        Tambah
                                         <i class="fa fa-plus"></i>
                                     </button>
                                 </div>
@@ -59,15 +59,17 @@
                                         <td>{{$data->email}}</td>
                                         <td>foto</td>
                                         <td class="text-right">
-                                            <button class="btn-light">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button class="btn-warning">
-                                                <i class="fa fa-pen"></i>
-                                            </button>
-                                            <button class="btn-danger">
+                                            {{--<button class="btn-light">--}}
+                                                {{--<i class="fa fa-eye"></i>--}}
+                                            {{--</button>--}}
+                                            {{--<button class="btn-warning">--}}
+                                                {{--<i class="fa fa-pen"></i>--}}
+                                            {{--</button>--}}
+                                            <a href="{{route('users_verified.destroy', $data->id)}}">
+                                            <button class="btn btn-danger">
                                                 <i class="fa fa-trash"></i>
                                             </button>
+                                            </a>
                                         </td>
                                     </tr>
                                         @endforeach

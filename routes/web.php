@@ -41,6 +41,7 @@ Route::group(['prefix' => 'superadmin'], function (){
     Route::resource('users_verified', 'superadmin\UsersVerifiedController')->only('index');
     Route::get('users/{id}/update', 'superadmin\UsersController@update')->name('users.update');
     Route::get('users/{id}/destroy', 'superadmin\UsersController@destroy')->name('users.destroy');
+    Route::get('users_verified/{id}/destroy', 'superadmin\UsersVerifiedController@destroy')->name('users_verified.destroy');
     Route::resource('profiladmin', 'superadmin\ProfilController');
     Route::resource('sekolah', 'superadmin\SekolahController')->except(['show', 'destroy']);
     Route::get('sekolah/{id}', 'superadmin\SekolahController@destroy')->name('sekolah.destroy');
