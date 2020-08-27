@@ -14,7 +14,7 @@
                                     <i class="fas fa-home"></i> Home</a>
                             </li>
                             <li class="breadcrumb-item bcrumb-2">
-                                <a href="#" onClick="return false;">Data Users</a>
+                                <a href="#" onClick="return false;">Data Admin Sekolah</a>
                             </li>
                         </ul>
                     </div>

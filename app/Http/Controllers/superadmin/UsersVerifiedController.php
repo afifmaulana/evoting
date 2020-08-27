@@ -23,6 +23,6 @@ class UsersVerifiedController extends Controller
     {
         $data = AdminSekolah::find($id);
         $data->update(['status' => '0']);
-        return redirect()->route('users_verified.index')->with('create', 'Berhasil Tidak Mengkonfirmasi Admin Sekolah');
+        return redirect()->route('users_verified.index')->with('create', 'Berhasil Menghapus Admin Sekolah');
     }
 }

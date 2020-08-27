@@ -78,7 +78,6 @@ class LoginController extends Controller
         /*if (Auth::guard('adminsekolah')->attempt($credential, $request->remember)){
             return redirect()->intended(route('dashboard2.index'));
         }*/
-
         return redirect()->back()->withInput($request->only('email'))
             ->with('error', 'masukkan email dan passsword yang benar');
 

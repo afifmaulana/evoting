@@ -11,7 +11,7 @@
             <div class="col-md-8 mx-auto">
                 <div class="row">
                     <div class="col-lg-7">
-                        <h1> Aplikasi E-Voting Osis
+                        <h1> Aplikasi E-Voting OSIS
                         </h1>
                         <div class="mt-5">
                             <a href="{{route('adminsekolah.login')}}">
@@ -124,6 +124,12 @@
     {{--</div>--}}
 <!-- page-body-wrapper ends -->
 </div>
+<footer class="footer">
+    <div class="container-fluid clearfix">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2020 <a href="http://evoting-osis.herokuapp.com/" target="_blank">Evoting</a>. All rights reserved.</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Evoting OSIS<i class="mdi mdi-heart text-danger"></i></span>
+    </div>
+</footer>
 <!-- container-scroller -->
 <!-- plugins:js -->
 @include('templates.partials.adminhome._script')

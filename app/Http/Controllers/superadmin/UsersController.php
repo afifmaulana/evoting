@@ -92,6 +92,6 @@ class UsersController extends Controller
     {
         $data = AdminSekolah::find($id);
         $data->update(['status' => '0']);
-        return redirect()->route('users.index')->with('create', 'Berhasil Tidak Mengkonfirmasi Admin Sekolah');
+        return redirect()->route('users.index')->with('create', 'Berhasil Menolak Admin Sekolah');
     }
 }
