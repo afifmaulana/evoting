@@ -13,9 +13,9 @@
             <li class="nav-item">
                 <a href="{{route('pemilihan.index')}}" class="nav-link"><i class="link-icon mdi mdi-apple-safari"></i><span class="menu-title">ATUR PEMILIHAN</span></a>
             </li>
-            {{--<li class="nav-item">--}}
-                {{--<a href="#" class="nav-link"><i class="link-icon mdi mdi-apple-safari"></i><span class="menu-title">HASIL PEMILIHAN</span></a>--}}
-            {{--</li>--}}
+            <li class="nav-item">
+                <a href="{{route('history.index')}}" class="nav-link"><i class="link-icon mdi mdi-apple-safari"></i><span class="menu-title">HISTORY</span></a>
+            </li>
         </ul>
     </div>
 </div>

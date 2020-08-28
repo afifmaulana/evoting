@@ -59,6 +59,7 @@ Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('pemilihan', 'adminsekolah\PemilihanController')->except(['destroy']);
     Route::get('pemilihan/{id}/destroy', 'adminsekolah\PemilihanController@destroy')->name('pemilihan.destroy');
     Route::resource('profilsekolah', 'adminsekolah\ProfilController');
+    Route::get('history', 'adminsekolah\HistoryController@index')->name('history.index');
 
 });
 

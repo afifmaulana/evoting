@@ -18,4 +18,9 @@ class Hasil extends Model
     {
         return $this->belongsTo(AdminSekolah::class, 'id_adminsekolah', 'id');
     }
+
+    public function pemilihans()
+    {
+        return $this->hasMany(Pemilihan::class, 'id_pemilihan', 'id');
+    }
 }

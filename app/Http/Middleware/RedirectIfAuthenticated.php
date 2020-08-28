@@ -27,7 +27,9 @@ class RedirectIfAuthenticated
 
             case 'adminsekolah':
                 if (Auth::guard($guard)->check()){
-                    return redirect()->route('dashboard2.index');
+                    if (Auth::guard($guard)->user()->status == '2') {
+                        return redirect()->intended(route('dashboard2.index'));
+                    }
                 }
                 break;
 
