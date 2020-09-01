@@ -19,9 +19,9 @@ class Hasil extends Model
         return $this->belongsTo(AdminSekolah::class, 'id_adminsekolah', 'id');
     }
 
-    public function pemilihans()
+    public function pemilihan()
     {
-        return $this->hasMany(Pemilihan::class, 'id_pemilihan', 'id');
+        return $this->belongsTo(Pemilihan::class, 'id_pemilihan', 'id');
     }
 
 }

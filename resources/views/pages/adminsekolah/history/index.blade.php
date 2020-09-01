@@ -23,7 +23,13 @@
                                     @foreach($datas as $data)
                                         <tr>
                                             <td>{{$loop->iteration}}</td>
-                                            <td>{{$data->pemilihans->tahun_ajaran}}</td>
+                                            <td>{{$data->tahun_ajaran}}</td>
+                                            @foreach($data->hasils as $hasil)
+                                                <td>
+                                                    <p>{{$hasil->calon->ketua->nama_siswa}}</p>
+                                                <td>{{$hasil->total}}</td>
+                                                </td>
+                                            @endforeach
                                         </tr>
                                     @endforeach
                                     </tbody>

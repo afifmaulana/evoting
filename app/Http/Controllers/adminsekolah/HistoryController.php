@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\adminsekolah;
 
 use App\Hasil;
+use App\Pemilihan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +16,7 @@ class HistoryController extends Controller
      */
     public function index()
     {
-        $datas = Hasil::all();
+        $datas = Pemilihan::all();
         return view('pages.adminsekolah.history.index', compact('datas'));
     }
 

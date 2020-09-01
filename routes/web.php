@@ -47,7 +47,6 @@ Route::group(['prefix' => 'superadmin'], function (){
     Route::get('sekolah/{id}', 'superadmin\SekolahController@destroy')->name('sekolah.destroy');
 });
 
-/*Route::post('import/create', 'adminsekolah\DataSiswaController@import')->name('import.store');*/
 
 Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('dashboard2', 'adminsekolah\DashboardController');
