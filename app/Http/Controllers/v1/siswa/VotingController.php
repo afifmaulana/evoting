@@ -20,7 +20,7 @@ class VotingController extends Controller
 
     public function pemilihan()
     {
-        $tahun = Carbon::now()->format('Y-m-d H:i');
+        $tahun = Carbon::now()->format('Y');
         $jam = Carbon::now()->format('H');
         $id_sekolah = Auth::user()->id_adminsekolah;
         $pemilihan = Pemilihan::where('id_adminsekolah', $id_sekolah)
