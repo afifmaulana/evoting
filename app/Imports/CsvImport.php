@@ -21,11 +21,11 @@ class CsvImport implements ToModel, WithHeadingRow
     public function model(array $row)
     {
 
-        $this->validate($row,[
-            'nis' => 'unique:users',
-            'email' => 'unique:users',
-            'nama_siswa' => 'required'
-        ]);
+        // $this->validate($row,[
+        //     'nis' => 'unique:users',
+        //     'email' => 'unique:users',
+        //     'nama_siswa' => 'required'
+        // ]);
 
         $logged_admin = Auth::guard('adminsekolah')->user()->id;
         $api_token = Hash::make($row["email"]);
