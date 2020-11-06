@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Str;
+use App\Notification;
+use Illuminate\Mail\Message;
 
 class RegisterController extends Controller
 {
@@ -57,7 +59,8 @@ class RegisterController extends Controller
         return view('auth_adminsekolah.register', compact('datas'));
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $rules = [
             'nama_admin'        => 'required',
             'nama_sekolah'      => 'required|unique:admin_sekolahs',
@@ -85,15 +88,19 @@ class RegisterController extends Controller
             $data->password     = bcrypt($request->password);
             $data->no_izin      = $request->no_izin;
             $data->activation_token = Str::random(100);
-            if ($data->save()){
-                //event(new AdminSekolahActivationEmail($data));
+            if ($data->save()) {
+                $message = "Sekolah ".$data->nama_sekolah." telah berhasil mendfatar";
+                Notification::create([ "pesan" => $message ]);
+                $data->sendNotification($message);
+
                 return redirect()->route('adminsekolah.login');
-            }else{
+            } else {
                 return redirect()->back()->withErrors();
             }
-        }else{
+        } else {
             return redirect()->back()->with('error', 'no izin salah');
         }
-        //return redirect()->route('adminsekolah.login')->with('succes', 'Berhasil Register, Silahkan Verifikasi Email');
+
+        // return redirect()->route('adminsekolah.login')->with('succes', 'Berhasil Register, Silahkan Verifikasi Email');
     }
 }

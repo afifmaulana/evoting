@@ -17,8 +17,8 @@ class AdminSekolah extends Authenticatable
      */
     protected $table = 'admin_sekolahs';
     protected $guard = 'adminsekolah';
-    protected $guarded =[];
-        /*'nama_admin',
+    protected $guarded = [];
+    /*'nama_admin',
         'nama_sekolah',
         'email',
         'password',
@@ -42,4 +42,9 @@ class AdminSekolah extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function sendNotification($message)
+    {
+        return event(new Events\AdminNotification($message));
+    }
 }

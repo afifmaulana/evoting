@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('templates.adminhome');
 });
 
+Route::get('/test', function () {
+    event(new \App\Events\AdminNotification("okeh"));
+    return "success";
+});
+
+Route::get('superadmin/notification', 'superadmin\DashboardController@notification');
+
 
 //Auth SuperAdmin
 Route::get('/superadmin-login', 'superadmin\Auth\LoginController@showLoginForm')->name('superadmin.login');

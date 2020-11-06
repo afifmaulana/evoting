@@ -4,6 +4,7 @@ namespace App\Http\Controllers\superadmin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Notification;
 
 class DashboardController extends Controller
 {
@@ -86,5 +87,10 @@ class DashboardController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function notification(){
+        $notification = Notification::orderBy('id', 'DESC')->limit(4)->get(['id','pesan','status','created_at']);
+        return response()->json($notification);
     }
 }

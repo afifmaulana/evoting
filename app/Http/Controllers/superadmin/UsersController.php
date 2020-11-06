@@ -6,6 +6,7 @@ use App\AdminSekolah;
 use App\SuperAdmin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Notification;
 
 class UsersController extends Controller
 {
@@ -21,7 +22,7 @@ class UsersController extends Controller
 
     public function index()
     {
-        $datas = AdminSekolah::all()->where('status','1');
+        $datas = AdminSekolah::orderBy('id', 'DESC')->where('status','1')->get();
         return view('pages.superadmin.user.users', compact('datas'));
     }
 
@@ -79,6 +80,7 @@ class UsersController extends Controller
     {
         $data = AdminSekolah::find($id);
         $data->update(['status' => '2']);
+        // Notification::where('pesan')
         return redirect()->route('users.index')->with('create', 'Berhasil Mengkonfirmasi Admin Sekolah');
     }
 

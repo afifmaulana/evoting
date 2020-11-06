@@ -24,6 +24,21 @@
                         <i class="fas fa-expand"></i>
                     </a>
                 </li>
+                <li class="dropdown">
+                    <a href="#" onclick="return false;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+                        <i class="far fa-bell"></i>
+                        <span id="count" class="bg-orange"></span>
+                    </a>
+                    <ul class="dropdown-menu pullDow">
+                        <li class="header">Notifikasi</li>
+                        <li class="body">
+                            <ul id="notify"></ul>
+                        </li>
+                        <li class="footer">
+                            <a href="#" onclick="return false;">Lihat Semua</a>
+                        </li>
+                    </ul>
+                </li>
                 <!-- #END# Full Screen Button -->
 
                 <li class="dropdown user_profile">
@@ -57,3 +72,47 @@
         </div>
     </div>
 </nav>
+<script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+<script>
+    const url = "{{ config('app.url') }}";
+    const count = document.querySelector('#count');
+    const nonify = document.querySelector('#notify');
+    const pusher = new Pusher('12f76077b696fd636928', {
+      cluster: 'ap1',
+      encrypted: true
+    });
+
+    const channel = pusher.subscribe('admin-notification');
+    channel.bind('App\\Events\\AdminNotification', function(data) {
+      getData();
+    });
+
+    function getData(){
+        fetch(url+'/superadmin/notification')
+        .then(res => res.json())
+        .then(res => {
+        const status = res.filter(r => !r.status);
+        if(status.length > 0){
+            count.classList.add('label-count')
+        }
+        let li = ``;
+        res.map(r => {
+            li += showData(r);
+        })
+
+        notify.innerHTML = li;
+
+        });
+    }
+
+    getData();
+
+    function showData(r){
+        return `
+            <li class="text-center mb-2 mt-3">
+                <button class="btn btn-primary btn-large" onclick="window.location='users'">${r.pesan}</button>
+            </li>
+            `
+    }
+
+</script>
