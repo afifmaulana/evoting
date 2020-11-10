@@ -9,10 +9,12 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
+use Maatwebsite\Excel\Concerns\WithValidation;
 
-
-class CsvImport implements ToModel, WithHeadingRow
+class CsvImport implements ToModel, WithHeadingRow, WithValidation
 {
+
+
     /**
      * @param array $row
      *
@@ -21,11 +23,7 @@ class CsvImport implements ToModel, WithHeadingRow
     public function model(array $row)
     {
 
-        // $this->validate($row,[
-        //     'nis' => 'unique:users',
-        //     'email' => 'unique:users',
-        //     'nama_siswa' => 'required'
-        // ]);
+
 
         $logged_admin = Auth::guard('adminsekolah')->user()->id;
         $api_token = Hash::make($row["email"]);
@@ -56,5 +54,12 @@ class CsvImport implements ToModel, WithHeadingRow
             //'password'          => $password
             'password' => $passwordHash
         ]);
+    }
+
+    public function rules(): array
+    {
+        return [
+            '*. ' => ['email', 'unique:users,email']
+        ];
     }
 }

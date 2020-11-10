@@ -23,14 +23,16 @@ class DataSiswaController extends Controller
         $this->middleware('auth:adminsekolah');
     }
 
-    public function formtambah(){
+    public function formtambah()
+    {
         return view('pages.adminsekolah.datasiswa.tambah_siswa');
     }
 
 
-    public function tambahsiswa(Request $request){
+    public function tambahsiswa(Request $request)
+    {
 
-        $rules= [
+        $rules = [
             'nis' => 'required|unique:users',
             'nama_siswa' => 'required',
             'email'      => 'required|unique:users|email',
@@ -81,10 +83,10 @@ class DataSiswaController extends Controller
     public function store(Request $request)
     {
 
+       Excel::import(new CsvImport, request()->file('file'));
 
-
-        Excel::import(new CsvImport, request()->file('file'));
         return back();
+
 
     }
 
