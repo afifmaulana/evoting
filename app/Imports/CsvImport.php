@@ -27,7 +27,6 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation
 
         $logged_admin = Auth::guard('adminsekolah')->user()->id;
         $api_token = Hash::make($row["email"]);
-        //$password = Hash::make($row["nis"]);
         $password = rand();
         $passwordHash = Hash::make($password);
 
@@ -51,7 +50,6 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation
             'nama_siswa' => $row["nama_siswa"],
             'email' => $row["email"],
             'api_token' => $api_token,
-            //'password'          => $password
             'password' => $passwordHash
         ]);
     }
