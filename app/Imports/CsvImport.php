@@ -57,8 +57,7 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation
     public function rules(): array
     {
         return [
-            '*. ' => ['email', 'unique:users,email']
+            '*.email ' => ['email', 'unique:users,email']
         ];
     }
-    
 }

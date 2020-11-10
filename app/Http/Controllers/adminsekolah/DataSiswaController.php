@@ -86,7 +86,6 @@ class DataSiswaController extends Controller
        Excel::import(new CsvImport, request()->file('file'));
 
         return back();
-
     }
 
     /**
