@@ -7,14 +7,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+use Maatwebsite\Excel\Concerns\Importable;
+use Maatwebsite\Excel\Concerns\SkipsErrors;
+use Maatwebsite\Excel\Concerns\SkipsFailures;
+use Maatwebsite\Excel\Concerns\SkipsOnError;
+use Maatwebsite\Excel\Concerns\SkipsOnFailure;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithValidation;
+use Maatwebsite\Excel\Validators\Failure;
 
-class CsvImport implements ToModel, WithHeadingRow, WithValidation
+class CsvImport implements ToModel, WithHeadingRow, WithValidation, SkipsOnError, SkipsOnFailure
 {
 
-
+    use Importable, SkipsErrors, SkipsFailures;
     /**
      * @param array $row
      *
@@ -22,8 +28,6 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation
      */
     public function model(array $row)
     {
-
-
 
         $logged_admin = Auth::guard('adminsekolah')->user()->id;
         $api_token = Hash::make($row["email"]);
@@ -57,7 +61,15 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation
     public function rules(): array
     {
         return [
-            '*.email ' => ['email', 'unique:users,email']
+            '*.nis' => ['unique:users','numeric'],
+            '*.email ' => ['email', 'unique:users'],
         ];
+    }
+
+    public function customValidationMessages(): array
+    {
+    return [
+        '*.email' => 'email sudah pernah di tambahkan :attribute.',
+    ];
     }
 }

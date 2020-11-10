@@ -43,16 +43,11 @@
                             </form>
 
                         </div>
-                        @if (isset($errors) &&  $errors->any())
-                        <div class="alert alert-danger">
-                            @foreach ($errors->all() as $error)
-                            {{ $error }}
-                            @endforeach
-                        </div>
-                        @endif
 
 
-                        {{-- @if (session()->has('failures'))
+
+                        @if (session()->has('failures'))
+
                         <table class="table table-danger">
                             <tr>
                                 <th>Row</th>
@@ -62,23 +57,24 @@
                             </tr>
 
                             @foreach (session()->get('failures') as $validation)
-                            <tr>
-                                <td>{{ $validation->row() }}</td>
-                                <td>{{ $validation->attribute() }}</td>
-                                <td>
-                                    <ul>
-                                        @foreach ($validation->errors() as $e)
-                                        <li>{{ $e }}</li>
-
-                                        @endforeach
-                                    </ul>
-                                </td>
-                                {{ $validation->values()[$validation->attribute()] }}
-                            </tr>
+                                <tr>
+                                    <td>{{ $validation->row() }}</td>
+                                    <td>{{ $validation->attribute() }}</td>
+                                    <td>
+                                        <ul>
+                                            @foreach ($validation->errors() as $e)
+                                                <li>{{ $e }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        {{ $validation->values()[$validation->attribute()] }}
+                                    </td>
+                                </tr>
                             @endforeach
                         </table>
 
-                        @endif --}}
+                    @endif
 
                         </div>
                         <div class="row">

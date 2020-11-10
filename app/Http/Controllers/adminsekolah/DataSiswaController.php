@@ -83,9 +83,23 @@ class DataSiswaController extends Controller
     public function store(Request $request)
     {
 
-       Excel::import(new CsvImport, request()->file('file'));
 
-        return back();
+
+        $file = $request->file('file')->store('import');
+
+        $import = new CsvImport;
+        $import->import($file);
+
+        if ($import->failures()->isNotEmpty()) {
+            return back()->withFailures($import->failures());
+        }
+
+
+        return back()->withStatus('Import in queue, we will send notification after import finished.');
+
+    //    Excel::import(new CsvImport, request()->file('file'));
+
+    //     return back();
     }
 
     /**
