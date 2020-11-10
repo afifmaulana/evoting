@@ -21,6 +21,7 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation, SkipsOnError
 {
 
     use Importable, SkipsErrors, SkipsFailures;
+    
     /**
      * @param array $row
      *

@@ -44,8 +44,6 @@
 
                         </div>
 
-
-
                         @if (session()->has('failures'))
 
                         <table class="table table-danger">
