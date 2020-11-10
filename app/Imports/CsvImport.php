@@ -60,4 +60,5 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation
             '*. ' => ['email', 'unique:users,email']
         ];
     }
+    
 }

@@ -87,7 +87,6 @@ class DataSiswaController extends Controller
 
         return back();
 
-
     }
 
     /**
