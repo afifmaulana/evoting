@@ -66,10 +66,10 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation, SkipsOnError
         ];
     }
 
-    public function customValidationMessages(): array
+    public function customValidationMessages()
     {
     return [
-        '*.email' => 'email sudah pernah di tambahkan :attribute.',
-    ];
+        '*.email' => ':attribute sudah pernah di tambahkan',
+        '*.nis' => ':attribute sudah pernah ditambahkan'];
     }
 }
