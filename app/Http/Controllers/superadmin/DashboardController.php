@@ -90,7 +90,7 @@ class DashboardController extends Controller
     }
 
     public function notification(){
-        $notification = Notification::orderBy('id', 'DESC')->limit(4)->get(['id','pesan','status','created_at']);
+        $notification = Notification::orderBy('id', 'DESC')->limit(4)->get(['id','pesan','created_at']);
         return response()->json($notification);
     }
 }

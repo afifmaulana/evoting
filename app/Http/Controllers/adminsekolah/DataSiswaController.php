@@ -93,7 +93,7 @@ class DataSiswaController extends Controller
         }
 
 
-        return back()->withStatus('Import in queue, we will send notification after import finished.');
+        return back()->with('create', 'Berhasil Menambahkan Data Siswa');
 
     //    Excel::import(new CsvImport, request()->file('file'));
 
@@ -135,11 +135,12 @@ class DataSiswaController extends Controller
         $data = User::find($id);
         $data->nis          = $request->nis;
         $data->nama_siswa   = $request->nama_siswa;
+        $data->kelas        = $request->kelas;
         $data->email        = $request->email;
 
         $data->update();
 
-        return redirect()->route('datasiswa.index');
+        return redirect()->route('datasiswa.index')->with('update', 'Berhasil Mengubah Data Siswa');
     }
 
     /**
@@ -150,6 +151,8 @@ class DataSiswaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = User::find($id);
+        $data->delete();
+        return redirect()->route('datasiswa.index')->with('delete', 'Berhasil Menghapus Data');
     }
 }

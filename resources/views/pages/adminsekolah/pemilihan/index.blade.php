@@ -3,6 +3,29 @@
     <div class="content-wrapper">
         <div class="row">
             <div class="col-12">
+
+                @if($message = Session::get('create'))
+                        <div class="alert alert-success alert-dismissible mb-2" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            {{$message}}
+                        </div>
+                    @endif
+
+                    @if($message = Session::get('update'))
+                        <div class="alert alert-success alert-dismissible mb-2" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            {{$message}}
+                        </div>
+                    @endif
+
+                    @if($message = Session::get('delete'))
+                        <div class="alert alert-success alert-dismissible mb-2" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            {{$message}}
+                        </div>
+                    @endif
+
+
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Atur Pemilihan</h4>

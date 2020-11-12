@@ -15,10 +15,10 @@ Route::get('/', function () {
     return view('templates.adminhome');
 });
 
-Route::get('/test', function () {
-    event(new \App\Events\AdminNotification("okeh"));
-    return "success";
-});
+// Route::get('/test', function () {
+//     event(new \App\Events\AdminNotification("okeh"));
+//     return "success";
+// });
 
 Route::get('superadmin/notification', 'superadmin\DashboardController@notification');
 
@@ -60,6 +60,7 @@ Route::group(['prefix' => 'adminsekolah'], function (){
     Route::resource('datacalon', 'adminsekolah\DataCalonController')->except(['destroy']);
     Route::get('datacalon/{id}/destroy', 'adminsekolah\DataCalonController@destroy')->name('datacalon.destroy');
     Route::resource('datasiswa', 'adminsekolah\DataSiswaController');
+    Route::get('datasiswa/{id}/destroy', 'adminsekolah\DataSiswaController@destroy')->name('datasiswa.destroy');
     Route::get('tambahsiswa', 'adminsekolah\DataSiswaController@formtambah')->name('form.siswa');
     Route::post('tambahsiswa/tambah', 'adminsekolah\DataSiswaController@tambahsiswa')->name('tambah.siswa');
     Route::resource('pemilihan', 'adminsekolah\PemilihanController')->except(['destroy']);

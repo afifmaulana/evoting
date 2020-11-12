@@ -21,7 +21,7 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation, SkipsOnError
 {
 
     use Importable, SkipsErrors, SkipsFailures;
-    
+
     /**
      * @param array $row
      *
@@ -53,6 +53,7 @@ class CsvImport implements ToModel, WithHeadingRow, WithValidation, SkipsOnError
             'id_adminsekolah' => $logged_admin,
             'nis' => $row["nis"],
             'nama_siswa' => $row["nama_siswa"],
+            'kelas' => $row["kelas"],
             'email' => $row["email"],
             'api_token' => $api_token,
             'password' => $passwordHash

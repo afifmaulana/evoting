@@ -65,7 +65,7 @@ class DataCalonController extends Controller
         ];
 
         $this->validate($request, $rules, $message);
-        
+
 
 //        $image=$request->file('foto');
 //        $filename=rand().'.'.$image->getClientOriginalExtension();
@@ -131,34 +131,8 @@ class DataCalonController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-//        $names = $request->name;
-//
-//        if (count($names) > 2) {
-//            return redirect()->back()->withErrors(['msg', 'The Message']);
-//        }
-//
-//        $data = Calon::find($id);
-//        $data->id_adminsekolah = Auth::guard('adminsekolah')->user()->id;
-//        $data->id_ketua = $names[0];
-//        $data->id_wakil = $names[1];
-//        $data->visi = $request->visi;
-//        $data->misi = $request->misi;
-////        $data->foto = $file_name;
-//
-//        $file = $request->file('foto');
-//        $file_name = date('ymdHis') . "-" . $file->getClientOriginalName();
-//        $file_path = 'data-calon/' . $file_name;
-//        Storage::disk('s3')->put($file_path, file_get_contents($file));
-//        $data->foto = Storage::disk('s3')->url($file_path, $file_name);
-//
-//        $data->update();
-//
-//        return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');
-
         $a = User::where('nama_siswa', '=', $request->name)
             ->where('id_adminsekolah', '=', Auth::guard('adminsekolah')->user()->id)->first();
-        //dd($a->id);
 
         $image = $request->file('foto');
         $filename = rand() . '.' . $image->getClientOriginalExtension();
@@ -180,7 +154,7 @@ class DataCalonController extends Controller
             $data->foto = $request->file('foto') == '' ? $request->old_foto : $filename;
             $data->update();
 
-            return redirect()->route('datacalon.index')->with('create', 'Berhasil Menambahkan Data');
+            return redirect()->route('datacalon.index')->with('update', 'Berhasil Mengubah Data');
         } else {
             return redirect()->back()->with('datacalon.create');
         }

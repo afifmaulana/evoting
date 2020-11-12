@@ -23,10 +23,21 @@
 
                     <div class="form-group">
                         <label for="exampleInputName1">Nama Siswa</label>
-                        <input type="text" class="form-control {{$errors->has('nis')?'is-invalid':''}}"
+                        <input type="text" class="form-control {{$errors->has('nama_siswa')?'is-invalid':''}}"
                                id="exampleInputName1" placeholder="Masukkan Nama Siswa" name="nama_siswa"
                                value="{{$data->nama_siswa}}">
                         @error('nama_siswa')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Kelas</label>
+                        <input type="text" class="form-control {{$errors->has('kelas')?'is-invalid':''}}"
+                               id="exampleInputName1" placeholder="Masukkan Nama Kelas" name="kelas"
+                               value="{{$data->kelas}}">
+                        @error('kelas')
                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -38,8 +49,7 @@
                         <input type="email" class="form-control" readonly value="{{Auth::guard('adminsekolah')->user()->email}}">
                     </div>
 
-                    <button type="submit" class="btn btn-success mr-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
+                    <button type="submit" class="btn btn-success mr-2">Ubah</button>
                 </form>
             </div>
         </div>

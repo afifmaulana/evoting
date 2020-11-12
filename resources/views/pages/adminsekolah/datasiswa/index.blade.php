@@ -83,6 +83,7 @@
                                         <th>No</th>
                                         <th>Nis</th>
                                         <th>Nama</th>
+                                        <th>Kelas</th>
                                         <th>Email</th>
                                         <th>Actions</th>
                                     </tr>
@@ -93,20 +94,20 @@
                                             <td>{{$loop->iteration}}</td>
                                             <td>{{$data->nis}}</td>
                                             <td>{{$data->nama_siswa}}</td>
+                                            <td>{{$data->kelas}}</td>
                                             <td>{{$data->email}}</td>
 
                                             <td class="text-right">
-                                                <button class="btn btn-light">
-                                                    <i class="mdi mdi-eye text-primary"></i>
-                                                </button>
                                                 <a href="{{route('datasiswa.edit', $data->id)}}">
                                                 <button class="btn btn-warning">
                                                     <i class="icon-note"></i>
                                                 </button>
                                                 </a>
+                                                <a href="{{route('datasiswa.destroy', $data->id)}}">
                                                 <button class="btn btn-danger">
                                                     <i class="icon-trash"></i>
                                                 </button>
+                                                </a>
                                             </td>
                                         </tr>
                                     @endforeach

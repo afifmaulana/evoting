@@ -89,7 +89,7 @@ class PemilihanController extends Controller
 
 
 
-        return redirect()->route('pemilihan.index')->with('create', 'Berhasil mengubah Data');
+        return redirect()->route('pemilihan.index')->with('create', 'Berhasil Menambahkan Jadwal Pemilihan OSIS');
     }
 
     /**
@@ -159,7 +159,7 @@ class PemilihanController extends Controller
 
 
 
-        return redirect()->route('pemilihan.index')->with('create', 'Berhasil mengubah Data');
+        return redirect()->route('pemilihan.index')->with('update', 'Berhasil mengubah jadwal pemilihan');
     }
 
     /**
@@ -172,6 +172,6 @@ class PemilihanController extends Controller
     {
         $data = Pemilihan::find($id);
         $data->delete();
-        return redirect()->route('pemilihan.index')->with('delete', 'berhasil menghapus data');
+        return redirect()->route('pemilihan.index')->with('delete', 'berhasil menghapus jadwal pemilihan');
     }
 }
