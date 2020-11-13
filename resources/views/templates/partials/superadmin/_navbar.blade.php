@@ -43,7 +43,7 @@
 
                 <li class="dropdown user_profile">
                     <a href="#" onClick="return false;" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                        <img src="{{asset('uploads/superadmin/'.Auth::guard('superadmin')->user()->path_avatar)}}" width="32" height="32" alt="User">
+                        <img src="{{Auth::guard('superadmin')->user()->path_avatar}}" width="32" height="32" alt="User">
                     </a>
                     <ul class="dropdown-menu pullDown">
                         <li class="body">

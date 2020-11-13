@@ -14,9 +14,10 @@
                                     <tr class="bg-light">
                                         <th>No</th>
                                         <th>Tahun Ajaran</th>
-                                        <th>Nama Calon</th>
+                                        <th>Nama Calon 1</th>
                                         <th>Hasil</th>
-                                        <th>Actions</th>
+                                        <th>Nama Calon 2</th>
+                                        <th>Hasil</th>
                                     </tr>
                                     </thead>
                                     <tbody>

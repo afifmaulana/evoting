@@ -61,14 +61,11 @@
                                             <td>{{$data->tahun_ajaran}}</td>
 
                                             <td class="text-right">
-                                                <button class="btn btn-light">
-                                                    <i class="mdi mdi-eye text-primary"></i>
-                                                </button>
-                                                <a href="#">
+                                                {{-- <a href="#">
                                                     <button class="btn btn-warning">
                                                         <i class="icon-note"></i>
                                                     </button>
-                                                </a>
+                                                </a> --}}
                                                 <a href="{{route('pemilihan.destroy', $data->id)}}">
                                                 <button class="btn btn-danger">
                                                     <i class="icon-trash"></i>

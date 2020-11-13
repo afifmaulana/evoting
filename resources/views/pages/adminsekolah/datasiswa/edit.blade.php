@@ -6,7 +6,7 @@
             <div class="card-body">
                 <h4 class="card-title">Ubah Data Siswa</h4>
 
-                <form class="forms-sample" method="POST" action="{{route('datasiswa.update', $data->id)}}" enctype="multipart/form-data">
+                <form class="forms-sample" method="PATCH" action="{{route('datasiswa.update', $data->id)}}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="exampleInputName1">NIS</label>

@@ -5,7 +5,7 @@
             <li class="sidebar-user-panel active">
                 <div class="user-panel">
                     <div class=" image">
-                        <img src="{{asset('uploads/superadmin/'.Auth::guard('superadmin')->user()->path_avatar)}}" class="img-circle user-img-circle" alt="User Image" />
+                        <img src="{{Auth::guard('superadmin')->user()->path_avatar}}" class="img-circle user-img-circle" alt="User Image" />
                     </div>
                 </div>
                 <div class="profile-usertitle">

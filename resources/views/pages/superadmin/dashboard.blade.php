@@ -24,9 +24,6 @@
                     <div class="text font-17 m-b-5">Total Data Users</div>
                     <h3 class="m-b-10">{{count(\App\AdminSekolah::all())}}
                     </h3>
-                    <div class="icon">
-                        <div class="chart chart-bar"></div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-sm-6">
