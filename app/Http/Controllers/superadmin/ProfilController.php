@@ -44,17 +44,6 @@ class ProfilController extends Controller
     {
         $data = Auth::guard('superadmin')->user();
         $data->name = $request->name;
-        // if ($request->file('path_avatar') == ''){
-        //     $data->path_avatar = $request->old_path_avatar;
-        // }else{
-        //     $image=$request->file('path_avatar');
-        //     $filename=rand().'.'.$image->getClientOriginalExtension();
-        //     $path=public_path('uploads/superadmin');
-        //     $image->move($path,$filename);
-        //     $data->path_avatar = $filename;
-        // }
-
-
         if ($request->file('path_avatar') == ''){
             $data->path_avatar = $request->old_path_avatar;
         }else{

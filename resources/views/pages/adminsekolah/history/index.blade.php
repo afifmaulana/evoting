@@ -37,6 +37,12 @@
                                 </table>
                             </div>
                         </div>
+                        <div class="text-center">
+                            <a href="{{ route('export.history') }}">
+                                <button class="btn btn-success">Cetak History Pemilihan | <i class="icon-printer"></i></button>
+                            </a>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>

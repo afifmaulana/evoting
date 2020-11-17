@@ -12,4 +12,6 @@ class Pemilihan extends Model
     {
         return $this->hasMany(Hasil::class, 'id_pemilihan', 'id');
     }
+
+    
 }

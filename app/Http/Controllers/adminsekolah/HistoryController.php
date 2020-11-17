@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\adminsekolah;
 
+use App\Exports\HistoryExport;
 use App\Hasil;
 use App\Pemilihan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Maatwebsite\Excel\Facades\Excel;
 
 class HistoryController extends Controller
 {
@@ -25,6 +27,12 @@ class HistoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     public function export()
+     {
+         return Excel::download(new HistoryExport, 'Hasil Pemilihan.xlsx');
+     }
+
     public function create()
     {
         //

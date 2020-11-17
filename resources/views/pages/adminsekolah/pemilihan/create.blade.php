@@ -3,7 +3,7 @@
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Buat Even Pemilihan</h4>
+                <h4 class="card-title">Buat Acara Pemilihan</h4>
                 <p class="card-description">
                     Pemilihan Ketua dan Wakil Osis
                 </p>
