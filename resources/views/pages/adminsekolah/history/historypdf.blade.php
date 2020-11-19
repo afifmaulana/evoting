@@ -21,7 +21,7 @@ div.cls_006{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:0px;top:0px">
 <img src="f37f3e04-2a29-11eb-8b25-0cc47a792c0a_id_f37f3e04-2a29-11eb-8b25-0cc47a792c0a_files/background1.jpg" width=612 height=792></div>
 <div style="position:absolute;left:175.94px;top:71.18px" class="cls_002"><span class="cls_002">ORGANISASI SISWA INTRA SEKOLAH (OSIS)</span></div>
-<div style="position:absolute;left:190.82px;top:91.82px" class="cls_002"><span class="cls_002">SMP NEGERI 1 KOTA TEGAL (2020/2021)</span></div>
+<div style="position:absolute;left:190.82px;top:91.82px" class="cls_002"><span class="cls_002">{{Auth::guard('adminsekolah')->user()->nama_sekolah}}</span></div>
 <div style="position:absolute;left:271.61px;top:112.70px" class="cls_003"><span class="cls_003">Alamat sekolah</span></div>
 <div style="position:absolute;left:192.26px;top:131.66px" class="cls_003"><span class="cls_003">No_telp. 098765498765. E-mail : </span><A HREF="mailto:qwert@mail.com">qwert@mail.com</A> </span></div>
 <div style="position:absolute;left:143.06px;top:169.58px" class="cls_005"><span class="cls_005">PENGUMUMAN HASIL PEMILIHAN KETUA DAN WAKIL OSIS</span></div>

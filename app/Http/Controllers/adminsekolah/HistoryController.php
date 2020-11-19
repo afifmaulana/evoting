@@ -7,7 +7,7 @@ use App\Hasil;
 use App\Pemilihan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Barryvdh\DomPDF\PDF;
+use Barryvdh\DomPDF\Facade as PDF;
 use Maatwebsite\Excel\Facades\Excel;
 
 class HistoryController extends Controller
@@ -37,7 +37,7 @@ class HistoryController extends Controller
      public function exportpdf()
      {
         $datas = Hasil::all();
-        $pdf = PDF::loadview('pages.adminsekolah.history.historypdf', ['hasil' =>$datas]);
+        $pdf = PDF::loadview('pages.adminsekolah.history.pdf', compact('datas'));
         return $pdf->download('historypemilihan.pdf');
      }
 
