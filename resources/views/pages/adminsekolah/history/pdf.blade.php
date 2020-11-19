@@ -9,6 +9,12 @@
           margin-left: auto;
           margin-right: auto;
         }
+        .text_content{
+				text-indent: 60px;
+		}
+        p.ex1 {
+  padding: 35px 70px 50px 90px;
+}
         </style>
         </head>
 
@@ -52,7 +58,7 @@
                   </table>
                 </div>
               </div>
-              <p align="center"> Berdasarkan dari data hasil pemilihan ketua dan wakil OSIS untuk periode 2020/2021
+              <p class="ex1"> Berdasarkan dari data hasil pemilihan ketua dan wakil OSIS untuk periode 2020/2021
                   di atas maka telah ditetapkan bahwa dengan ini saudara Anu dan Ani telah memenangkan pemilihan ini,
                   dan resmi menjadi ketua dan wakil OSIS untuk periode 2020/2021.
               </p>
