@@ -89,10 +89,10 @@ class RegisterController extends Controller
             $data->no_izin      = $request->no_izin;
             $data->activation_token = Str::random(100);
             if ($data->save()) {
-                $message = "Sekolah ".$data->nama_sekolah." telah berhasil mendfatar";
-                Notification::create([ "pesan" => $message ]);
-                $data->sendNotification($message);
-
+                // $message = "Sekolah ".$data->nama_sekolah." telah berhasil mendfatar";
+                // Notification::create([ "pesan" => $message ]);
+                // $data->sendNotification($message);
+                event(new AdminSekolahActivationEmail($data));
                 return redirect()->route('adminsekolah.login');
             } else {
                 return redirect()->back()->withErrors();

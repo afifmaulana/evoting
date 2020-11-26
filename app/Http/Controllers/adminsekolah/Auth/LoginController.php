@@ -66,7 +66,7 @@ class LoginController extends Controller
 
         if (Auth::guard('adminsekolah')->attempt($credential)){
             $user = Auth::guard('adminsekolah')->user();
-            if ($user->status == '2'){
+            if ($user->email_verified_at != null) {
                 return redirect()->intended(route('dashboard2.index'));
             }else{
                 return redirect()->back()

@@ -17,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('templates.adminhome');
 });
+Route::get('/about', function () {
+    return view('templates.about');
+});
+Route::get('/help', function () {
+    return view('templates.help');
+});
 
 // Route::get('/test', function () {
 //     event(new \App\Events\AdminNotification("okeh"));

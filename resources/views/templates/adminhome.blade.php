@@ -4,15 +4,15 @@
 @include('templates.partials.adminhome._head')
 
 <body>
-<div class="container-scroller landing-page">
+<div id="home" class="container-scroller landing-page">
     <div class="container-fluid top-banner">
         @include('templates.partials.adminhome._navbar')
         <div class="row top-banner-content">
             <div class="col-md-8 mx-auto">
                 <div class="row">
                     <div class="col-lg-7">
-                        <h1> Aplikasi E-Voting OSIS
-                        </h1>
+                        <h1> Aplikasi E-Voting OSIS</h1>
+                        <p2> Segera Daftarkan Sekolah Anda</p2>
                         <div class="mt-5">
                             <a href="{{route('adminsekolah.login')}}">
                                 <button class="btn btn-dark btn-lg mr-2">Masuk</button>
@@ -39,33 +39,34 @@
                     <div class="col-md-4 grid-margin stretch-card">
                         <div class="card card-icon-top">
                             <div class="card-body">
-                                {{--<img src="#" alt="image"--}}
-                                     {{--class="card-icon"/>--}}
-                                <p class="card-text">
+                                <img src="{{ asset ('assets-sekolah/images/samples/landing/voting.png') }}" alt="image"
+                                     class="card-icon"/>
+                                <p3 class="card-text">
                                     Mempermudah users menggunakan Aplikasi ini
-                                </p>
+                                </p3>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 grid-margin stretch-card">
                         <div class="card card-icon-top">
                             <div class="card-body">
-                                {{--<img src="#" alt="image"--}}
-                                     {{--class="card-icon"/>--}}
-                                <p class="card-text">
+                                <img src="{{ asset ('assets-sekolah/images/samples/landing/voting-box.png') }}" alt="image"
+                                     class="card-icon"/>
+                                <p3 class="card-text">
                                     Mempermudah dalam proses pemilihan ketua dan wakil OSIS terutama dalam perhitungan suara
-                                </p>
+                                </p3>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 grid-margin stretch-card">
                         <div class="card card-icon-top">
                             <div class="card-body">
-                                {{--<img src="#" alt="image"--}}
-                                     {{--class="card-icon"/>--}}
-                                <p class="card-text">
+                                <img src="{{ asset ('assets-sekolah/images/samples/landing/school.png') }}" alt="image"
+                                     class="card-icon"/>
+                                <p3 class="card-text">
+                                    <br>
                                     Mengurangi biaya yang dikeluarkan oleh sekolah
-                                </p>
+                                </p3>
                             </div>
                         </div>
                     </div>
@@ -73,55 +74,106 @@
             </div>
         </div>
     </div>
-    {{--<div class="container-fluid features-section">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-8 mx-auto">--}}
-                {{--<div class="row mb-5">--}}
-                    {{--<div class="col-md-8 mx-auto">--}}
-                        {{--<h3>Built for everyone</h3>--}}
-                        {{--<h6>--}}
-                            {{--Shure’s Music Phone Adapter (MPA) is our favorite iPhone solution, since it lets you use the--}}
-                            {{--headphones you’re most comfortable with.--}}
-                        {{--</h6>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="row">--}}
-                    {{--<div class="col-md-3 grid-margin">--}}
-                        {{--<img class="card-img-top"--}}
-                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-1.png') }}" alt="image">--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-3 grid-margin">--}}
-                        {{--<img class="card-img-top"--}}
-                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-2.png') }}" alt="image">--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-3 grid-margin">--}}
-                        {{--<img class="card-img-top"--}}
-                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-3.png') }}" alt="image">--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-3 grid-margin">--}}
-                        {{--<img class="card-img-top"--}}
-                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-4.png') }}" alt="image">--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-3 grid-margin">--}}
-                        {{--<img class="card-img-top"--}}
-                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-5.png') }}" alt="image">--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-3 grid-margin">--}}
-                        {{--<img class="card-img-top"--}}
-                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-6.png') }}" alt="image">--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-3 grid-margin">--}}
-                        {{--<img class="card-img-top"--}}
-                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-7.png') }}" alt="image">--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-3 grid-margin">--}}
-                        {{--<img class="card-img-top"--}}
-                             {{--src="{{ asset ('assets-sekolah/images/samples/landing/landing-8.png') }}" alt="image">--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
+
+    <div class="container-fluid afif-maulana">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto">
+                        <h3>Member E-Voting</h3>
+                        <h6>
+                            Sukseskan pemilihan ketua & wakil OSIS sekolah Anda dengan menggunakan Aplikasi E-Voting OSIS.
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 grid-margin stretch-card">
+                    <div class="card card-item-preview">
+                        <div class="card-body">
+                    <div class="col-md-3 grid-margin">
+                        <img src="{{ asset ('assets-sekolah/images/samples/landing/muh1.png') }}" width="200" height="200" alt="image">
+                    </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 grid-margin stretch-card">
+                    <div class="card card-item-preview">
+                        <div class="card-body">
+                    <div class="col-md-3 grid-margin">
+                        <img src="{{ asset ('assets-sekolah/images/samples/landing/sma1.png') }}" width="200" height="200" alt="image">
+                    </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 grid-margin stretch-card">
+                    <div class="card card-item-preview">
+                        <div class="card-body">
+                    <div class="col-md-3 grid-margin">
+                        <img src="{{ asset ('assets-sekolah/images/samples/landing/sma2.png') }}" width="200" height="200" alt="image">
+                    </div>
+                        </div>
+                </div>
+                    </div>
+                    <div class="col-md-4 grid-margin stretch-card">
+                <div class="card card-item-preview">
+                    <div class="card-body">
+                    <div class="col-md-3 grid-margin">
+                        <img src="{{ asset ('assets-sekolah/images/samples/landing/sma3.jpg') }}" width="200" height="200" alt="image">
+                    </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="col-md-4 grid-margin stretch-card">
+                <div class="card card-item-preview">
+                    <div class="card-body">
+                    <div class="col-md-3 grid-margin">
+                        <img src="{{ asset ('assets-sekolah/images/samples/landing/sma4.png') }}" width="200" height="200" alt="image">
+                    </div>
+                </div>
+            </div>
+                    </div>
+            <div class="col-md-4 grid-margin stretch-card">
+            <div class="card card-item-preview">
+                <div class="card-body">
+                    <div class="col-md-3 grid-margin">
+                        <img src="{{ asset ('assets-sekolah/images/samples/landing/smk3.png') }}" width="200" height="200" alt="image">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 grid-margin stretch-card">
+            <div class="card card-item-preview">
+                <div class="card-body">
+                    <div class="col-md-3 grid-margin">
+                        <img src="{{ asset ('assets-sekolah/images/samples/landing/smp1.jpg') }}" width="200" height="200" alt="image">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 grid-margin stretch-card">
+            <div class="card card-item-preview">
+                <div class="card-body">
+                    <div class="col-md-3 grid-margin">
+                        <img src="{{ asset ('assets-sekolah/images/samples/landing/smp7.png') }}" width="200" height="200" alt="image">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-4 grid-margin stretch-card">
+                <div class="card card-item-preview">
+                    <div class="card-body">
+                        <div class="col-md-3 grid-margin">
+                            <img src="{{ asset ('assets-sekolah/images/samples/landing/alirsyad.png') }}" width="200" height="200" alt="image">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- page-body-wrapper ends -->
 </div>
 <footer class="footer">

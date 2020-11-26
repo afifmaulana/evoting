@@ -16,6 +16,7 @@
                         <label>Nama Calon</label>
                         <select class="js-example-basic-multiple form-control {{$errors->has('name')?'is-invalid':''}}"
                                 multiple="multiple" style="width:100%" name="name[]" id="name">
+                                
                             @if ($errors->has('name'))
                                 <span class="invalid-feedback" role="alert">
                                     <p><b>{{ $errors->first('name') }}</b></p>

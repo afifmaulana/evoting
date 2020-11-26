@@ -7577,7 +7577,8 @@ dfn {
 
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bold;
+ }
 
 small {
   font-size: 80%; }
@@ -14716,7 +14717,18 @@ h6 {
 
 p {
   font-weight: 400;
-  font-size: 0.8rem; }
+  font-size: 1.0rem;
+  text-indent: 60px; }
+
+  p2 {
+    font-weight: 400;
+    font-size: 1.0rem;
+    color: #fff; }
+
+p3 {
+    font-weight: 400;
+    font-size: 1.0rem;
+    color: #000; }
 
 .h1,
 h1 {
@@ -16683,7 +16695,10 @@ pre {
 
 /* Breadcrumbs */
 .breadcrumb {
-  border: 1px solid #d5dcec; }
+  border: 1px solid #d5dcec;
+background: transparent;
+position: relative; }
+
   .breadcrumb .breadcrumb-item {
     font-size: 0.8rem; }
   .breadcrumb.breadcrumb-custom {
@@ -19296,7 +19311,7 @@ ul {
 .nav-tabs .nav-item .nav-link {
   font-family: "Open Sans", sans-serif;
   line-height: 1;
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   color: #000;
   text-align: center;
   display: -webkit-flex;
@@ -19307,7 +19322,7 @@ ul {
 
 .tab-content {
   font-family: "Open Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   line-height: 1.71; }
 
 .tab-basic {
@@ -22362,6 +22377,52 @@ div.tagsinput {
   .landing-page .top-banner .top-banner-content {
     padding-top: 80px;
     padding-bottom: 120px; }
+
+
+    .landing-page .afif-maulana {
+        background: rgb(232, 237, 243);
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+        color: #000; }
+        .landing-page .afif-maulana .card {
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+          border: 1px solid #d5dcec;
+          -webkit-transition: box-shadow 0.5s ease;
+          -moz-transition: box-shadow 0.5s ease;
+          -ms-transition: box-shadow 0.5s ease;
+          -o-transition: box-shadow 0.5s ease;
+          transition: box-shadow 0.5s ease; }
+          .landing-page .afif-maulana .card:hover {
+            box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2); }
+          .landing-page .afif-maulana .card.card-icon-top .card-body {
+            padding: 3rem; }
+          .landing-page .afif-maulana .card.card-icon-top .card-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 2rem; }
+          .landing-page .afif-maulana .card.card-icon-top h4 {
+            margin-bottom: 2rem; }
+          .landing-page .afif-maulana .card.card-item-preview {
+            position: relative; }
+            .landing-page .afif-maulana .card.card-item-preview .badge {
+              position: absolute;
+              top: -25px;
+              right: 35px;
+              width: 65px;
+              height: 65px;
+              padding: 1rem;
+              border-radius: 50%;
+              line-height: 32px;
+              font-size: 1rem; }
+            .landing-page .afif-maulana .card.card-item-preview .card-img-top {
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px; }
+
+
+
 
 .landing-page .middle-section {
   padding-top: 80px;

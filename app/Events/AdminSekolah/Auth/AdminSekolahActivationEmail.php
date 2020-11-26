@@ -13,7 +13,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
 class AdminSekolahActivationEmail
 {
-    use Dispatchable, InteractsWithSockets, SerializesModels;
+    use Dispatchable, SerializesModels;
 
     public $adminsekolah;
     /**
@@ -23,16 +23,8 @@ class AdminSekolahActivationEmail
      */
     public function __construct(AdminSekolah $adminSekolah)
     {
+        
         $this->adminsekolah = $adminSekolah;
     }
 
-    /**
-     * Get the channels the event should broadcast on.
-     *
-     * @return \Illuminate\Broadcasting\Channel|array
-     */
-    public function broadcastOn()
-    {
-        return new PrivateChannel('channel-name');
-    }
 }

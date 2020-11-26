@@ -13,10 +13,13 @@ class ActivationController extends Controller
     {
         $user = AdminSekolah::where('email', $request->email)->where('activation_token', $request->token)->firstOrFail();
         $user->status = true;
+        $user->email_verified_at = now();
         $user->activation_token = null;
         $user->update();
 
-        Auth::guard('adminsekolah')->loginUsingId($user->id);
-        return redirect()->route('dashboard1.index')->with('success', 'Berhasil Activasi Email, Sekarang Anda bisa masuk');
+        //Auth::guard('adminsekolah')->loginUsingId($user->id);
+
+        return redirect()->route('adminsekolah.login')->with('success', 'Berhasil Activasi Email, Sekarang Anda bisa masuk');
+        //return redirect()->route('dashboard2.index')->with('success', 'Berhasil Activasi Email, Sekarang Anda bisa masuk');
     }
 }
