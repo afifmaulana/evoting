@@ -107,16 +107,16 @@
                             </div>
                           </div>
                           <div class="card">
-                            <div class="card-header" role="tab" id="headingOne">
+                            <div class="card-header" role="tab" id="headingThree">
                               <h6 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true"
+                                <a data-toggle="collapse" href="#collapseThree" aria-expanded="true"
                                 aria-controls="collapseOne">
                                   <i class="card-icon mdi mdi-checkbox-marked-circle-outline"></i>
                                   Siswa tidak dapat melakukan login?
                                 </a>
                               </h6>
                             </div>
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                               <div class="card-body">
                                 <div class="row">
                                   <div class="col-md-3">
